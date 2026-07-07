@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Tamil Nadu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutalism-shadow {
+            box-shadow: 4px 4px 0px 0px #191b22;
+        }
+        .neo-brutalism-shadow-hover:hover {
+            box-shadow: 2px 2px 0px 0px #191b22;
+            transform: translate(2px, 2px);
+        }
+        .kolam-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(#727785 0.8px, transparent 0.8px), radial-gradient(#727785 0.8px, #ffffff 0.8px);
+            background-size: 32px 32px;
+            background-position: 0 0, 16px 16px;
+            opacity: 0.1;
+        }
+        .temple-silhouette {
+            mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+            -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#89fa9b",
+                        "on-secondary-fixed-variant": "#005320",
+                        "surface-container-high": "#e7e7f1",
+                        "secondary": "#006e2c",
+                        "on-primary-fixed": "#001a41",
+                        "on-surface": "#191b22",
+                        "on-background": "#191b22",
+                        "on-error-container": "#93000a",
+                        "surface-container-highest": "#e1e2eb",
+                        "inverse-on-surface": "#eff0fa",
+                        "secondary-fixed-dim": "#6ddd81",
+                        "tertiary-fixed": "#ffdea0",
+                        "surface-container-low": "#f2f3fd",
+                        "on-primary-container": "#fefcff",
+                        "surface-variant": "#e1e2eb",
+                        "surface": "#f9f9ff",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-fixed": "#002108",
+                        "on-secondary-container": "#00722f",
+                        "surface-tint": "#005ac1",
+                        "error": "#ba1a1a",
+                        "tertiary": "#765700",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "on-tertiary-container": "#fffbff",
+                        "primary-container": "#2771df",
+                        "primary": "#0058bd",
+                        "on-error": "#ffffff",
+                        "background": "#f9f9ff",
+                        "surface-bright": "#f9f9ff",
+                        "inverse-surface": "#2e3038",
+                        "inverse-primary": "#adc6ff",
+                        "outline": "#727785",
+                        "on-surface-variant": "#424753",
+                        "outline-variant": "#c2c6d5",
+                        "primary-fixed-dim": "#adc6ff",
+                        "error-container": "#ffdad6",
+                        "on-secondary": "#ffffff",
+                        "tertiary-container": "#956e00",
+                        "on-primary-fixed-variant": "#004494",
+                        "surface-container": "#ecedf7",
+                        "secondary-container": "#86f898",
+                        "surface-dim": "#d8d9e3",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "20px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "24px",
+                        "gutter": "16px",
+                        "3xl": "64px",
+                        "xl": "32px",
+                        "base": "8px",
+                        "2xl": "48px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "40px",
+                        "md": "16px",
+                        "xs": "4px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "label-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- Top Navigation Anchor -->
+<header class="sticky top-0 w-full flex justify-between items-center px-sm md:px-md py-xs z-50 bg-background border-b-3 border-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-title-md font-headline-lg font-black text-on-surface">Bharat One</span>
+<div class="hidden md:flex gap-4 ml-8">
+<a class="text-primary font-bold transition-transform duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-2 py-1 rounded" href="#">Services</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-2 py-1 rounded" href="#">Governance</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-high rounded-full">location_on</button>
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-high rounded-full">emergency_home</button>
+<div class="flex items-center gap-2 bg-on-surface text-surface px-3 py-1.5 rounded-xl border-2 border-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+<span class="font-label-lg text-label-lg">Arjun</span>
+</div>
+</div>
+</header>
+<main class="relative min-h-screen pb-32">
+<!-- TN Shader Background -->
+
+<!-- Decorative Kolam Overlays -->
+<div class="absolute top-0 right-0 w-64 h-64 kolam-pattern pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 kolam-pattern pointer-events-none"></div>
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl relative z-10">
+<!-- AI Greeting Section -->
+<section class="mb-2xl">
+<div class="flex flex-col md:flex-row items-end gap-4 mb-lg">
+<div class="bg-surface border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow max-w-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-6xl">temple_hindu</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg mb-2">Vanakkam, Arjun!</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Your digital gateway to Tamil Nadu is ready. How can I assist your civic needs today?</p>
+<div class="mt-6 flex flex-wrap gap-3">
+<button class="bg-secondary-container text-on-secondary-container border-3 border-on-surface px-4 py-2 rounded-xl font-label-lg text-label-lg neo-brutalism-shadow-hover">Renew License</button>
+<button class="bg-primary-container text-on-primary-container border-3 border-on-surface px-4 py-2 rounded-xl font-label-lg text-label-lg neo-brutalism-shadow-hover">Pay Water Tax</button>
+<button class="bg-surface border-3 border-on-surface px-4 py-2 rounded-xl font-label-lg text-label-lg neo-brutalism-shadow-hover flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">smart_toy</span> Ask AI
+                            </button>
+</div>
+</div>
+<!-- Hero Status Card -->
+<div class="bg-primary text-on-primary border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow flex-1 w-full md:w-auto">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="text-label-sm font-label-sm opacity-80 uppercase tracking-wider">Current Region</p>
+<h2 class="text-title-lg font-headline-md">Chennai, Tamil Nadu</h2>
+</div>
+<span class="material-symbols-outlined text-4xl">cloud_queue</span>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-on-primary/10 p-3 rounded-lg border border-on-primary/20">
+<p class="text-label-sm font-label-sm opacity-80">Weather</p>
+<p class="font-bold">32°C, Humid</p>
+</div>
+<div class="bg-on-primary/10 p-3 rounded-lg border border-on-primary/20">
+<p class="text-label-sm font-label-sm opacity-80">System</p>
+<p class="font-bold text-secondary-fixed">System Stable</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- Featured: TN Startup Mission -->
+<div class="md:col-span-8 bg-surface border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow overflow-hidden group relative">
+<div class="absolute -right-4 -bottom-4 w-48 h-48 opacity-10 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[180px]">rocket_launch</span>
+</div>
+<div class="relative z-10">
+<span class="bg-tertiary-container text-on-tertiary-container px-3 py-1 rounded-full text-label-sm font-label-sm border-2 border-on-surface mb-4 inline-block">Featured Mission</span>
+<h3 class="text-headline-md font-headline-md mb-4">Tamil Nadu Startup Mission</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mb-6 max-w-lg">Empowering local entrepreneurs with seed funding, mentorship, and global networking opportunities. Join the 5,000+ startups scaling from Tamil Nadu.</p>
+<button class="bg-primary text-on-primary border-3 border-on-surface px-8 py-3 rounded-xl font-label-lg text-label-lg neo-brutalism-shadow-hover flex items-center gap-2">
+                            Explore Ecosystem <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Featured: Pongal Gift Tracker -->
+<div class="md:col-span-4 bg-secondary-container border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow flex flex-col justify-between">
+<div>
+<div class="w-16 h-16 bg-on-secondary-container text-surface flex items-center justify-center rounded-xl border-3 border-on-surface mb-4">
+<span class="material-symbols-outlined text-4xl">redeem</span>
+</div>
+<h3 class="text-title-lg font-headline-md mb-2">Pongal Gift Scheme Tracker</h3>
+<p class="text-label-lg font-label-lg text-on-secondary-variant">Check your eligibility and nearby distribution centers for the harvest festival gift packs.</p>
+</div>
+<div class="mt-6 border-t-2 border-on-surface/10 pt-4">
+<a class="text-on-secondary-container font-bold flex items-center justify-between group" href="#">
+                            Check My Status
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- Architecture & Motifs Section -->
+<div class="md:col-span-4 bg-surface border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow min-h-[300px] flex flex-col justify-end relative overflow-hidden">
+<!-- Vector Illustration Placeholder (No photos) -->
+<div class="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none opacity-20">
+<span class="material-symbols-outlined text-[200px]">temple_hindu</span>
+</div>
+<div class="relative z-10">
+<h4 class="text-title-lg font-headline-md mb-2">Temple Tourism</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">Book special darshans and explore the Brihadeeswarar Temple architecture through our digital guide.</p>
+</div>
+</div>
+<!-- Quick Services List -->
+<div class="md:col-span-8 bg-surface border-3 border-on-surface rounded-xl p-lg neo-brutalism-shadow">
+<div class="flex justify-between items-center mb-6">
+<h3 class="text-title-lg font-headline-md">Quick Services</h3>
+<button class="text-primary font-bold text-label-lg">View All</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="border-3 border-on-surface p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">electric_bolt</span>
+<span class="text-label-sm font-label-sm">Electricity Bill</span>
+</div>
+<div class="border-3 border-on-surface p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">description</span>
+<span class="text-label-sm font-label-sm">Birth Certificate</span>
+</div>
+<div class="border-3 border-on-surface p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">commute</span>
+<span class="text-label-sm font-label-sm">Bus Pass</span>
+</div>
+<div class="border-3 border-on-surface p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-surface-container-low cursor-pointer transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<span class="text-label-sm font-label-sm">Education Loan</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button Contextual (Home) -->
+<button class="fixed bottom-24 right-6 w-16 h-16 bg-primary text-on-primary rounded-full border-3 border-on-surface flex items-center justify-center neo-brutalism-shadow transition-transform active:translate-y-1 z-40">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+<script>
+        // Micro-interaction for hover states
+        document.querySelectorAll('.neo-brutalism-shadow-hover').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.style.transform = 'translate(2px, 2px)';
+                button.style.boxShadow = '2px 2px 0px 0px #191b22';
+            });
+            button.addEventListener('mouseup', () => {
+                button.style.transform = '';
+                button.style.boxShadow = '';
+            });
+        });
+    </script>
+</body></html>

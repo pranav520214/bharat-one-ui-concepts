@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Mizoram</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#212121",
+                        "on-surface-variant": "#444748",
+                        "background": "#f8f9fa",
+                        "error": "#ba1a1a",
+                        "tertiary": "#0b0a09",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-tint": "#5f5e5e",
+                        "on-surface": "#191c1d",
+                        "outline": "#747878",
+                        "secondary-container": "#da3433",
+                        "on-secondary-container": "#fffbff",
+                        "surface-dim": "#d9dadb",
+                        "on-tertiary-fixed-variant": "#484645",
+                        "on-secondary-fixed": "#410003",
+                        "secondary-fixed-dim": "#ffb3ac",
+                        "tertiary-fixed": "#e6e2e0",
+                        "surface-bright": "#f8f9fa",
+                        "surface-variant": "#e1e3e4",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-tertiary-container": "#8b8886",
+                        "tertiary-container": "#222120",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed-dim": "#c9c6c4",
+                        "inverse-surface": "#2e3132",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "on-background": "#191c1d",
+                        "on-primary-container": "#898888",
+                        "surface": "#f8f9fa",
+                        "on-primary-fixed": "#1b1c1c",
+                        "secondary": "#b6171e",
+                        "inverse-primary": "#c8c6c5",
+                        "surface-container-highest": "#e1e3e4",
+                        "secondary-fixed": "#ffdad6",
+                        "primary": "#0a0a0a",
+                        "surface-container-high": "#e7e8e9",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c4c7c7",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-container": "#edeeef",
+                        "inverse-on-surface": "#f0f1f2",
+                        "surface-container-low": "#f3f4f5",
+                        "on-tertiary-fixed": "#1c1b1a",
+                        "on-secondary-fixed-variant": "#930010",
+                        "bamboo-brown": "#8D734A",
+                        "hill-green": "#2D4B31"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "bento": "20px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "xl": "64px",
+                        "lg": "40px",
+                        "gutter": "20px",
+                        "xs": "8px",
+                        "md": "24px",
+                        "margin-desktop": "32px",
+                        "base": "4px",
+                        "sm": "16px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Plus Jakarta Sans"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "title-md": ["Plus Jakarta Sans"],
+                        "body-sm": ["Plus Jakarta Sans"],
+                        "label-bold": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                        "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bamboo-pattern {
+            background-image: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(141, 115, 74, 0.05) 40px, rgba(141, 115, 74, 0.05) 42px);
+        }
+        .neo-brutalist-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(10, 10, 10, 1);
+        }
+        .neo-brutalist-shadow-hover:hover {
+            box-shadow: 8px 8px 0px 0px rgba(10, 10, 10, 1);
+            transform: translate(-2px, -2px);
+        }
+        .active-nav-item {
+            border-bottom: 3px solid #0a0a0a;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg overflow-x-hidden bamboo-pattern">
+<!-- WebGL Background Placeholder -->
+<div class="fixed inset-0 -z-10 opacity-30">
+
+</div>
+<!-- Top Navigation Bar -->
+<header class="bg-surface sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile py-4 border-b-3 border-primary shadow-[4px_4px_0px_0px_rgba(10,10,10,1)]">
+<div class="flex items-center gap-4">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold tracking-tight">Bharat One | Mizoram</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<nav class="flex gap-6 font-title-md text-title-md text-on-surface-variant">
+<a class="text-primary font-bold active-nav-item py-1" href="#">Home</a>
+<a class="hover:text-primary transition-colors py-1" href="#">Services</a>
+<a class="hover:text-primary transition-colors py-1" href="#">Archives</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-2 rounded-full font-label-bold text-label-bold border-3 border-primary neo-brutalist-shadow active:translate-y-1 active:shadow-none transition-all">
+                Emergency
+            </button>
+<span class="material-symbols-outlined text-3xl cursor-pointer" data-icon="account_circle">account_circle</span>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-3xl" data-icon="menu">menu</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-12 space-y-12">
+<!-- Hero Greeting Section -->
+<section class="relative overflow-hidden rounded-bento border-3 border-primary bg-white p-8 md:p-12 neo-brutalist-shadow">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6 z-10">
+<div class="inline-block bg-hill-green text-white px-4 py-1 rounded-full font-label-bold text-label-bold uppercase tracking-widest">
+                        Zoram Morning
+                    </div>
+<h1 class="font-display-lg text-display-lg text-primary">Chibai!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md">
+                        Welcome to the digital heart of Mizoram. Explore our rolling hills, vibrant traditions, and the sustainable future of our bamboo craft.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-bento border-3 border-primary font-title-md text-title-md neo-brutalist-shadow-hover transition-all">
+                            Explore Zoram
+                        </button>
+<button class="bg-white text-primary px-8 py-4 rounded-bento border-3 border-primary font-title-md text-title-md neo-brutalist-shadow-hover transition-all">
+                            Government Services
+                        </button>
+</div>
+</div>
+<div class="relative h-[300px] md:h-[400px] rounded-bento overflow-hidden border-3 border-primary">
+<img class="w-full h-full object-cover" data-alt="A cinematic, wide-angle photograph of the rolling green hills of Mizoram during sunrise. The atmosphere is misty and ethereal, with soft morning light illuminating the verdant valleys and distant mountain ridges. The style is professional landscape photography, emphasizing the deep hill greens and misty whites of the North-Eastern Indian highlands. The image feels serene, vast, and majestic, capturing the essence of the 'Land of the Hill People'." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsr3xe6Y2N_u406_Mx3PrVgfNlAvBULB1-edLNJNLTmO-dzXzOOaEQV0VvaufF_jFyPuSCzAkDw66wLDC5vGDnILgNJRZjNvSu7aehcZYXZGBWM5-5ZvHSg1joVxIobhMqRWsYGDIenx5Y_YXUEkUhzsvqT1dpga2hwcpEt1YRCCuHRCbYATlGQLoxE9BLQ5GhFPxg-2uFXL6lB7IAMLxjg7-JRWjtGAfuub0-1OwhZ3mlmoHhyNAX-QehDswco6H6NtJPu8GByVCP"/>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Special Features -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Bamboo Economy Tracker -->
+<div class="md:col-span-2 bg-white rounded-bento border-3 border-primary p-8 neo-brutalist-shadow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<div class="space-y-2">
+<h2 class="font-headline-lg text-headline-lg text-primary">Bamboo Economy Tracker</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time market insights for local Zoram artisans</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-bamboo-brown" data-icon="potted_plant">potted_plant</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+<div class="p-4 bg-surface rounded-xl border-1 border-outline border-opacity-30">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase">Current Demand</p>
+<p class="font-headline-lg text-headline-lg text-hill-green">High</p>
+</div>
+<div class="p-4 bg-surface rounded-xl border-1 border-outline border-opacity-30">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase">Avg Price/Ton</p>
+<p class="font-headline-lg text-headline-lg text-bamboo-brown">₹4.2k</p>
+</div>
+<div class="p-4 bg-surface rounded-xl border-1 border-outline border-opacity-30">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase">Artisans Active</p>
+<p class="font-headline-lg text-headline-lg text-primary">12.4k</p>
+</div>
+<div class="p-4 bg-surface rounded-xl border-1 border-outline border-opacity-30">
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase">Export Growth</p>
+<p class="font-headline-lg text-headline-lg text-hill-green">+18%</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary-fixed text-primary py-3 rounded-xl border-3 border-primary font-label-bold text-label-bold hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2">
+                    View Full Market Report <span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+</button>
+</div>
+<!-- Blue Mountain Portal -->
+<div class="bg-hill-green text-white rounded-bento border-3 border-primary p-8 neo-brutalist-shadow flex flex-col justify-between overflow-hidden relative group">
+<div class="z-10">
+<h2 class="font-headline-lg text-headline-lg mb-2">Phawngpui Expedition</h2>
+<p class="font-body-sm text-body-sm text-surface-variant">The Peak of Mizoram</p>
+</div>
+<div class="z-10 space-y-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="landscape">landscape</span>
+<span class="font-label-bold text-label-bold">2,157m Elevation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="calendar_month">calendar_month</span>
+<span class="font-label-bold text-label-bold">Best time: Oct - Apr</span>
+</div>
+<button class="mt-4 w-full bg-white text-hill-green py-3 rounded-xl font-title-md text-title-md border-3 border-primary neo-brutalist-shadow-hover transition-all">
+                        Book Portal
+                    </button>
+</div>
+<div class="absolute inset-0 opacity-40 group-hover:scale-110 transition-transform duration-500">
+<img class="w-full h-full object-cover" data-alt="A stunning vertical shot of Phawngpui or Blue Mountain, the highest peak in Mizoram. The image shows dramatic cliffs and lush tropical vegetation under a deep blue sky. Rich forest greens contrast with the sharp rocky edges of the mountain. The style is adventurous and rugged, emphasizing the wild beauty of the North-East frontier. Lighting is crisp and vibrant, highlighting the geological textures." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNjEoFMcjPQ1ETxHb5N86N-vGxTLEsP9kXJoBFdR52bA2FPojUG3C95fnN4B1c5r9eo6MlG_LD2zoVw_ZpNqp-hSsaBwqipdhMGzH5ukI8S-3_yfAXVnNoDNMBTcL2B_0wyuxVkxlbVf_iHweE9eloqPH8QjqV60GWbQRRYg4jQQvbZtwQ4yIAK4USPFU7XGp7n9mSd-NROJlJpW6oztZU-TRtw-ciQTNQyaSfpWrgs3mBmT0gfrrvvQ7xfz5GpLvl9ZuwhXhT8ga3"/>
+</div>
+</div>
+</div>
+<!-- Cheraw Dance Archive -->
+<section class="space-y-6">
+<div class="flex justify-between items-end">
+<div class="space-y-2">
+<h2 class="font-display-lg text-display-lg text-primary">Cheraw Dance Archive</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Preserving the rhythmic heritage of the Bamboo Dance.</p>
+</div>
+<button class="hidden md:flex items-center gap-2 font-label-bold text-label-bold text-primary uppercase tracking-widest border-b-3 border-primary pb-1">
+                    View Full Archive <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Archive Card 1 -->
+<div class="bg-white rounded-bento border-3 border-primary p-4 neo-brutalist-shadow-hover transition-all">
+<div class="aspect-square rounded-xl overflow-hidden border-3 border-primary mb-4">
+<img class="w-full h-full object-cover" data-alt="A close-up photograph of Mizoram dancers performing the Cheraw dance. Focus on the rhythmic movement of their feet as they step between long bamboo poles being clapped together. The dancers are wearing traditional Puan costumes with vibrant red, black, and white patterns. The image is dynamic, capturing the motion blur of the bamboo poles. Lighting is warm, suggesting an evening performance stage." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUTN4qauOh6bpuoMUhx_erL2sQVfWCqh2WMveIisps4SwwjtSQUw24wAA5LPWUQ8vOpgRHbGehnBrsNbVHjYLoOPHK9QS5UixGJl1Tx1RzofSf75JUsh1ihCebZUB1WrCQ-wcSwLGhK257-KM3Ctr5QTyCUKN6q2KWgzNOMn5f12k3r7LTU12jvVO4CKIKuZlg27Hz9HqgwOYKfGoraKMWQa5hkq4bwUC9wuoakiza_Y651lX6XRTXa6mHl6wS36lmAiOKfn3fn4l-"/>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Traditional Rhythms</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">The core patterns of bamboo percussion.</p>
+</div>
+<!-- Archive Card 2 -->
+<div class="bg-white rounded-bento border-3 border-primary p-4 neo-brutalist-shadow-hover transition-all">
+<div class="aspect-square rounded-xl overflow-hidden border-3 border-primary mb-4">
+<img class="w-full h-full object-cover" data-alt="A detailed shot of the traditional Mizo headgear and woven garments used during the Cheraw festivals. The intricate embroidery features geometric tribal motifs in striking red and black. The texture of the hand-woven fabric is clearly visible, showcasing the artisanal skill of Mizoram weavers. The style is high-contrast and sharp, emphasizing the cultural richness of the attire." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc1SlOIq29mb8kIOWRACVT8XR2bTUNlXx0HSj2BVTkLcNI_kFWKlIw25vsl7Z3PyRLREky9UCG8Z7dXzQR_JpmgcUVvjAZ2HVVVLr6zj7L4xn9XaOPH22Z_xtQZgpBRkqqRJtm6hsAhwqgVG-fcYV67W3LdKEMFvsvOVq_jG3Q6vxvqVbUA0xgn5ibsvbQyWZ0wt05LQItr1-MqW1Evuq-wHioRaFza4uEw6ByI8A_1C3EWElUKOYT3ABPUXdXXm8Vbjpv98twPZly"/>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Costume Gallery</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Woven stories in Puan fabrics.</p>
+</div>
+<!-- Archive Card 3 -->
+<div class="bg-white rounded-bento border-3 border-primary p-4 neo-brutalist-shadow-hover transition-all">
+<div class="aspect-square rounded-xl overflow-hidden border-3 border-primary mb-4">
+<img class="w-full h-full object-cover" data-alt="An atmospheric wide shot of a community Cheraw dance gathering in a Mizo village at twilight. Dozens of bamboo poles form a grid across the village square, with dancers in perfect synchronicity. Warm lights from the nearby bamboo houses illuminate the scene. The mood is joyful and communal, celebrating the collective spirit of the Mizo people. The composition uses the vertical bamboo poles as rhythmic leading lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT_xciNg6aBKYolGieXZtR75Q3g4YpGZHBRcn5dI66tW2S-3iug2R_RkwfjPhiK3gnjktsMhmvOhUTt-LABpho87A3Eb0ld4lsIGU6Wsp_Wjsg2HX3p1s31EE2gMvgr3Q0mqzRpkgw-Bwnz9OTqQhMsHXH-fOIn3-6r7oIsOwBWXebj3Rc8fx_qE1SSQPg31EO9XDgqrKYzfSi3azVw-FcILe-4jODOjWhBEibVNOzhB-V6966qUY1z5biX8gtOMFkHraxk3GgoR8x"/>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Community Fest</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">Historic footage of village celebrations.</p>
+</div>
+<!-- Archive Card 4 -->
+<div class="bg-bamboo-brown text-white rounded-bento border-3 border-primary p-6 flex flex-col justify-center items-center text-center space-y-4 neo-brutalist-shadow">
+<span class="material-symbols-outlined text-5xl" data-icon="history_edu">history_edu</span>
+<h3 class="font-title-md text-title-md">Contribute to the Archive</h3>
+<p class="font-body-sm text-body-sm opacity-90">Help us digitize oral histories and vintage Cheraw recordings.</p>
+<button class="bg-white text-bamboo-brown px-4 py-2 rounded-full font-label-bold text-label-bold border-3 border-primary">
+                        Upload Media
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bamboo Texture Highlight Section -->
+<section class="bg-surface-container rounded-bento border-3 border-primary p-8 md:p-12 neo-brutalist-shadow overflow-hidden relative">
+<div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+<div class="md:w-1/2 space-y-6">
+<h2 class="font-display-lg text-display-lg text-primary">The Green Gold</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                        Mizoram's bamboo forests are not just scenery; they are our lifeline. From traditional architecture to modern eco-plastics, discover how the bamboo economy is evolving.
+                    </p>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-4 bg-white p-4 rounded-xl border-3 border-primary">
+<span class="material-symbols-outlined text-hill-green text-3xl" data-icon="eco">eco</span>
+<div>
+<p class="font-title-md text-title-md">Sustainability Rating</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">A+ Certified Carbon Neutral Industry</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white p-4 rounded-xl border-3 border-primary">
+<span class="material-symbols-outlined text-bamboo-brown text-3xl" data-icon="factory">factory</span>
+<div>
+<p class="font-title-md text-title-md">Innovation Hub</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">64+ Patented bamboo processing techs</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2 grid grid-cols-2 gap-4">
+<div class="rounded-xl overflow-hidden border-3 border-primary h-64">
+<img class="w-full h-full object-cover" data-alt="A close-up macro photograph showing the intricate texture of bamboo fibers being processed in a modern Mizoram laboratory. The lighting is clean and clinical, highlighting the organic patterns and strength of the bamboo strands. The aesthetic is futuristic and high-tech, showcasing the crossover between traditional materials and advanced science. Palette is neutral with hits of bamboo brown." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD812BgFWTwD6hyIJOPdGBzQtBUf-uMLgmAKk8uAySLiv-XK2SevyFUINvuYLKRXHy9c1YoWQ2PIIEol79LhGYwtNCQhKDnwS2QTx4plunFQ3S3tqZ8sLXkUSJF5LKLkR_ls6wCgYYKkK-craapttGsxYwomxiQ_wWuPB9sp8tLUPujuzzEl1TQZioo72EX34iFgjp1dzVoY5N0fd-QvHhuxBLDAbzgKie2yTgzychFahWbYGvD_oukPZ6_NA1C0XuQ2cg9-7Sbl5G6"/>
+</div>
+<div class="rounded-xl overflow-hidden border-3 border-primary h-64 translate-y-8">
+<img class="w-full h-full object-cover" data-alt="A photograph of modern, sustainable architecture in Aizawl, Mizoram, where bamboo is used as a primary structural and decorative element. The building features large glass panels framed by masterfully treated bamboo poles. The design is sleek and contemporary, showing how traditional materials can be integrated into high-end modern construction. Soft natural lighting emphasizes the warmth of the bamboo against the cool glass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8PQIumcBAcrrZFe6IjsLhu3YD4SCUnbPdKYt8Xt31hDYoqs74wXJf_ACYkMrV2QSzwB_L8Y5HwqTysD54UCThaKu6Kpq7e1rQ4hRkiAE1emb5LUOC_nClButkZ-Mc4G58eH-O00DNuOX3C-xI058OV5G_NPyz2p_baqLIxXJGth-sCHuHS7vs-qi2Z5OUPs25BJKk88PA6qijS0YCDnZSFtpvxWKzYzGRLvc2QtI-_jGhNf657afC_dQ1hgDgfLa_wacuBoTRr71"/>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-6 bg-surface dark:bg-surface-container-lowest border-t-3 border-primary shadow-[0px_-4px_0px_0px_rgba(10,10,10,1)]">
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 border-3 border-primary scale-95 transition-transform duration-100">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-label-bold text-label-bold">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="apps">apps</span>
+<span class="font-label-bold text-label-bold">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+<span class="font-label-bold text-label-bold">AI</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+<span class="font-label-bold text-label-bold">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-bold text-label-bold">Profile</span>
+</div>
+</nav>
+<!-- FAB (Contextual for Services/Inquiry) -->
+<div class="fixed bottom-24 right-6 md:bottom-12 md:right-12 z-40">
+<button class="bg-primary text-on-primary p-4 rounded-full border-3 border-primary neo-brutalist-shadow active:translate-y-1 active:shadow-none transition-all group">
+<span class="material-symbols-outlined text-4xl group-hover:rotate-12 transition-transform" data-icon="chat_bubble">chat_bubble</span>
+</button>
+</div>
+<footer class="bg-primary text-on-primary pt-16 pb-24 md:pb-12 px-margin-mobile md:px-margin-desktop mt-20">
+<div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-12">
+<div class="col-span-2 space-y-6">
+<h2 class="font-headline-lg text-headline-lg">Bharat One | Mizoram</h2>
+<p class="font-body-lg text-body-lg opacity-80 max-w-md">The unified digital interface for the citizens and friends of the state of Mizoram. Built for the hill people, by the people.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-3xl cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="facebook">face_nod</span>
+<span class="material-symbols-outlined text-3xl cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-3xl cursor-pointer hover:text-secondary-fixed transition-colors" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-bold text-label-bold uppercase text-on-primary-container">Quick Links</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="hover:underline" href="#">State Services</a></li>
+<li><a class="hover:underline" href="#">Tourism Portal</a></li>
+<li><a class="hover:underline" href="#">Artisan Marketplace</a></li>
+<li><a class="hover:underline" href="#">Disaster Management</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-label-bold text-label-bold uppercase text-on-primary-container">Transparency</h4>
+<ul class="space-y-2 font-body-sm text-body-sm">
+<li><a class="hover:underline" href="#">Right to Information</a></li>
+<li><a class="hover:underline" href="#">Open Data Policy</a></li>
+<li><a class="hover:underline" href="#">Citizen Charter</a></li>
+<li><a class="hover:underline" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-white border-opacity-10 text-center font-body-sm text-body-sm opacity-60">
+            © 2024 Government of Mizoram. All Rights Reserved.
+        </div>
+</footer>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.neo-brutalist-shadow-hover').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translate(-4px, -4px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translate(0, 0)';
+            });
+        });
+
+        // Search bar focus effect
+        const searchInput = document.querySelector('input[type="text"]');
+        if(searchInput) {
+            searchInput.addEventListener('focus', () => {
+                searchInput.parentElement.classList.add('shadow-[6px_6px_0px_0px_rgba(10,10,10,1)]');
+            });
+            searchInput.addEventListener('blur', () => {
+                searchInput.parentElement.classList.remove('shadow-[6px_6px_0px_0px_rgba(10,10,10,1)]');
+            });
+        }
+    </script>
+</body></html>

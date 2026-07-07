@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Ladakh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#191b22",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f9f9ff",
+                    "tertiary-fixed": "#ffdea0",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-container-low": "#f2f3fd",
+                    "secondary-container": "#86f898",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-container-highest": "#e1e2eb",
+                    "on-primary-container": "#fefcff",
+                    "on-primary-fixed-variant": "#004494",
+                    "secondary-fixed": "#89fa9b",
+                    "primary": "#0058bd",
+                    "inverse-on-surface": "#eff0fa",
+                    "on-error-container": "#93000a",
+                    "outline": "#727785",
+                    "outline-variant": "#c2c6d5",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-surface-variant": "#424753",
+                    "tertiary-container": "#956e00",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d8d9e3",
+                    "surface-container-high": "#e7e7f1",
+                    "background": "#f9f9ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary": "#765700",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed-variant": "#005320",
+                    "surface": "#f9f9ff",
+                    "on-surface": "#191b22",
+                    "primary-container": "#2771df",
+                    "inverse-primary": "#adc6ff",
+                    "surface-variant": "#e1e2eb",
+                    "primary-fixed-dim": "#adc6ff",
+                    "inverse-surface": "#2e3038",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed": "#002108",
+                    "on-secondary-container": "#00722f",
+                    "error-container": "#ffdad6",
+                    "surface-tint": "#005ac1",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "secondary": "#006e2c",
+                    "surface-container": "#ecedf7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "xl": "32px",
+                    "lg": "24px",
+                    "gutter": "16px",
+                    "margin-mobile": "16px",
+                    "2xl": "48px",
+                    "xs": "4px",
+                    "3xl": "64px",
+                    "base": "8px",
+                    "md": "16px",
+                    "margin-desktop": "40px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "title-lg": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"],
+                    "label-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #f9f9ff; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .neo-brutal-card { border: 3px solid #191b22; transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .neo-brutal-card:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0px 0px #191b22; }
+        .neo-brutal-button { border: 3px solid #191b22; box-shadow: 4px 4px 0px 0px #191b22; transition: all 0.1s; }
+        .neo-brutal-button:active { transform: translate(2px, 2px); box-shadow: 0px 0px 0px 0px #191b22; }
+        .glass-blur { backdrop-filter: blur(8px); background: rgba(255, 255, 255, 0.7); }
+    </style>
+</head>
+<body class="text-on-surface antialiased overflow-x-hidden">
+<!-- TopAppBar from JSON -->
+<header class="bg-surface dark:bg-on-background w-full top-0 border-b-3 border-on-background dark:border-outline shadow-[0px_4px_0px_0px_rgba(25,27,34,1)] sticky z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-[1200px] mx-auto">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-primary text-3xl">hub</span>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Bharat One</h1>
+</div>
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-primary font-bold font-label-lg text-label-lg transition-colors" href="#">Ladakh</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-sm py-xs rounded-lg font-label-lg text-label-lg" href="#">Services</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high transition-colors px-sm py-xs rounded-lg font-label-lg text-label-lg" href="#">Support</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="p-sm hover:bg-surface-container-high transition-colors rounded-full active:scale-95">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-sm hover:bg-surface-container-high transition-colors rounded-full active:scale-95">
+<span class="material-symbols-outlined">location_on</span>
+</button>
+</div>
+</div>
+</header>
+<main class="min-h-screen pb-32">
+<!-- Hero Section with Shader -->
+<section class="relative h-[870px] w-full flex items-center justify-center overflow-hidden">
+
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent z-0"></div>
+<div class="relative z-10 text-center px-margin-mobile max-w-4xl">
+<span class="inline-block bg-primary text-on-primary px-xl py-sm rounded-full font-bold text-label-lg mb-lg border-2 border-on-background shadow-[4px_4px_0px_0px_rgba(25,27,34,1)]">
+                    Julley!
+                </span>
+<h2 class="font-display-lg text-headline-lg-mobile md:text-display-lg text-on-background mb-xl leading-tight">
+                    Experience the <span class="bg-tertiary-fixed text-on-tertiary-fixed px-sm border-b-4 border-on-background">Land of High Passes</span>
+</h2>
+<div class="flex flex-col md:flex-row gap-md justify-center mt-xl">
+<button class="neo-brutal-button bg-primary text-on-primary px-3xl py-md rounded-xl font-bold text-label-lg flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined">explore</span> Explore Ladakh
+                    </button>
+<button class="neo-brutal-button bg-surface text-on-surface px-3xl py-md rounded-xl font-bold text-label-lg flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined">description</span> Apply for Permit
+                    </button>
+</div>
+</div>
+</section>
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop -mt-24 relative z-20">
+<!-- Quick Actions Grid -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md mb-2xl">
+<div class="neo-brutal-card bg-surface p-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-secondary-container rounded-lg border-2 border-on-background flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-secondary-container">landscape</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold">Pangong Permit (ILP)</p>
+</div>
+<div class="neo-brutal-card bg-surface p-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg border-2 border-on-background flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant">border_outer</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold">Border Tourism</p>
+</div>
+<div class="neo-brutal-card bg-surface p-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg border-2 border-on-background flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-primary-fixed-variant">fingerprint</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold">Aadhaar Enrollment</p>
+</div>
+<div class="neo-brutal-card bg-surface p-lg rounded-xl flex flex-col items-center text-center">
+<div class="w-12 h-12 bg-surface-container-highest rounded-lg border-2 border-on-background flex items-center justify-center mb-md">
+<span class="material-symbols-outlined text-on-surface">storefront</span>
+</div>
+<p class="font-label-lg text-label-lg font-bold">Local Mandi Rates</p>
+</div>
+</div>
+<!-- Bento Featured Services -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg mb-2xl">
+<!-- Monastery Circuit -->
+<div class="md:col-span-7 neo-brutal-card bg-[#F5E6D3] rounded-xl overflow-hidden group">
+<div class="flex flex-col md:flex-row h-full">
+<div class="p-xl md:w-3/5 flex flex-col justify-center">
+<h3 class="font-headline-md text-headline-md mb-md text-on-background">Monastery Circuit Guide</h3>
+<p class="font-body-md text-body-md mb-xl text-on-surface-variant">Access interactive maps of spiritual heritage sites. Explore Thiksey, Hemis, and Diskit with real-time prayer schedules and virtual portals.</p>
+<button class="neo-brutal-button bg-on-background text-on-primary px-lg py-sm rounded-lg self-start font-bold">Open Portal</button>
+</div>
+<div class="md:w-2/5 min-h-[240px] relative overflow-hidden">
+<img class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A majestic ancient Tibetan Buddhist monastery perched on a stark, rocky Ladakh mountain peak under a brilliant blue Himalayan sky. The architecture features whitewashed walls with dark red trim and golden spires, reflecting a monastic red and earthy sandstone color palette. The lighting is crisp and high-contrast, characteristic of high altitudes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoUycDOd_f76uJ_mUBGyg_m12cfKizvGfgVt5wGq33EdmYmEr7y9HkrAULVMyZEhrdIN1YjcRAe1L58rSfTlcMFsVpjxSIkxImL5PVJeDk_b9-h_HIGOv_1l-KQsPnxOKRGoP6qZCGlCJj-y6FmMRtI3eGbKimyEp3LNIslxdX12G-s7kt3qCO6z0PeoecloP-uetO7Pjibd9R5MtaZmIuTUmTaa8c4KNPucaLH0KnUf5vsScIA-D3jGrLddusGPInDSq8mOEFYrq_"/>
+</div>
+</div>
+</div>
+<!-- Solar Ladakh -->
+<div class="md:col-span-5 neo-brutal-card bg-secondary-container rounded-xl overflow-hidden group">
+<div class="p-xl flex flex-col h-full">
+<div class="flex justify-between items-start mb-lg">
+<span class="material-symbols-outlined text-4xl text-on-secondary-container" style="font-variation-settings: 'FILL' 1;">solar_power</span>
+<span class="bg-on-secondary-container text-secondary-container px-sm py-xs rounded-md text-xs font-bold border-2 border-on-background">ACTIVE</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-md text-on-secondary-container">Solar Ladakh Portal</h3>
+<p class="font-body-md text-body-md text-on-secondary-container mb-xl">Tracking carbon-neutral initiatives and renewable energy rollout across the UT. Monitor your household solar output.</p>
+<div class="mt-auto">
+<div class="w-full bg-white/30 rounded-full h-3 border-2 border-on-background overflow-hidden">
+<div class="bg-on-secondary-container h-full w-[65%]"></div>
+</div>
+<p class="text-xs font-bold mt-sm text-on-secondary-container uppercase">65% State Target Achieved</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Updates & Live Status -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl">
+<div class="neo-brutal-card bg-white p-xl rounded-xl">
+<div class="flex items-center gap-md mb-xl">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">traffic</span>
+<h4 class="font-title-lg text-title-lg">Real-Time Pass Status</h4>
+</div>
+<div class="space-y-md">
+<div class="flex justify-between items-center p-md bg-surface-container rounded-lg border-2 border-on-background">
+<div>
+<p class="font-bold">Khardung La Pass</p>
+<p class="text-sm opacity-70">Updated 10m ago</p>
+</div>
+<span class="px-lg py-xs bg-secondary text-on-secondary rounded-full font-bold border-2 border-on-background">OPEN</span>
+</div>
+<div class="flex justify-between items-center p-md bg-surface-container rounded-lg border-2 border-on-background opacity-60">
+<div>
+<p class="font-bold">Chang La Pass</p>
+<p class="text-sm opacity-70">Restricted Access</p>
+</div>
+<span class="px-lg py-xs bg-tertiary text-on-tertiary rounded-full font-bold border-2 border-on-background">ADVISORY</span>
+</div>
+</div>
+</div>
+<div class="neo-brutal-card bg-on-background text-white p-xl rounded-xl relative overflow-hidden group">
+<img class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-1000" data-alt="Close-up of a vibrant Cham dance mask used in the Hemis Festival, featuring intricate carvings, bold colors like monastic red, yellow, and deep blue. The dancer is surrounded by traditional Himalayan musicians in the background. The scene is cinematic with deep shadows and warm sunlight, capturing the intense cultural spiritual heritage of Ladakh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-IEwNoUHlhY6nLO7M8vs97T55-OeKb02TlLmVaJDh48PoPrsD4vLvr8sqb6B128BDab0TFKVwmzwSfLkTCMh2FduIjpKccMKOmDuH0xJAH_8yHWj7hS7QDsu3aMU2QB5mwJMYjOt1QMxUYgCRJ046FD8BARFCBdha_2x2TCakUOGOEdpWxpgu6jQDrTsXwSiM1kNdlpXYt0bqK-hytIK0_ywjEyWwBnQ8xgg67RCwvwp0fDCe2pMXIFYrvZE-VAsLx9PrOdZRUhuk"/>
+<div class="relative z-10 h-full flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-sm text-tertiary-fixed-dim mb-md">
+<span class="material-symbols-outlined text-sm">circle</span>
+<span class="font-bold text-label-lg tracking-widest uppercase">Live Stream</span>
+</div>
+<h4 class="font-headline-md text-headline-md mb-sm">Hemis Festival 2024</h4>
+<p class="font-body-md text-body-md opacity-80">Experience the sacred Cham masked dance and monastic chanting live from the Hemis Monastery courtyard.</p>
+</div>
+<button class="neo-brutal-button bg-white text-on-background px-xl py-md rounded-xl font-bold flex items-center justify-center gap-md mt-xl">
+<span class="material-symbols-outlined">play_circle</span> Watch Now
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar from JSON -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-gutter py-sm bg-surface dark:bg-on-background border-t-3 border-on-background dark:border-outline shadow-[0px_-4px_0px_0px_rgba(25,27,34,1)] z-50 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl p-sm scale-105 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-lg text-label-lg">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-sm hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-lg text-label-lg">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-sm hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-lg text-label-lg">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-sm hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="font-label-lg text-label-lg">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant p-sm hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-lg text-label-lg">Profile</span>
+</a>
+</nav>
+<script>
+        // Subtle micro-interaction for cards
+        document.querySelectorAll('.neo-brutal-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential JS driven micro-effects
+            });
+        });
+    </script>
+</body></html>

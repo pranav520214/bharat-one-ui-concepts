@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Karnataka</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+            color: #191b22;
+        }
+        .neo-brutalism-card {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.2s ease;
+        }
+        .neo-brutalism-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #191b22;
+        }
+        .neo-brutalism-button {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.1s ease;
+        }
+        .neo-brutalism-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .vidhana-soudha-pattern {
+            mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+            opacity: 0.1;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#89fa9b",
+                    "on-secondary-fixed-variant": "#005320",
+                    "surface-container-high": "#e7e7f1",
+                    "secondary": "#006e2c",
+                    "on-primary-fixed": "#001a41",
+                    "on-surface": "#191b22",
+                    "on-background": "#191b22",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e1e2eb",
+                    "inverse-on-surface": "#eff0fa",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "tertiary-fixed": "#ffdea0",
+                    "surface-container-low": "#f2f3fd",
+                    "on-primary-container": "#fefcff",
+                    "surface-variant": "#e1e2eb",
+                    "surface": "#f9f9ff",
+                    "primary-fixed": "#d8e2ff",
+                    "on-secondary-fixed": "#002108",
+                    "on-secondary-container": "#00722f",
+                    "surface-tint": "#005ac1",
+                    "error": "#ba1a1a",
+                    "tertiary": "#765700",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "on-tertiary-container": "#fffbff",
+                    "primary-container": "#2771df",
+                    "primary": "#0058bd",
+                    "on-error": "#ffffff",
+                    "background": "#f9f9ff",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-surface": "#2e3038",
+                    "inverse-primary": "#adc6ff",
+                    "outline": "#727785",
+                    "on-surface-variant": "#424753",
+                    "outline-variant": "#c2c6d5",
+                    "primary-fixed-dim": "#adc6ff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "tertiary-container": "#956e00",
+                    "on-primary-fixed-variant": "#004494",
+                    "surface-container": "#ecedf7",
+                    "secondary-container": "#86f898",
+                    "surface-dim": "#d8d9e3",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-tertiary-fixed": "#261a00",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "custom": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "24px",
+                    "gutter": "16px",
+                    "3xl": "64px",
+                    "xl": "32px",
+                    "base": "8px",
+                    "2xl": "48px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background min-h-screen pb-24">
+<!-- Karnataka Shader Background -->
+<div class="fixed inset-0 z-[-1] opacity-40">
+
+</div>
+<!-- Top AppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-sm md:px-md py-xs z-50 bg-background border-b-3 border-on-surface">
+<div class="flex items-center gap-3">
+<span class="text-title-md font-headline-lg font-black text-on-surface">Bharat One</span>
+<div class="hidden md:flex gap-4 ml-8">
+<a class="text-primary font-bold text-label-md" href="#">Home</a>
+<a class="text-on-surface-variant text-label-md hover:bg-surface-container-high px-2 py-1 rounded" href="#">Services</a>
+<a class="text-on-surface-variant text-label-md hover:bg-surface-container-high px-2 py-1 rounded" href="#">Governance</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface p-2 hover:bg-surface-container-high rounded-full cursor-pointer">location_on</span>
+<span class="material-symbols-outlined text-on-surface p-2 hover:bg-surface-container-high rounded-full cursor-pointer">emergency_home</span>
+<span class="material-symbols-outlined text-on-surface p-2 hover:bg-surface-container-high rounded-full cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 md:px-lg pt-lg">
+<!-- AI Greeting & Hero Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-lg mb-2xl">
+<!-- Greeting Card -->
+<div class="lg:col-span-8 neo-brutalism-card bg-white rounded-custom p-lg relative overflow-hidden">
+<!-- Mysore Palace Inspired Pattern -->
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10 pointer-events-none">
+<svg class="text-tertiary" fill="currentColor" viewbox="0 0 100 100">
+<path d="M50 0 L100 50 L50 100 L0 50 Z"></path>
+<circle cx="50" cy="50" r="20"></circle>
+</svg>
+</div>
+<div class="relative z-10">
+<p class="text-primary font-bold text-label-lg mb-2 uppercase tracking-wider">Karnataka Smart Portal</p>
+<h1 class="font-display-lg text-display-lg mb-4 text-on-surface">Namaskara, Arjun!</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl">Your civic dashboard is ready. Today in Bengaluru, the air is fresh and government services are running at 100% capacity.</p>
+<div class="mt-8 flex flex-wrap gap-4">
+<button class="neo-brutalism-button bg-primary text-white px-lg py-3 rounded-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">smart_toy</span>
+                            Ask Bharat AI
+                        </button>
+<button class="neo-brutalism-button bg-white text-on-surface px-lg py-3 rounded-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined">description</span>
+                            View Certificates
+                        </button>
+</div>
+</div>
+</div>
+<!-- Context/Weather Card -->
+<div class="lg:col-span-4 neo-brutalism-card bg-secondary-container rounded-custom p-lg flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-4">
+<div class="flex flex-col">
+<span class="text-label-sm font-bold text-on-secondary-container uppercase">Current Location</span>
+<span class="text-title-lg font-bold text-on-surface">Bengaluru, KA</span>
+</div>
+<span class="material-symbols-outlined text-4xl text-on-secondary-container">cloud_queue</span>
+</div>
+<div class="flex items-baseline gap-2 mb-6">
+<span class="text-5xl font-black text-on-surface">24°C</span>
+<span class="text-label-lg text-on-secondary-container">Breezy</span>
+</div>
+</div>
+<div class="bg-white/50 border-2 border-on-surface rounded-xl p-4">
+<div class="flex items-center gap-3 mb-2">
+<div class="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
+<span class="font-bold text-label-md">System Status: Normal</span>
+</div>
+<p class="text-label-sm opacity-80">All 422 e-Governance nodes in Karnataka are active.</p>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Featured Content & Services -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mb-2xl">
+<!-- Property Registration Card -->
+<div class="neo-brutalism-card bg-[#e3f2fd] rounded-custom p-lg flex flex-col justify-between min-h-[320px]">
+<div>
+<div class="w-16 h-16 bg-white border-3 border-on-surface rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl text-primary">real_estate_agent</span>
+</div>
+<h3 class="text-headline-md font-bold text-on-surface mb-2">Kaveri 2.0 Property Registration</h3>
+<p class="text-body-md text-on-surface-variant">Streamlined digital property registration for all Karnataka districts. Skip the queue.</p>
+</div>
+<div class="mt-6">
+<a class="inline-flex items-center gap-2 font-bold text-primary hover:underline" href="#">
+                        Register Now
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Metro Phase 2 Card -->
+<div class="neo-brutalism-card bg-[#fff3e0] rounded-custom p-lg flex flex-col justify-between min-h-[320px] relative overflow-hidden">
+<div class="vidhana-soudha-pattern absolute inset-0 z-0">
+<!-- Geometric interpretation of Metro Tracks -->
+<svg class="opacity-10" height="100%" width="100%">
+<line stroke="black" stroke-width="4" x1="0" x2="100%" y1="20" y2="20"></line>
+<line stroke="black" stroke-width="4" x1="0" x2="100%" y1="40" y2="40"></line>
+</svg>
+</div>
+<div class="relative z-10">
+<div class="w-16 h-16 bg-white border-3 border-on-surface rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl text-tertiary">train</span>
+</div>
+<h3 class="text-headline-md font-bold text-on-surface mb-2">Bengaluru Metro Phase 2 Updates</h3>
+<p class="text-body-md text-on-surface-variant">Live progress tracking of the Pink Line and new station commissioning dates.</p>
+</div>
+<div class="mt-6 relative z-10">
+<a class="inline-flex items-center gap-2 font-bold text-tertiary hover:underline" href="#">
+                        View Map
+                        <span class="material-symbols-outlined">map</span>
+</a>
+</div>
+</div>
+<!-- Coffee Plantation Illustration / Agriculture Card -->
+<div class="neo-brutalism-card bg-secondary rounded-custom p-lg text-white flex flex-col justify-between min-h-[320px]">
+<div class="h-32 mb-4">
+<!-- Coffee Plantation Illustration via Abstract Geometry -->
+<svg class="w-full h-full opacity-80" viewbox="0 0 200 100">
+<circle cx="40" cy="80" fill="#2e7d32" r="20"></circle>
+<circle cx="80" cy="70" fill="#388e3c" r="25"></circle>
+<circle cx="120" cy="80" fill="#2e7d32" r="20"></circle>
+<circle cx="160" cy="75" fill="#43a047" r="22"></circle>
+<path d="M0 100 Q 100 80 200 100" fill="none" stroke="white" stroke-width="3"></path>
+</svg>
+</div>
+<div>
+<h3 class="text-headline-md font-bold mb-2">Raitha Samparka</h3>
+<p class="text-body-md opacity-90">Direct market access and subsidy tracking for Kodagu and Chikkamagaluru growers.</p>
+</div>
+<div class="mt-6">
+<button class="w-full py-3 bg-white text-secondary font-bold rounded-xl border-3 border-on-surface">Portal Login</button>
+</div>
+</div>
+</section>
+<!-- Service Categories Grid -->
+<section class="mb-2xl">
+<div class="flex justify-between items-center mb-lg">
+<h2 class="text-headline-md font-bold border-l-8 border-primary pl-4">Digital Services</h2>
+<button class="text-primary font-bold flex items-center gap-1">See All <span class="material-symbols-outlined">chevron_right</span></button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-md">
+<!-- Loop-like structure for service icons -->
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">electric_bolt</span>
+<span class="text-label-sm font-bold">Bescom</span>
+</div>
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">water_drop</span>
+<span class="text-label-sm font-bold">BWSSB</span>
+</div>
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">directions_bus</span>
+<span class="text-label-sm font-bold">BMTC/KSRTC</span>
+</div>
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">school</span>
+<span class="text-label-sm font-bold">CET/KEA</span>
+</div>
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">health_and_safety</span>
+<span class="text-label-sm font-bold">Ayushman</span>
+</div>
+<div class="neo-brutalism-card bg-white p-md flex flex-col items-center justify-center text-center rounded-xl cursor-pointer hover:bg-primary-fixed">
+<span class="material-symbols-outlined text-3xl mb-2">grid_view</span>
+<span class="text-label-sm font-bold">More</span>
+</div>
+</div>
+</section>
+<!-- Informational Banner -->
+<div class="neo-brutalism-card bg-on-surface text-white rounded-custom p-lg mb-2xl flex flex-col md:flex-row items-center gap-lg">
+<div class="flex-1">
+<h4 class="text-headline-md font-bold mb-2">Digital Shakti Karnataka</h4>
+<p class="text-body-md opacity-80">Empowering citizens through unified digital infrastructure. Secure, transparent, and built for 7 crore Kannadigas.</p>
+</div>
+<div class="flex gap-4">
+<button class="bg-white text-on-surface px-lg py-3 rounded-xl font-bold border-3 border-white">Learn More</button>
+</div>
+</div>
+</main>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed bottom-24 right-6 z-50">
+<button class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-xl border-3 border-on-surface neo-brutalism-button active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</button>
+</div>
+<!-- Bottom NavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(19,21,27,1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for hovering and visual feedback
+        document.querySelectorAll('.neo-brutalism-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Subtle lift already handled by CSS
+            });
+        });
+
+        // Search simulate logic if needed
+        const appBarAction = (icon) => {
+            console.log(`Action: ${icon} clicked`);
+        };
+    </script>
+</body></html>

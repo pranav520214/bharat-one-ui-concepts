@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<title>Bharat One | Uttar Pradesh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Style Guidance Override & Custom Component Styles -->
+<style>
+    :root {
+      --border-weight: 3px;
+      --neo-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 0.1);
+      --neo-shadow-hover: 2px 2px 0px 0px rgba(25, 27, 34, 0.2);
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9ff;
+      color: #191b22;
+      overflow-x: hidden;
+    }
+    .neo-card {
+      border: var(--border-weight) solid #191b22;
+      border-radius: 20px;
+      background-color: #ffffff;
+      box-shadow: var(--neo-shadow);
+      transition: all 0.2s ease;
+    }
+    .neo-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 8px 8px 0px 0px rgba(25, 27, 34, 0.05);
+    }
+    .neo-btn-primary {
+      border: var(--border-weight) solid #191b22;
+      border-radius: 20px;
+      background-color: #0058bd; /* Google Blue Accent */
+      color: #ffffff;
+      font-weight: 700;
+      box-shadow: 0px 4px 0px 0px #001a41;
+      transition: all 0.15s active;
+    }
+    .neo-btn-primary:active {
+      transform: translateY(2px);
+      box-shadow: 0px 1px 0px 0px #001a41;
+    }
+    .banarasi-pattern {
+      background-image: url("https://www.transparenttextures.com/patterns/cubes.png"); /* Placeholder for intricate textile feel */
+      opacity: 0.05;
+    }
+    .ghat-curve {
+      border-radius: 0 0 100% 100% / 0 0 25% 25%;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<!-- Tailwind Config from Source of Truth -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-secondary-fixed-variant": "#005320",
+            "on-primary-container": "#fefcff",
+            "primary": "#0058bd",
+            "surface": "#f9f9ff",
+            "on-surface": "#191b22",
+            "outline-variant": "#c2c6d5",
+            "secondary-container": "#86f898",
+            "on-secondary-container": "#00722f",
+            "background": "#f9f9ff",
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "20px": "20px",
+            "full": "9999px"
+          },
+          fontFamily: {
+            "headline-md": ["Inter"],
+            "title-lg": ["Inter"],
+            "label-lg": ["Inter"],
+          },
+          fontSize: {
+            "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+            "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+            "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+            "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+            "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 h-16 bg-surface border-b-3 border-on-surface shadow-[0px_4px_0px_0px] shadow-on-surface/10">
+<div class="flex items-center gap-3">
+<span class="text-primary text-headline-md font-black tracking-tighter">Bharat One</span>
+<div class="h-6 w-[2px] bg-outline-variant mx-1"></div>
+<span class="text-on-surface font-bold text-label-lg">Uttar Pradesh</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface p-2 hover:bg-surface-container-high rounded-full transition-colors">notifications</button>
+<div class="w-10 h-10 rounded-full border-2 border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up professional portrait of a modern Indian man with a friendly expression, set against a blurred urban background. The lighting is natural and bright, conveying a sense of approachability and efficiency, consistent with a premium civic application identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_9VZd6DRL9wdxoyJSVO_Xyh1c9tEcghqSDIi2GCG9hQTwTOoR8mm4C0yFCuUdemlry7Gk0hq29AdbmH9AtFwQ2ey5mkfZnrOgsFU8NfTGhyIRAf0XiKKRRzbzG2PCUCj8IxtXUXl-Tqo9wnCYBb52FbYXrXtQEfS22hBaZcJuhh7XSRIxEwJClq4GaJJMZRNAneBj55u-mlnyz2d3ILwW6guCBecDXkRYcoS2Ql6ekE-1vw4PMu-pmYBpaRW9mT5lBu09vWo_-vxv"/>
+</div>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="pt-20 pb-32 px-4 max-w-4xl mx-auto space-y-8 relative overflow-hidden">
+<!-- Hero Section with Animation & Greetings -->
+<section class="relative min-h-[320px] neo-card p-6 overflow-hidden flex flex-col justify-end">
+<!-- Animated Shader Background -->
+
+<!-- Banarasi Pattern Overlay -->
+<div class="absolute inset-0 banarasi-pattern z-10 pointer-events-none"></div>
+<div class="relative z-20 space-y-2">
+<p class="text-on-surface font-headline-md text-headline-md">Pranam, Arjun!</p>
+<p class="text-on-surface-variant font-body-md max-w-xs">Welcome to your unified gateway for the heartland of India.</p>
+<!-- Silhouette of Taj Mahal (Stylized) -->
+<div class="absolute top-4 right-4 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section class="grid grid-cols-4 gap-4">
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 neo-card flex items-center justify-center bg-white group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance_wallet</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">E-District</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 neo-card flex items-center justify-center bg-white group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">directions_car</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">mParivahan</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 neo-card flex items-center justify-center bg-white group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">health_and_safety</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">Health</span>
+</div>
+<div class="flex flex-col items-center gap-2 group cursor-pointer">
+<div class="w-16 h-16 neo-card flex items-center justify-center bg-white group-active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">more_horiz</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface">All Services</span>
+</div>
+</section>
+<!-- Highlights: ODOP & Expressways (Bento Style) -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- ODOP -->
+<div class="neo-card flex flex-col p-0 overflow-hidden min-h-[300px]">
+<div class="h-40 relative">
+<img class="w-full h-full object-cover" data-alt="Detailed macro shot of traditional Banarasi silk weaving, showing intricate gold thread patterns on vibrant crimson fabric. The lighting is dramatic and focused, highlighting the artisanal craftsmanship of Uttar Pradesh. The overall aesthetic is luxurious and cultural, fitting a modern civic showcase." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmHRgLmQD0enS-p2z2N1DaDn1UC6wdi4t_sVpfE40JNmVXEtAhsQ4YHQPQ-b0yAmdpxHo8ZJ5HJ2m2q1Qxc9VbFohJdnfFyoNU7j0zDYEnRrVCFtT_-rbc5EsZmo1g3j4UvlVSE5Hc0ZtMa-faBCTjKP62ZwmPc2Z-SgmSBU6ppSG1_FDPszrHEMuuWWTVJX6qnG2aE1F1ZMMWziIwodKNer5qtJ9NJL8qC_ypxOOYQGA1Vus5QX9IIlnf0G3BS1d1WHJVvpTyZVzo"/>
+<div class="absolute top-3 left-3 bg-white px-3 py-1 neo-card border-2 text-label-sm font-bold uppercase">Heritage</div>
+</div>
+<div class="p-5 flex-grow flex flex-col">
+<h3 class="text-title-lg font-headline-md mb-2">One District One Product (ODOP)</h3>
+<p class="text-label-lg text-on-surface-variant flex-grow">Discover the unique craftsmanship of all 75 districts, from Kannauj's perfumes to Bhadohi's carpets.</p>
+<button class="mt-4 neo-btn-primary w-full py-3 h-auto">Explore Catalog</button>
+</div>
+</div>
+<!-- Expressway Status -->
+<div class="neo-card p-0 flex flex-col overflow-hidden min-h-[300px]">
+<div class="p-5 flex flex-col h-full bg-surface-container-low relative">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-title-lg font-headline-md">UP Expressway Status</h3>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded-full text-[10px] font-bold uppercase">Live</span>
+</div>
+<div class="space-y-4 flex-grow">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">speed</span>
+<div class="flex-grow">
+<div class="text-label-sm font-bold">Purvanchal Expressway</div>
+<div class="w-full bg-outline-variant h-2 rounded-full mt-1">
+<div class="bg-primary h-2 rounded-full w-[85%]"></div>
+</div>
+</div>
+<span class="text-label-sm font-bold">Smooth</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">analytics</span>
+<div class="flex-grow">
+<div class="text-label-sm font-bold">Ganga Expressway</div>
+<div class="w-full bg-outline-variant h-2 rounded-full mt-1">
+<div class="bg-primary h-2 rounded-full w-[40%]"></div>
+</div>
+</div>
+<span class="text-label-sm font-bold">40% Built</span>
+</div>
+</div>
+<div class="h-32 mt-4 neo-card border-2 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Stylized topographic map of Uttar Pradesh highlighting the major highway network including the Purvanchal and Ganga expressways. The map uses a clean, white and Google Blue color palette with sharp vector lines and minimalist markers for major cities like Lucknow and Noida. Civic data visualization style." data-location="Uttar Pradesh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHmHZy8na9x_D3UtDI2221BybubkIG2LoylqVazrX78FVo6CQWCj5rcwfVByg7DJGEkzeoiM9ZvsBaKpYwb-18lYzhIO-nOkJqswzZBP_fN2zdhOgK0BVzOIH2lFugHygM5RB3P70tc5--5fxUWRTJVbzvapALkiXjeuM8cgX-0D_DIvWdApOiIMOf5mynAV7SJqNFlH3EJlmSHXgsTVmw428OJigmm0Fe0HcrDbi5bH1MpowRf8_l5nqfFyb1Qrx-1Dy30X-e1UJ7"/>
+</div>
+<button class="mt-4 neo-btn-primary bg-white !text-primary !border-primary py-3 h-auto">View Map</button>
+</div>
+</div>
+</section>
+<!-- State Updates -->
+<section class="space-y-4">
+<div class="flex justify-between items-center px-1">
+<h2 class="text-title-lg font-headline-md">State Updates</h2>
+<span class="text-primary text-label-lg font-bold cursor-pointer">View All</span>
+</div>
+<div class="space-y-4">
+<div class="neo-card p-4 flex gap-4 items-center group cursor-pointer hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 neo-card border-2">
+<img class="w-full h-full object-cover" data-alt="Modern architectural rendering of a massive movie studio complex with sleek glass facades and high-tech soundstages, set against a clear blue sky. The scene is bright and professional, representing the Noida Film City Phase 1 development in Uttar Pradesh. High-end real estate photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY5SdUiM0HpgKMnxWKOHtp3UxeD_Poa7BgouODm850zdZgr1saJHyLo-1nuDadX_uPwzeWxFs9bgTEdSL0X4Qk3HwwpARN1gJeIIk-Xp5trebiHxjJbcaD7LqFR7DrbSM3xTTmrxyf4xyLKozJkUEX883Iu0ULZH24N3KUwbsLIUzFxdDvKBrsJRF6hWsv3AikER3U7vDGvoGsYH5PwcsLY_l9piNh2RXgNz052pbcOx8VIvRE9_AHqZcrMk6Qhfb2O2P1gW0_qGFS"/>
+</div>
+<div>
+<h4 class="font-bold text-on-surface group-hover:text-primary transition-colors">Noida Film City Phase 1 Near Completion</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">Infrastructure developments reaching 90% milestones...</p>
+</div>
+</div>
+<div class="neo-card p-4 flex gap-4 items-center group cursor-pointer hover:bg-surface-bright">
+<div class="w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 neo-card border-2">
+<img class="w-full h-full object-cover" data-alt="Serene wide-angle photograph of the Ram Mandir temple architecture in Ayodhya, showing intricate stone carvings and traditional shikharas under a soft golden hour sun. The atmosphere is peaceful and majestic, conveying spiritual heritage in a high-quality civic travel context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7vwD9U0eOgnJoarNGHAquGT6dp8XXSqGChHOWL9ZqQmnpW-sMpN2GqR_6lr4AXV2H8APgZWpilLJLFXAd1KfXbwtMddsgxMT4rq0sabE73qqTByTEKO4ADHCLm5KFOD0jfp7bC7m9we4h2NfLqYORHlRRZWBwJ4CmCBgPjsE2zKHUfUkIfLkYJOr-AwQrmhS-FVei-9Pk9MGhlayaOMSMLBnPZwcV9YPpr1zQHU-gj_JVLONzkZeNZuYEqZTiTfA0LbWitVLkByax"/>
+</div>
+<div>
+<h4 class="font-bold text-on-surface group-hover:text-primary transition-colors">Ram Temple Pilgrimage Guide Updated</h4>
+<p class="text-label-sm text-on-surface-variant mt-1">New digital passes and shuttle schedules for devotees.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Artistic Footer Element -->
+<div class="w-full h-24 bg-primary/5 ghat-curve border-t-3 border-on-surface/10 flex items-center justify-center">
+<span class="text-primary/40 font-black tracking-[1em] text-label-sm uppercase">Uttar Pradesh Heritage</span>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-safe h-20 bg-surface border-t-3 border-on-surface shadow-[0px_-4px_0px_0px] shadow-on-surface/5">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 translate-y-[-2px] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+    // Subtle interaction: Haptic feedback simulation on button press
+    document.querySelectorAll('.neo-btn-primary, .neo-card').forEach(el => {
+      el.addEventListener('click', () => {
+        if (window.navigator.vibrate) {
+          window.navigator.vibrate(50);
+        }
+      });
+    });
+
+    // Handle scroll shadow for TopAppBar
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 20) {
+        header.classList.add('shadow-lg');
+      } else {
+        header.classList.remove('shadow-lg');
+      }
+    });
+  </script>
+</body></html>

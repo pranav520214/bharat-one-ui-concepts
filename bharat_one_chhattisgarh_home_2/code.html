@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Chhattisgarh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "outline": "#727785",
+                    "outline-variant": "#c2c6d5",
+                    "secondary-fixed": "#89fa9b",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-surface-variant": "#424753",
+                    "primary-container": "#2771df",
+                    "on-background": "#1b1b1c",
+                    "on-secondary": "#ffffff",
+                    "inverse-primary": "#adc6ff",
+                    "surface-container-high": "#eae7e7",
+                    "on-tertiary-container": "#fffbff",
+                    "secondary-container": "#86f898",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-primary-container": "#fefcff",
+                    "error-container": "#ffdad6",
+                    "background": "#fcf9f8",
+                    "surface-container": "#f0eded",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "on-primary-fixed-variant": "#004494",
+                    "on-error": "#ffffff",
+                    "surface-tint": "#005ac1",
+                    "surface-dim": "#dcd9d9",
+                    "on-surface": "#1b1b1c",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed": "#002108",
+                    "tertiary-container": "#956e00",
+                    "on-primary": "#ffffff",
+                    "secondary": "#006e2c",
+                    "surface-container-low": "#f6f3f2",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "surface": "#fcf9f8",
+                    "on-secondary-fixed-variant": "#005320",
+                    "tertiary": "#765700",
+                    "surface-container-highest": "#e5e2e1",
+                    "primary-fixed": "#d8e2ff",
+                    "tertiary-fixed": "#ffdea0",
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#00722f",
+                    "inverse-surface": "#303030",
+                    "surface-variant": "#e5e2e1",
+                    "primary": "#0058bd",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-bright": "#fcf9f8",
+                    "primary-fixed-dim": "#adc6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "base": "4px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "label-sm": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "label-md": ["Plus Jakarta Sans"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-md": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bastar-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l20 20-20 20L0 20z' fill='%23006e2c' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+        .forest-gradient {
+            background: linear-gradient(180deg, #fcf9f8 0%, #f0fdf4 100%);
+        }
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-hover:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+        }
+        .neo-shadow-active:active {
+            transform: translate(0px, 0px);
+            box-shadow: none;
+        }
+    </style>
+</head>
+<body class="font-body-md text-on-background bg-background forest-gradient bastar-pattern min-h-screen pb-24">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface border-b-[3px] border-on-background shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4">
+<div class="flex items-center gap-4">
+<span class="text-headline-md font-headline-md font-extrabold text-primary">Bharat One</span>
+<div class="hidden md:flex items-center bg-surface-container border-[3px] border-on-background rounded-full px-4 py-1">
+<span class="material-symbols-outlined text-outline">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-64" placeholder="Search Chhattisgarh..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-error text-on-error px-4 py-2 rounded-full font-bold border-[3px] border-on-background neo-shadow neo-shadow-hover neo-shadow-active flex items-center gap-2">
+<span class="material-symbols-outlined">emergency</span>
+<span class="hidden md:inline">Emergency</span>
+</button>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">location_on</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="pt-28 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto space-y-8">
+<!-- Hero Section -->
+<section class="relative bg-secondary-container border-[3px] border-on-background rounded-[20px] p-8 md:p-12 overflow-hidden neo-shadow">
+<div class="relative z-10 max-w-2xl">
+<h1 class="font-headline-xl text-headline-xl md:text-headline-xl text-on-secondary-container mb-4">Johar, Chhattisgarh!</h1>
+<p class="font-body-lg text-body-lg text-on-secondary-container opacity-90 mb-8">Welcome to the heart of India. Explore our vibrant tribal heritage, lush forests, and the timeless artistry of the Bastar region.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-[20px] border-[3px] border-on-background font-bold text-body-md neo-shadow-hover neo-shadow-active shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                        Explore Art Portal
+                    </button>
+<button class="bg-surface text-on-surface px-8 py-4 rounded-[20px] border-[3px] border-on-background font-bold text-body-md neo-shadow-hover neo-shadow-active shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                        Conservation Map
+                    </button>
+</div>
+</div>
+<!-- Decorative Vector Elements (Simulated) -->
+<div class="absolute right-[-50px] top-[-50px] w-64 h-64 opacity-20 rotate-12">
+<div class="w-full h-full border-[10px] border-secondary rounded-full"></div>
+</div>
+</section>
+<!-- Bento Grid Content -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Bastar Tribal Art Showcase -->
+<div class="md:col-span-8 bg-surface border-[3px] border-on-background rounded-[20px] p-6 neo-shadow flex flex-col">
+<div class="flex justify-between items-center mb-6">
+<h2 class="font-headline-md text-headline-md">Bastar Tribal Art Showcase</h2>
+<span class="material-symbols-outlined text-primary text-4xl">brush</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4 flex-grow">
+<!-- Art Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square bg-surface-container-high border-[3px] border-on-background rounded-[20px] mb-2 overflow-hidden transition-all group-hover:shadow-[4px_4px_0px_0px_rgba(0,58,189,1)]">
+<img class="w-full h-full object-cover" data-alt="A stylized vector illustration of Bastar Dhokra art featuring a traditional tribal figurine of a horse rider. The style uses bold black outlines and a warm metallic bronze color palette against a deep forest green background, echoing the intricate wax-casting technique. Minimalist and clean modern UI presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnHF6DtbD57LMB-nvgNa19S3w6du1EfeNOzNpu3ZZa6v_wAzfq6FC_Uo44CkLZiKcnsMou_GSsJ1q46OZjaFG8TbfJ-gJXcxbj73MPxe5zkU2I6J2tUWNXEpR2yxjMhb-zn9xJrFZ_RWHLlFRfdFCdm6hNmCk_9ylT5eJTDaI6o6_MVB8MGedbhziUoWchFyg-wqm6PpQeS8Rp6Syw5H6zBEvMLipUiIGHCtSArFNo1pERT1IwFMkibBqgCOXSryofFZvUsuaR3cZI"/>
+</div>
+<p class="font-label-md text-label-md text-center">Dhokra Bronze</p>
+</div>
+<!-- Art Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square bg-surface-container-high border-[3px] border-on-background rounded-[20px] mb-2 overflow-hidden transition-all group-hover:shadow-[4px_4px_0px_0px_rgba(0,58,189,1)]">
+<img class="w-full h-full object-cover" data-alt="A vibrant vector graphic showcasing Gond art motifs of mythical birds and trees in a symmetrical pattern. The color scheme features earthy terracotta, vibrant yellows, and deep forest greens, all bounded by thick 3px black structural lines. The lighting is flat and graphic, emphasizing the geometric precision of tribal patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6S9POfuK47osgGG7nw9xalcUJb7Ii--ALmh5WICeD_mih4aGp1szojDtZzQOZ3cj6jtA7BkngvtEh8J6XduWr0CljDtRbFMXBuRKRVn5Y-DF6njTnlSCVruRwscQf8mTLcTc-f6nS3YsLCVP5WHlfHCwHn3L8FknFpGLhUAmiU5gPSUGX2yac3EwcKCfsoxKQUY29ziRNnv6y7mbecvGowHjTUOI4cVNoi_3rYrqENQWUHpd4tGaAEcT2edAzVbwVnRUuiECvLCr3"/>
+</div>
+<p class="font-label-md text-label-md text-center">Gond Motifs</p>
+</div>
+<!-- Art Card 3 -->
+<div class="group cursor-pointer hidden md:block">
+<div class="aspect-square bg-surface-container-high border-[3px] border-on-background rounded-[20px] mb-2 overflow-hidden transition-all group-hover:shadow-[4px_4px_0px_0px_rgba(0,58,189,1)]">
+<img class="w-full h-full object-cover" data-alt="A vector illustration of Terracotta tribal masks from Chhattisgarh, featuring intricate carved details and traditional markings. The artwork uses a minimalist aesthetic with high contrast between the clay-orange masks and a clean white background, framed with a bold structural border. High-end modern UI art direction." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNvTDRRlIKa4E-5lHB60uYYl7NDoLa0pnguz8UYMv06CngSMmGt6cuKU1lmrYtFQyw11Agz_BNqWWhYcdcjIJtR2AT85zxfpwcJOPm--L6Bq1lU3k_t_tjzMFPczmo4P1naJmt74TMxkKqkJrShBNT5zrkZ-McvrUD-7zSUAk_SncGW4GFpz0mQzEH7c_FUBRo1KsubfPW7LdGH3yssfGNg4JfxfrR978e9ezMPoNF7ZMl2YPcOyJOUncz0vQQsZ4VEGD86_T5QmaQ"/>
+</div>
+<p class="font-label-md text-label-md text-center">Terracotta Masks</p>
+</div>
+</div>
+</div>
+<!-- Bell Metal Artisan Portal -->
+<div class="md:col-span-4 bg-tertiary-fixed border-[3px] border-on-background rounded-[20px] p-6 neo-shadow flex flex-col justify-between">
+<div>
+<div class="bg-on-tertiary-fixed text-tertiary-fixed w-12 h-12 rounded-full flex items-center justify-center mb-4 border-[3px] border-on-background">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2">Artisan Portal</h3>
+<p class="font-body-md text-body-md mb-6">Directly connect with Master Bell Metal craftsmen. Preserve legacy, empower communities.</p>
+</div>
+<div class="space-y-3">
+<div class="flex items-center gap-3 bg-surface/50 p-3 rounded-xl border-[2px] border-on-background">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-md">1,240 Registered Artisans</span>
+</div>
+<button class="w-full bg-on-tertiary-fixed text-tertiary-fixed py-3 rounded-full font-bold border-[3px] border-on-background neo-shadow-hover">
+                        View Directory
+                    </button>
+</div>
+</div>
+<!-- Forest Conservation Heatmap -->
+<div class="md:col-span-12 bg-secondary border-[3px] border-on-background rounded-[20px] p-8 neo-shadow relative overflow-hidden">
+<div class="relative z-10 grid md:grid-cols-2 gap-8 items-center">
+<div>
+<div class="inline-flex items-center gap-2 bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full border-[2px] border-on-background mb-4">
+<span class="w-2 h-2 bg-error rounded-full animate-pulse"></span>
+<span class="font-label-sm uppercase">Live Conservation Status</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-secondary mb-4">Forest Health 2024</h2>
+<p class="text-on-secondary/80 text-body-lg mb-6">Real-time satellite monitoring of the Bastar and Surguja forest belts. Maintaining 44% forest cover through community action.</p>
+<div class="grid grid-cols-3 gap-4">
+<div class="text-on-secondary">
+<div class="text-headline-md">44.2%</div>
+<div class="text-label-sm opacity-70">Total Cover</div>
+</div>
+<div class="text-on-secondary">
+<div class="text-headline-md">+1.2%</div>
+<div class="text-label-sm opacity-70">Annual Growth</div>
+</div>
+<div class="text-on-secondary">
+<div class="text-headline-md">12k</div>
+<div class="text-label-sm opacity-70">Rangers Active</div>
+</div>
+</div>
+</div>
+<div class="bg-surface border-[3px] border-on-background rounded-[20px] h-64 md:h-80 relative overflow-hidden">
+<!-- Simulated Heatmap Map Component -->
+<div class="absolute inset-0 bg-secondary/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-6xl opacity-20">map</span>
+</div>
+<div class="absolute top-4 right-4 bg-surface p-2 rounded-lg border-[2px] border-on-background flex flex-col gap-1 text-label-sm">
+<div class="flex items-center gap-2"><span class="w-3 h-3 bg-secondary rounded-sm"></span> Pristine</div>
+<div class="flex items-center gap-2"><span class="w-3 h-3 bg-tertiary-fixed rounded-sm"></span> Restoration</div>
+<div class="flex items-center gap-2"><span class="w-3 h-3 bg-error rounded-sm"></span> At Risk</div>
+</div>
+<!-- State Map Background (Simplified Vector) -->
+<div class="absolute inset-0 p-8">
+<div class="w-full h-full border-[3px] border-dashed border-outline-variant opacity-30 rounded-full flex items-center justify-center">
+<span class="text-outline-variant font-bold">STATE BOUNDARY HEATMAP</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Service Chips -->
+<div class="md:col-span-12 flex flex-wrap gap-3">
+<div class="bg-surface border-[2px] border-on-background rounded-full px-6 py-3 flex items-center gap-2 neo-shadow-hover cursor-pointer transition-all">
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="font-label-md">Agri-Portal</span>
+</div>
+<div class="bg-surface border-[2px] border-on-background rounded-full px-6 py-3 flex items-center gap-2 neo-shadow-hover cursor-pointer transition-all">
+<span class="material-symbols-outlined text-primary">school</span>
+<span class="font-label-md">Tribal Education</span>
+</div>
+<div class="bg-surface border-[2px] border-on-background rounded-full px-6 py-3 flex items-center gap-2 neo-shadow-hover cursor-pointer transition-all">
+<span class="material-symbols-outlined text-primary">medical_services</span>
+<span class="font-label-md">Health Outreach</span>
+</div>
+<div class="bg-surface border-[2px] border-on-background rounded-full px-6 py-3 flex items-center gap-2 neo-shadow-hover cursor-pointer transition-all">
+<span class="material-symbols-outlined text-primary">museum</span>
+<span class="font-label-md">State Archives</span>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center bg-surface border-t-[3px] border-on-background py-2 px-2 z-50">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-full px-4 py-1 border-[2px] border-on-background" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-md">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-md">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-md">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">location_searching</span>
+<span class="text-label-md">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-md">Profile</span>
+</a>
+</nav>
+<!-- Contextual FAB (Hidden on scroll or specific context as per rules) -->
+<button class="fixed bottom-24 right-6 bg-primary text-on-primary w-14 h-14 rounded-[20px] border-[3px] border-on-background neo-shadow neo-shadow-hover neo-shadow-active flex items-center justify-center z-40">
+<span class="material-symbols-outlined">chat</span>
+</button>
+<script>
+        // Simple micro-interaction for scroll effects
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('py-2');
+                header.classList.remove('py-4');
+            } else {
+                header.classList.add('py-4');
+                header.classList.remove('py-2');
+            }
+        });
+
+        // Hover effect for artisan portal stats
+        const artisanBtn = document.querySelector('.bg-on-tertiary-fixed');
+        artisanBtn.addEventListener('mouseenter', () => {
+            artisanBtn.classList.add('scale-105');
+        });
+        artisanBtn.addEventListener('mouseleave', () => {
+            artisanBtn.classList.remove('scale-105');
+        });
+    </script>
+</body></html>

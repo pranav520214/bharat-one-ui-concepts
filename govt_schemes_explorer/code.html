@@ -1,0 +1,381 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Bharat One | Government Schemes Explorer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "error-container": "#ffdad6",
+                    "inverse-surface": "#2e3038",
+                    "inverse-on-surface": "#eff0fa",
+                    "primary-container": "#2771df",
+                    "on-secondary-fixed": "#002108",
+                    "surface-tint": "#005ac1",
+                    "surface-variant": "#e1e2eb",
+                    "primary-fixed": "#d8e2ff",
+                    "on-primary-container": "#fefcff",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-primary-fixed": "#001a41",
+                    "inverse-primary": "#adc6ff",
+                    "on-surface": "#191b22",
+                    "error": "#ba1a1a",
+                    "tertiary": "#765700",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-primary-fixed-variant": "#004494",
+                    "tertiary-container": "#956e00",
+                    "primary-fixed-dim": "#adc6ff",
+                    "surface-dim": "#d8d9e3",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "secondary": "#006e2c",
+                    "primary": "#0058bd",
+                    "secondary-fixed": "#89fa9b",
+                    "tertiary-fixed": "#ffdea0",
+                    "background": "#f9f9ff",
+                    "on-primary": "#ffffff",
+                    "surface-container": "#ecedf7",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-highest": "#e1e2eb",
+                    "surface-container-low": "#f2f3fd",
+                    "outline": "#727785",
+                    "on-error-container": "#93000a",
+                    "on-background": "#191b22",
+                    "surface-container-high": "#e7e7f1",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#424753",
+                    "surface-bright": "#f9f9ff",
+                    "secondary-container": "#86f898",
+                    "on-tertiary-container": "#fffbff",
+                    "on-secondary-container": "#00722f",
+                    "outline-variant": "#c2c6d5"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "20px": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "xl": "32px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px",
+                    "lg": "24px",
+                    "margin-desktop": "40px",
+                    "2xl": "48px",
+                    "sm": "8px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "3xl": "64px",
+                    "md": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "headline-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutal-card {
+            border-width: 3px;
+            transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .neo-brutal-card:hover {
+            transform: translate(-2px, -2px);
+        }
+        .neo-brutal-shadow {
+            box-shadow: 4px 4px 0px 0px #191b22;
+        }
+        .neo-brutal-shadow-hover:hover {
+            box-shadow: 6px 6px 0px 0px #191b22;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #727785;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-24 md:pb-0">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b-[3px] border-on-surface shadow-[0_4px_0_0_rgba(25,27,34,1)]">
+<div class="flex items-center gap-4">
+<span class="text-title-lg font-black text-primary uppercase tracking-tighter">Bharat One</span>
+<div class="hidden md:flex gap-6 ml-8">
+<a class="text-label-lg font-label-lg text-primary font-bold" href="#">Home</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Schemes</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Help</a>
+<a class="text-label-lg font-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Favorites</a></div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors material-symbols-outlined text-on-surface">location_on</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors material-symbols-outlined text-on-surface">partly_cloudy_day</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors material-symbols-outlined text-on-surface">emergency_home</button>
+<div class="w-10 h-10 rounded-full border-2 border-on-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a smiling modern Indian citizen in a bright office environment, high-quality corporate photography style, soft natural lighting, light mode aesthetic, clean and professional." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKdwQzqHHkXJXrbpLa1flDW-8vVYQ-QVPk9MPmPpwnqPoCkT2bTAPe46CoNSFWDNPKfK-uSDmfL-lYPMGZgd0Cgo0inOrhsH9Xke1SJNHJZhSgO77dVNqIRBldU4MAquO7_EHZWSXGZB-Ql7l8LLJ8ZM9osj_Ob9SJBFGFO57evdNmpjY4k21LNWGUijLsUp0G9ycO2V3a-D7KjwV7HGbWzj28Y_dFnwMeoFAqelnuEGbiwOS2hN6pP3Q3EGZGA8BVysx3QHQ3da-X">
+</div>
+</div>
+</nav>
+<main class="pt-24 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<header class="mb-xl">
+<h1 class="font-headline-lg text-headline-lg md:text-display-lg md:font-display-lg text-on-surface mb-2">Government Schemes &amp; Benefits</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Find the right support for you and your family with personalized recommendations.</p>
+</header>
+<!-- Search & Filter Area -->
+<section class="mb-xl">
+<div class="relative max-w-2xl mb-lg">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline">search</span>
+<input class="w-full pl-12 pr-6 py-4 bg-surface-container-lowest border-[3px] border-on-surface rounded-20px font-body-md text-on-surface focus:ring-0 focus:border-primary neo-brutal-shadow outline-none" placeholder="Search schemes by keyword, department, or eligibility..." type="text">
+</div>
+<div class="flex items-center gap-3 overflow-x-auto pb-4 custom-scrollbar whitespace-nowrap -mx-margin-mobile px-margin-mobile md:mx-0 md:px-0">
+<!-- Category Chips -->
+<button class="flex items-center gap-2 px-6 py-3 bg-primary-container text-on-primary-container rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">filter_alt</span> All Categories
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">woman</span> Women
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">school</span> Students
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">agriculture</span> Farmers
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">home</span> Housing
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">precision_manufacturing</span> MSME
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">rocket_launch</span> Startup
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">elderly</span> Senior Citizens
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">child_care</span> Children
+                </button>
+<button class="flex items-center gap-2 px-6 py-3 bg-white hover:bg-surface-container-high transition-colors text-on-surface rounded-full border-[3px] border-on-surface font-label-lg">
+<span class="material-symbols-outlined">medical_services</span> Healthcare
+                </button>
+</div>
+</section>
+<!-- Schemes Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-lg mb-3xl">
+<!-- Card 1 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-secondary-container text-on-secondary-container border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">Farmers</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">PM Kisan Samman Nidhi</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Direct income support of ₹6,000 per year to all landholding farmer families across the country in three equal installments.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed-variant border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">Women</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Sukanya Samriddhi Yojana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">A small deposit scheme for the girl child to build a corpus for her future education and marriage expenses with high interest rates.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">Students</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Digital India Internship</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">An opportunity for students to secure a 2-month internship with the Ministry of Electronics and Information Technology.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-secondary-fixed text-on-secondary-fixed-variant border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">MSME</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">PMEGP Loan Scheme</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Credit linked subsidy program for generation of employment opportunities through establishment of micro enterprises.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-error-container text-on-error-container border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">Housing</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">PM Awas Yojana (Urban)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">Mission to provide 'Housing for All' in urban areas by 2024 through interest subsidies and financial assistance.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="neo-brutal-card neo-brutal-shadow bg-surface-container-lowest border-on-surface rounded-20px flex flex-col p-lg">
+<div class="flex justify-between items-start mb-4">
+<span class="px-3 py-1 bg-outline-variant text-on-surface border-[2px] border-on-surface rounded-full text-label-sm uppercase font-bold tracking-wider">Healthcare</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">bookmark</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-on-surface mb-2">Ayushman Bharat (PM-JAY)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-grow">World's largest health insurance scheme providing a cover of ₹5 lakh per family per year for secondary/tertiary care.</p>
+<div class="flex flex-col gap-3">
+<button class="w-full h-14 bg-primary text-white font-label-lg border-[3px] border-on-surface rounded-20px shadow-[2px_2px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all duration-100 flex items-center justify-center gap-2">
+                        Apply Now <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="w-full h-14 bg-white text-on-surface font-label-lg border-[3px] border-on-surface rounded-20px hover:bg-surface-container-high transition-colors flex items-center justify-center gap-2">
+                        Learn More
+                    </button>
+</div>
+</div>
+</section>
+<!-- CTA Section (Asymmetric Bento style) -->
+<section class="mb-3xl grid grid-cols-1 md:grid-cols-12 gap-lg h-auto">
+<div class="md:col-span-8 neo-brutal-card neo-brutal-shadow bg-primary-container text-on-primary-container p-xl rounded-20px border-on-surface flex flex-col justify-center">
+<h2 class="font-headline-lg text-headline-lg mb-4">Not sure which scheme fits you?</h2>
+<p class="font-body-lg text-body-lg mb-lg opacity-90 max-w-xl">Our AI-powered Bharat assistant can analyze your profile and suggest the most beneficial schemes for your current situation.</p>
+<button class="self-start px-8 py-4 bg-white text-primary font-bold border-[3px] border-on-surface rounded-full shadow-[4px_4px_0px_0px_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all">Talk to Bharat AI</button>
+</div>
+<div class="md:col-span-4 neo-brutal-card neo-brutal-shadow bg-white p-lg rounded-20px border-on-surface flex flex-col items-center justify-center text-center">
+<div class="w-20 h-20 bg-secondary-container rounded-full flex items-center justify-center mb-4 border-[3px] border-on-surface">
+<span class="material-symbols-outlined text-on-secondary-container scale-150">notifications_active</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-on-surface mb-2">Scheme Alerts</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant mb-4 px-4">Never miss an eligibility deadline or new scheme launch again.</p>
+<button class="px-6 py-2 border-[2px] border-on-surface rounded-full font-label-lg hover:bg-surface-container-high transition-colors">Enable SMS Alerts</button>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface border-t-[3px] border-on-surface">
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1.5 scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-label-sm font-label-sm">Favorites</span>
+</div><div class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">Ask Bharat AI</span>
+</div>
+
+<div class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</div>
+</nav>
+<script>
+        // Micro-interactions for hard-shadow buttons
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                if(btn.classList.contains('neo-brutal-shadow')) {
+                    btn.style.transform = 'translate(2px, 2px)';
+                    btn.style.boxShadow = 'none';
+                }
+            });
+            btn.addEventListener('mouseup', () => {
+                if(btn.classList.contains('neo-brutal-shadow')) {
+                    btn.style.transform = 'translate(0, 0)';
+                    btn.style.boxShadow = '4px 4px 0px 0px #191b22';
+                }
+            });
+        });
+
+        // Filter selection logic
+        const filterButtons = document.querySelectorAll('.custom-scrollbar button');
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterButtons.forEach(b => {
+                    b.classList.remove('bg-primary-container', 'text-on-primary-container');
+                    b.classList.add('bg-white', 'text-on-surface');
+                });
+                btn.classList.remove('bg-white', 'text-on-surface');
+                btn.classList.add('bg-primary-container', 'text-on-primary-container');
+            });
+        });
+    </script>
+
+
+</body></html>

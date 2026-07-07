@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Maharashtra</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-secondary-fixed": "#002108",
+                "on-secondary-container": "#00722f",
+                "surface-tint": "#005ac1",
+                "error": "#ba1a1a",
+                "secondary-fixed-dim": "#6ddd81",
+                "tertiary-fixed": "#ffdea0",
+                "on-primary-container": "#fefcff",
+                "surface-variant": "#e1e2eb",
+                "surface": "#f9f9ff",
+                "primary-fixed": "#d8e2ff",
+                "surface-container-low": "#f2f3fd",
+                "inverse-on-surface": "#eff0fa",
+                "on-error-container": "#93000a",
+                "surface-container-highest": "#e1e2eb",
+                "surface-container-high": "#e7e7f1",
+                "secondary": "#006e2c",
+                "on-primary-fixed": "#001a41",
+                "on-surface": "#191b22",
+                "secondary-fixed": "#89fa9b",
+                "on-secondary-fixed-variant": "#005320",
+                "on-background": "#191b22",
+                "secondary-container": "#86f898",
+                "on-primary-fixed-variant": "#004494",
+                "surface-container": "#ecedf7",
+                "surface-container-lowest": "#ffffff",
+                "on-tertiary": "#ffffff",
+                "surface-dim": "#d8d9e3",
+                "on-tertiary-fixed-variant": "#5c4300",
+                "on-tertiary-fixed": "#261a00",
+                "outline-variant": "#c2c6d5",
+                "outline": "#727785",
+                "on-surface-variant": "#424753",
+                "tertiary-container": "#956e00",
+                "primary-fixed-dim": "#adc6ff",
+                "error-container": "#ffdad6",
+                "on-secondary": "#ffffff",
+                "primary": "#0058bd",
+                "on-error": "#ffffff",
+                "background": "#f9f9ff",
+                "primary-container": "#2771df",
+                "surface-bright": "#f9f9ff",
+                "inverse-surface": "#2e3038",
+                "inverse-primary": "#adc6ff",
+                "tertiary": "#765700",
+                "on-primary": "#ffffff",
+                "tertiary-fixed-dim": "#fbbc06",
+                "on-tertiary-container": "#fffbff"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "sm": "8px",
+                "xs": "4px",
+                "md": "16px",
+                "margin-mobile": "16px",
+                "margin-desktop": "40px",
+                "base": "8px",
+                "2xl": "48px",
+                "xl": "32px",
+                "3xl": "64px",
+                "lg": "24px",
+                "gutter": "16px"
+            },
+            "fontFamily": {
+                "headline-lg": ["Inter", "sans-serif"],
+                "headline-md": ["Inter", "sans-serif"],
+                "title-lg": ["Inter", "sans-serif"],
+                "label-lg": ["Inter", "sans-serif"],
+                "label-md": ["Inter", "sans-serif"],
+                "label-sm": ["Inter", "sans-serif"],
+                "body-lg": ["Inter", "sans-serif"],
+                "body-md": ["Inter", "sans-serif"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutal-card {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+            transition: all 0.2s ease;
+        }
+        .neo-brutal-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-brutal-button {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+            transition: all 0.1s ease;
+        }
+        .neo-brutal-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px rgba(25, 27, 34, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-md py-xs z-50 bg-background border-b-3 border-on-surface">
+<div class="flex items-center gap-sm">
+<span class="text-title-md font-headline-lg font-black text-on-surface">Bharat One</span>
+</div>
+<div class="flex items-center gap-md">
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-high p-xs rounded-full transition-transform active:translate-y-0.5">location_on</button>
+<button class="material-symbols-outlined text-primary hover:bg-surface-container-high p-xs rounded-full transition-transform active:translate-y-0.5">emergency_home</button>
+<div class="w-10 h-10 rounded-full border-3 border-on-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a young Indian man with a friendly expression, styled in a clean, high-contrast digital illustration with a minimalist white background. The lighting is soft and even, highlighting modern features. The visual style follows a premium civic aesthetic with crisp lines and vibrant, deep blue accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIkuR3YS1RLinPo2iZJDcA8qfud2bvTLnbDj-jbTwdPB9snTTiWlsNH1wUYM3cQvi5SfFbxd3-mO7Hfyvfj58yeRanDtVYnCHN9_LBgiSbogduhUUPPBS5bLNOqek_MN3YzMdQ25lkyUbCQIGplqLesE-R0JkqWU1kmBhsiIQveViIU_mqQoBfsBwKoPSXjCfpENbSBsEDfeoA1h4gr6e7oT-NFrHOU6bYjGgMMEjp9yUADbup8SD6r5L7lnqFQLKRY63P0Og-SO_K"/>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl relative">
+<!-- Animated Background Component -->
+<div class="fixed inset-0 -z-10 pointer-events-none opacity-40">
+
+</div>
+<!-- Greeting Section -->
+<section class="mb-3xl flex flex-col md:flex-row md:items-end justify-between gap-lg">
+<div>
+<h1 class="font-headline-lg text-headline-lg mb-xs">Namaskar, Arjun!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">Welcome to the digital heart of Maharashtra. From the Sahyadri peaks to the Konkan coast, your state is at your fingertips.</p>
+</div>
+<div class="flex gap-sm">
+<div class="neo-brutal-card bg-primary-container text-on-primary-container px-lg py-sm rounded-xl">
+<span class="font-label-md text-label-md block opacity-80 uppercase tracking-wider">Local Temp</span>
+<span class="font-headline-md text-headline-md">28°C Mumbai</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- Mumbai Metro Expansion (Hero Card) -->
+<div class="md:col-span-8 neo-brutal-card bg-surface-container-lowest rounded-xl overflow-hidden group flex flex-col">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A futuristic, wide-angle view of a sleek, modern Mumbai Metro train gliding across a high-tech elevated bridge with the iconic Mumbai skyline and sea link in the background during a vibrant golden hour. The image features high-contrast outlines and a professional architectural photography style, blending warm sunset oranges with cool civic blues. The atmosphere is energetic and progressive." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBL5tyr_4axfTIrsi08PHCtxi0j3g6xCamB6PSOMi3P7gVaUnKN9MKlctPNPpxFwmVxzeFCTvJ2EwoKGW4gFvyeJnT0jCAu86dZhAff7UMZckmj2sFJiHqQCBBlxPNxAoJIDPzcGh969IxXPLLQ0jMfJaIWUGaSBE9jkbr09ZiYyayIJaQXn4cyQ4S_mQh3hEVptSUYANzbWHfr9IJpaAw402hB1rHqFnM6KVBZu1Eae_f5M3VRQfeLOrczZomxwrAJnzxRDS_Op8h"/>
+<div class="absolute top-md left-md bg-secondary-container border-3 border-on-surface px-md py-xs rounded-full">
+<span class="font-label-lg text-label-lg text-on-secondary-container">Live Project Update</span>
+</div>
+</div>
+<div class="p-lg flex-1 flex flex-col">
+<h2 class="font-headline-md text-headline-md mb-sm">Mumbai Metro Line 3 Expansion</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg flex-1">Track the progress of the underground Aqua Line. New stations opening soon at BKC and Worli. View real-time construction feeds and commuter route planners.</p>
+<button class="neo-brutal-button bg-primary text-on-primary font-label-lg text-label-lg px-xl py-md rounded-xl self-start">Explore Route Map</button>
+</div>
+</div>
+<!-- Ajanta Cave Archive -->
+<div class="md:col-span-4 neo-brutal-card bg-tertiary-fixed rounded-xl overflow-hidden flex flex-col">
+<div class="p-lg flex-1">
+<div class="w-12 h-12 bg-on-tertiary-fixed-variant rounded-full flex items-center justify-center mb-lg">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" style="font-variation-settings: 'FILL' 1;">museum</span>
+</div>
+<h2 class="font-headline-md text-headline-md mb-sm text-on-tertiary-fixed">Ajanta Digital Archive</h2>
+<p class="font-body-md text-body-md text-on-tertiary-fixed-variant mb-xl">Step into 2nd Century BCE with our 8K digital restoration project of the Ajanta frescos and sculptures. A legacy preserved in pixels.</p>
+</div>
+<div class="h-48 border-t-3 border-on-surface bg-background">
+<img class="w-full h-full object-cover" data-alt="A high-resolution, detailed close-up of a preserved Ajanta cave wall painting showing intricate traditional Indian artistic details with earthy pigments of ochre and deep reds. The style is historical yet feels fresh and digitally enhanced, with dramatic side-lighting revealing the textures of the stone wall. The mood is reverent and culturally rich, set in a light-mode museum aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDW3SOZy8snhhkOg1LBtZokWeBt4bqln8olBE4Y-Pu8WFmdU9RNugGQmqtTzvmeH6PlKQpvMdqdE3tjGgniECbBpNMOVf79oOm8ZVfxEivAJXS5k8ldNJNdBb0ke8crkRU3P8DFZ5cKsws36xQrYKb6wcCqFPPq-wM6ys46TcX_TBqOlJf4NpiMbe-_LQgUETALgUcLRitPh8AcqZ4wtcokZZVHl36A-YLAYIRENt-1V1-NCSKY5H2bJNAzvjh4X0Uy8p8dcq6uPI45"/>
+</div>
+</div>
+<!-- Konkan Tourism -->
+<div class="md:col-span-4 neo-brutal-card bg-secondary-container rounded-xl overflow-hidden flex flex-col h-full">
+<div class="h-40 bg-surface-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A serene landscape of the Konkan coastline featuring gentle turquoise waves washing over pristine white sands, with lush green palm trees and a historic coastal fort in the far distance. The visual style is crisp and modern with a 3px black stroke around the frame, utilizing a bright, airy color palette of sea greens and sandy neutrals. The atmosphere is peaceful and inviting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMTRGqmHIjVrh3V3EHG0rFIVflmgktT_mg7GMMe7x1fDHDVA1NJyeqARATVp3Pi9COv5zBpbrUUBa1Ptav5SCYjhBf4khAtLcZG0FpqWGPAlZKARraUWiluisyx6zto674eGDbhbvnWH7uo10_6fTs9Xj6P3aVeA0FkQrX7G5MVCdWAMyyLjLy5KjA7dwyYQgUhGDdupGx-zqToeed21E8bVVqFxIxKsOw5Zp8TQEztm0Xo4FhPQShd3oLQq8TSc4pvEL980yT-ZLn"/>
+</div>
+<div class="p-lg">
+<h3 class="font-headline-md text-headline-md mb-sm text-on-secondary-fixed">Discover Konkan</h3>
+<p class="font-body-md text-body-md text-on-secondary-fixed-variant mb-lg">Experience the magic of the 'Konkan Katta'. Plan your escape to the hidden beaches of Ratnagiri and Sindhudurg.</p>
+<div class="flex flex-wrap gap-xs">
+<span class="bg-surface-container-lowest border-2 border-on-surface px-sm py-xs rounded-lg font-label-sm text-label-sm">#CoastalLife</span>
+<span class="bg-surface-container-lowest border-2 border-on-surface px-sm py-xs rounded-lg font-label-sm text-label-sm">#EcoTourism</span>
+</div>
+</div>
+</div>
+<!-- Modern Tech-City Vibes / Quick Services -->
+<div class="md:col-span-8 neo-brutal-card bg-surface-container-lowest rounded-xl p-lg">
+<div class="flex items-center justify-between mb-xl">
+<h2 class="font-headline-md text-headline-md">Unified Citizen Services</h2>
+<span class="font-label-lg text-label-lg text-primary flex items-center gap-xs">All Services <span class="material-symbols-outlined text-sm">arrow_forward</span></span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-md">
+<button class="flex flex-col items-center gap-sm group">
+<div class="w-16 h-16 rounded-2xl bg-primary-fixed border-3 border-on-surface flex items-center justify-center group-hover:-translate-y-1 transition-all shadow-[4px_4px_0_0_rgba(25,27,34,1)]">
+<span class="material-symbols-outlined text-3xl text-on-primary-fixed">description</span>
+</div>
+<span class="font-label-md text-label-md">E-Documents</span>
+</button>
+<button class="flex flex-col items-center gap-sm group">
+<div class="w-16 h-16 rounded-2xl bg-secondary-fixed border-3 border-on-surface flex items-center justify-center group-hover:-translate-y-1 transition-all shadow-[4px_4px_0_0_rgba(25,27,34,1)]">
+<span class="material-symbols-outlined text-3xl text-on-secondary-fixed">payments</span>
+</div>
+<span class="font-label-md text-label-md">Taxes</span>
+</button>
+<button class="flex flex-col items-center gap-sm group">
+<div class="w-16 h-16 rounded-2xl bg-tertiary-fixed border-3 border-on-surface flex items-center justify-center group-hover:-translate-y-1 transition-all shadow-[4px_4px_0_0_rgba(25,27,34,1)]">
+<span class="material-symbols-outlined text-3xl text-on-tertiary-fixed">health_and_safety</span>
+</div>
+<span class="font-label-md text-label-md">Health</span>
+</button>
+<button class="flex flex-col items-center gap-sm group">
+<div class="w-16 h-16 rounded-2xl bg-outline-variant border-3 border-on-surface flex items-center justify-center group-hover:-translate-y-1 transition-all shadow-[4px_4px_0_0_rgba(25,27,34,1)]">
+<span class="material-symbols-outlined text-3xl text-on-surface-variant">school</span>
+</div>
+<span class="font-label-md text-label-md">Education</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-sm text-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="font-label-sm text-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for neo-brutalism elements
+        document.querySelectorAll('.neo-brutal-card').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.transform = 'translate(2px, 2px)';
+                card.style.boxShadow = '2px 2px 0px 0px rgba(25, 27, 34, 1)';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.transform = 'translate(-2px, -2px)';
+                card.style.boxShadow = '6px 6px 0px 0px rgba(25, 27, 34, 1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    </script>
+</body></html>

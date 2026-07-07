@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Karnataka</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed": "#002108",
+                    "on-secondary-container": "#00722f",
+                    "surface-tint": "#005ac1",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "tertiary-fixed": "#ffdea0",
+                    "on-primary-container": "#fefcff",
+                    "surface-variant": "#e1e2eb",
+                    "surface": "#f9f9ff",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-container-low": "#f2f3fd",
+                    "inverse-on-surface": "#eff0fa",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e1e2eb",
+                    "surface-container-high": "#e7e7f1",
+                    "secondary": "#006e2c",
+                    "on-primary-fixed": "#001a41",
+                    "on-surface": "#191b22",
+                    "secondary-fixed": "#89fa9b",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-background": "#191b22",
+                    "secondary-container": "#86f898",
+                    "on-primary-fixed-variant": "#004494",
+                    "surface-container": "#ecedf7",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface-dim": "#d8d9e3",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-tertiary-fixed": "#261a00",
+                    "outline-variant": "#c2c6d5",
+                    "outline": "#727785",
+                    "on-surface-variant": "#424753",
+                    "tertiary-container": "#956e00",
+                    "primary-fixed-dim": "#adc6ff",
+                    "error-container": "#ffdad6",
+                    "on-secondary": "#ffffff",
+                    "primary": "#0058bd",
+                    "on-error": "#ffffff",
+                    "background": "#f9f9ff",
+                    "primary-container": "#2771df",
+                    "surface-bright": "#f9f9ff",
+                    "inverse-surface": "#2e3038",
+                    "inverse-primary": "#adc6ff",
+                    "tertiary": "#765700",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "on-tertiary-container": "#fffbff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "sm": "8px",
+                    "xs": "4px",
+                    "md": "16px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "40px",
+                    "base": "8px",
+                    "2xl": "48px",
+                    "xl": "32px",
+                    "3xl": "64px",
+                    "lg": "24px",
+                    "gutter": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutal-card {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.2s ease;
+        }
+        .neo-brutal-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #191b22;
+        }
+        .neo-brutal-btn {
+            border: 3px solid #191b22;
+            box-shadow: 3px 3px 0px 0px #191b22;
+            transition: all 0.1s ease;
+        }
+        .neo-brutal-btn:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+        }
+        canvas#bg-shader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -10;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- WebGL Background Shader -->
+<canvas id="bg-shader"></canvas>
+<!-- Top Navigation Shell -->
+<header class="sticky top-0 w-full flex justify-between items-center px-md py-xs z-50 bg-background border-b-3 border-on-surface">
+<div class="flex items-center gap-md">
+<span class="text-title-md font-headline-lg font-black text-on-surface">Bharat One</span>
+<div class="hidden md:flex gap-md">
+<a class="text-primary font-bold transition-transform duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-sm py-xs rounded-lg transition-colors" href="#">Services</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-sm py-xs rounded-lg transition-colors" href="#">Governance</a>
+</div>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</button>
+<button class="p-xs hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined">emergency_home</span>
+</button>
+<button class="p-xs hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<main class="relative min-h-screen pb-32">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop py-xl">
+<!-- Greeting & Hero -->
+<section class="mb-2xl flex flex-col md:flex-row justify-between items-end gap-lg">
+<div class="space-y-sm">
+<h1 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">Namaste, Arjun!</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl">Welcome to your personalized digital gateway to Karnataka. From the tech hubs of Bengaluru to the heritage of Mysore and the green slopes of Kodagu.</p>
+</div>
+<div class="flex gap-sm">
+<button class="neo-brutal-btn bg-secondary-container text-on-secondary-container px-lg py-sm font-label-lg rounded-xl flex items-center gap-xs">
+<span class="material-symbols-outlined">bolt</span>
+                        Quick Access
+                    </button>
+</div>
+</section>
+<!-- Main Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- Bengaluru Tech Corridor -->
+<div class="md:col-span-8 neo-brutal-card bg-surface-container-lowest rounded-xl overflow-hidden flex flex-col">
+<div class="relative h-64 w-full">
+<div class="w-full h-full bg-cover bg-center" data-alt="A futuristic digital rendering of the Bengaluru tech corridor at dusk, featuring sleek glass skyscrapers with holographic data streams flowing between buildings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAt3_-8hVV5CHTX-G8X39dML-mYIWoJjPeD_gInw6pZrS32A4tuism4fkJjrPbRx2TYo1WxeqVuJ_WrYYtEtDUoMYcc6YCslMOLgpN5uvIR5rubRpnMbpfZZd5jfZT_jffvFPr8YxkX3wSAKxlJUsBCM8U9m9FMeYRu42iNaMeN-IU-h6LyQBOiZIrv_UImS_mkNEddr57iprDrwbYRaNMf6D5NIBaSJ8cnE43TaetzYkZ_30Xwl-1Md3cE4x_9Rt_q3b6LUHRpOh1B')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-[#191b22] to-transparent opacity-60"></div>
+<div class="absolute bottom-md left-md text-white">
+<span class="bg-primary-container text-on-primary-container text-label-sm font-label-sm px-sm py-xs rounded-full uppercase tracking-wider mb-xs inline-block border-2 border-on-surface">Live Update</span>
+<h2 class="text-headline-md font-headline-md">Bengaluru Tech Corridor</h2>
+</div>
+</div>
+<div class="p-lg flex-1">
+<div class="flex flex-col md:flex-row gap-lg">
+<div class="flex-1 space-y-md">
+<p class="text-body-md text-on-surface-variant">The Peripheral Ring Road Phase 2 integration is now 75% complete. Expect smoother connectivity between Electronic City and Sarjapur by Q3 2024.</p>
+<div class="flex items-center gap-md p-sm bg-surface-container-low rounded-lg border-2 border-outline-variant">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">router</span>
+<div>
+<p class="text-label-lg font-label-lg">5G Fiber Grid Expansion</p>
+<p class="text-label-sm">Outer Ring Road Sector active</p>
+</div>
+</div>
+</div>
+<div class="w-full md:w-48 flex flex-col gap-sm">
+<button class="neo-brutal-btn bg-primary text-on-primary w-full py-sm rounded-lg font-label-lg">View Traffic</button>
+<button class="neo-brutal-btn bg-white text-on-surface w-full py-sm rounded-lg font-label-lg">Project Docs</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Mysore Palace Schedule -->
+<div class="md:col-span-4 neo-brutal-card bg-tertiary-fixed rounded-xl p-lg flex flex-col">
+<div class="flex justify-between items-start mb-lg">
+<div>
+<h3 class="text-title-lg font-headline-md text-on-tertiary-fixed">Mysore Palace</h3>
+<p class="text-label-sm font-label-sm text-on-tertiary-fixed-variant">Cultural Heritage Schedule</p>
+</div>
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl">castle</span>
+</div>
+<div class="space-y-md flex-1">
+<div class="p-sm bg-white/40 border-2 border-on-tertiary-fixed rounded-lg">
+<p class="text-label-lg font-black">Tonight: Light &amp; Sound</p>
+<p class="text-body-md">07:00 PM - 08:00 PM</p>
+<p class="text-label-sm opacity-70">Narrated in Kannada &amp; English</p>
+</div>
+<div class="p-sm bg-white/20 border-2 border-dashed border-on-tertiary-fixed rounded-lg">
+<p class="text-label-lg font-bold">Sunday Illumination</p>
+<p class="text-body-md">07:00 PM - 08:30 PM</p>
+<p class="text-label-sm opacity-70">Full illumination of 97,000 bulbs</p>
+</div>
+</div>
+<button class="mt-lg neo-brutal-btn bg-on-tertiary-fixed text-white py-sm rounded-lg font-label-lg w-full">Book Tickets</button>
+</div>
+<!-- Featured Card: Vidhana Soudha Tech Integration -->
+<div class="md:col-span-6 neo-brutal-card bg-primary-fixed rounded-xl overflow-hidden flex flex-col">
+<div class="relative h-48 w-full">
+<img alt="Illustration of Vidhana Soudha with tech-inspired geometric accents" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBu7Bpu3gUXOTv5L-WvNyNRA6BGI19RC_yYyhsxuSWFvnARKTjM9Ga9YRPJG_Tzyg7y7oRanMgXfzd2-KStApK6TQ9ZMh6_Xr8V9rrYq2g7GaF3zl1YjvmqW7XMkoDukY9sApHCuILR7cE1VxQL2kfYZV8jGLqMOi-_5Zn7uT0FBtD3qHUCUU1XZMdYYK4eU1W_op922LXbB-fPum_QQYzQhLqunoew0_IU7SRUJzXTbu9tnLZKllGE7WmDbyMcTeE1RXwr1ThZm3tP"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-fixed to-transparent opacity-40"></div>
+</div>
+<div class="p-lg flex-1">
+<div class="flex items-center gap-md mb-md">
+<div class="w-12 h-12 bg-white border-2 border-on-surface rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-2xl text-primary">account_balance</span>
+</div>
+<h3 class="text-title-lg font-headline-md text-on-primary-fixed">Digital Secretariat</h3>
+</div>
+<p class="text-body-md text-on-primary-fixed-variant mb-lg">Seamlessly access e-Governance services through Karnataka's unified digital gateway.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+<a class="flex items-center justify-between p-md bg-white rounded-lg border-2 border-on-primary-fixed hover:bg-primary-fixed-dim transition-colors group" href="#">
+<span class="font-label-lg">Sakala Services</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-md bg-white rounded-lg border-2 border-on-primary-fixed hover:bg-primary-fixed-dim transition-colors group" href="#">
+<span class="font-label-lg">Property Records</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Coffee Plantation Tourism -->
+<div class="md:col-span-6 neo-brutal-card bg-secondary-fixed-dim rounded-xl p-lg relative overflow-hidden">
+<div class="relative z-10">
+<h3 class="text-headline-md font-headline-md text-on-secondary-fixed mb-sm">Kodagu Coffee Trails</h3>
+<p class="text-body-md text-on-secondary-fixed-variant max-w-sm mb-lg">Experience the soul of Karnataka's plantations. Book a guided harvest tour in Madikeri or Chikmagalur.</p>
+<div class="grid grid-cols-2 gap-md">
+<div class="neo-brutal-card bg-white p-sm rounded-lg">
+<span class="material-symbols-outlined text-secondary mb-xs">coffee</span>
+<p class="text-label-lg font-black">Bean to Cup</p>
+<p class="text-label-sm">Interactive workshop</p>
+</div>
+<div class="neo-brutal-card bg-white p-sm rounded-lg">
+<span class="material-symbols-outlined text-secondary mb-xs">nature_people</span>
+<p class="text-label-lg font-black">Homestays</p>
+<p class="text-label-sm">Heritage estates</p>
+</div>
+</div>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-20 transform rotate-12">
+<span class="material-symbols-outlined text-[180px]">coffee_maker</span>
+</div>
+</div>
+</div>
+<!-- News & Updates Section -->
+<section class="mt-2xl">
+<div class="flex items-center justify-between mb-lg border-b-3 border-on-surface pb-sm">
+<h3 class="text-headline-md font-headline-md">State Bulletins</h3>
+<button class="text-primary font-bold hover:underline flex items-center gap-xs">
+                        All News <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<div class="space-y-sm">
+<div class="aspect-video neo-brutal-card rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDNLEeAkOHEysghUQn85CkIBo9pWz9sx1dt0aXubAv0LtZ0mmK_f2HsMOK2L0WZj5Kg3Dj4Of4NfF6dTi7wD_9jHFTSHY1R5lCT1BJTgFB9zgOseoUVbbioLouRUh1lqwCB8dlAYyssth7y5xL0cKFbo3ef2laZQYL6_AdLFGKd6G_vRmJbPWZ3ytvH8mYtzJ2cl1Ttne6cpijRQbx_70oPNFDzrev-2mLXbUhaMnssDFBLilTNWho5XN0N6WC4aC4t4tymd8xAt3Z"/>
+</div>
+<p class="text-label-sm text-secondary font-bold">AGRICULTURE</p>
+<h4 class="text-title-lg font-bold leading-tight">New subsidy announced for shade-grown coffee farmers.</h4>
+</div>
+<div class="space-y-sm">
+<div class="aspect-video neo-brutal-card rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUi_8AuizjH9Lz7g3bSaTlScmmB4gCAff62YIryoB479VugO47sJO26JiFUiRRZDm-arJ3qmvoBkFCRpfkdfRHMiQLmr3DWJGAidO99lS3tq2AE0tPqE5H0dKWzri8Qf6P7js_Cyl0-r4u94DfQOD5_NBcg3vmoUc4C9Gb1wtoDKY6ZT-zINGVC9RhV-9f_vN2_ihNv8pn2nIyT5hQXpKaE3AShhDFFTS1Z7CLDfH04NJYd_juOzxL0TND-gQVkb9yKKqzGrIhIyWe"/>
+</div>
+<p class="text-label-sm text-primary font-bold">GOVERNANCE</p>
+<h4 class="text-title-lg font-bold leading-tight">Vidhana Soudha goes paperless with new digital system.</h4>
+</div>
+<div class="space-y-sm">
+<div class="aspect-video neo-brutal-card rounded-lg overflow-hidden relative">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsHRo9nos1lcTsOAY1Vv7DMYygUv7heYa7Z7DWxStygDT4W-g3p90a9prt1xvsaUiATHv5Th7CrIzdL80o8_l7UtMqL7dA_rFO6i2_GrGmBxWRPap_U_mhMEsBPeXkfZlqjDQ8Yh631y00XUiho-c7TafunIkgGLA6OzQi2wAF3688C3ZzZASCKjBO2Dyz3dMi76OfAU68LhZfzxvawgGewhCAinBu1r0-lVdnHaTlnan-MDswhPHtjqciHZVk4yXXbFqoKJB19M20"/>
+</div>
+<p class="text-label-sm text-tertiary font-bold">TECHNOLOGY</p>
+<h4 class="text-title-lg font-bold leading-tight">High-Speed Rail corridor study moves to phase 2.</h4>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button -->
+<button class="fixed bottom-24 right-6 w-16 h-16 bg-primary text-on-primary rounded-full border-3 border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] flex items-center justify-center active:translate-y-1 active:shadow-none transition-all z-40">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</button>
+<script>
+        // WebGL Background Shader Setup
+        const canvas = document.getElementById('bg-shader');
+        const gl = canvas.getContext('webgl');
+
+        if (gl) {
+            const vertexSrc = `
+                attribute vec2 position;
+                varying vec2 v_texCoord;
+                void main() {
+                    v_texCoord = position * 0.5 + 0.5;
+                    gl_Position = vec4(position, 0.0, 1.0);
+                }
+            `;
+            const fragmentSrc = `
+                precision highp float;
+                varying vec2 v_texCoord;
+                uniform float u_time;
+                void main() {
+                    vec2 uv = v_texCoord;
+                    // Heritage Purple & Tech Green
+                    vec3 royalPurple = vec3(0.3, 0.1, 0.4);
+                    vec3 techGreen = vec3(0.2, 0.8, 0.4);
+                    
+                    float grid = sin(uv.x * 20.0 + u_time * 0.5) * sin(uv.y * 20.0 + u_time * 0.5);
+                    vec3 baseColor = mix(royalPurple, royalPurple * 0.7, uv.y);
+                    
+                    // Tech geometric accents
+                    float pattern = smoothstep(0.9, 0.95, abs(grid)) * 0.05;
+                    
+                    vec3 finalColor = mix(baseColor, techGreen, pattern);
+                    gl_FragColor = vec4(finalColor, 1.0);
+                }
+            `;
+
+            function createShader(gl, type, source) {
+                const shader = gl.createShader(type);
+                gl.shaderSource(shader, source);
+                gl.compileShader(shader);
+                return shader;
+            }
+
+            const program = gl.createProgram();
+            gl.attachShader(program, createShader(gl, gl.VERTEX_SHADER, vertexSrc));
+            gl.attachShader(program, createShader(gl, gl.FRAGMENT_SHADER, fragmentSrc));
+            gl.linkProgram(program);
+            gl.useProgram(program);
+
+            const buffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
+
+            const position = gl.getAttribLocation(program, 'position');
+            gl.enableVertexAttribArray(position);
+            gl.vertexAttribPointer(position, 2, gl.FLOAT, false, 0, 0);
+
+            const timeLoc = gl.getUniformLocation(program, 'u_time');
+
+            function render(time) {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+                gl.viewport(0, 0, canvas.width, canvas.height);
+                gl.uniform1f(timeLoc, time * 0.001);
+                gl.drawArrays(gl.TRIANGLES, 0, 6);
+                requestAnimationFrame(render);
+            }
+            requestAnimationFrame(render);
+        }
+    </script>
+</body></html>

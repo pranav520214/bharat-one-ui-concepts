@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Uttarakhand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#005320",
+                        "on-primary-container": "#fefcff",
+                        "tertiary-container": "#956e00",
+                        "surface-variant": "#e1e2eb",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "primary-fixed": "#d8e2ff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-surface": "#191b22",
+                        "on-secondary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#adc6ff",
+                        "surface-container-low": "#f2f3fd",
+                        "on-primary-fixed": "#001a41",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-fixed": "#002108",
+                        "surface-container-highest": "#e1e2eb",
+                        "tertiary-fixed": "#ffdea0",
+                        "surface-tint": "#005ac1",
+                        "on-tertiary-container": "#fffbff",
+                        "on-background": "#191b22",
+                        "surface-container": "#ecedf7",
+                        "on-tertiary-fixed": "#261a00",
+                        "on-primary-fixed-variant": "#004494",
+                        "on-surface-variant": "#424753",
+                        "secondary-fixed-dim": "#6ddd81",
+                        "primary-fixed-dim": "#adc6ff",
+                        "secondary": "#006e2c",
+                        "error-container": "#ffdad6",
+                        "primary": "#0058bd",
+                        "tertiary": "#765700",
+                        "surface-container-high": "#e7e7f1",
+                        "surface-dim": "#d8d9e3",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2771df",
+                        "on-secondary-container": "#00722f",
+                        "surface": "#f9f9ff",
+                        "inverse-surface": "#2e3038",
+                        "error": "#ba1a1a",
+                        "on-primary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#86f898",
+                        "secondary-fixed": "#89fa9b",
+                        "inverse-on-surface": "#eff0fa",
+                        "outline": "#727785",
+                        "outline-variant": "#c2c6d5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "20px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "40px",
+                        "lg": "24px",
+                        "3xl": "64px",
+                        "gutter": "16px",
+                        "base": "8px",
+                        "md": "16px",
+                        "xl": "32px",
+                        "2xl": "48px",
+                        "margin-mobile": "16px",
+                        "sm": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .neo-shadow { shadow-[0px_4px_0px_0px] shadow-on-surface/10; }
+        .neo-border { border-width: 3px; border-color: #191b22; }
+        .mountain-mask {
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        }
+        .vibrancy-overlay {
+            background: linear-gradient(180deg, rgba(249, 249, 255, 0) 0%, rgba(249, 249, 255, 0.95) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased pb-32">
+<!-- Top Navigation Anchor -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b-3 border-on-surface shadow-[0px_4px_0px_0px] shadow-on-surface/10">
+<div class="flex items-center gap-3">
+<span class="text-title-lg font-headline-md font-black text-primary">Bharat One</span>
+<span class="hidden md:inline-block w-[3px] h-6 bg-outline-variant mx-2"></span>
+<span class="hidden md:inline-block font-label-lg text-on-surface-variant">Uttarakhand</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-primary p-2 hover:bg-surface-container-high rounded-full transition-colors">notifications</button>
+<div class="w-10 h-10 rounded-full border-2 border-primary overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a young Indian man named Arjun, wearing a clean white shirt. The background is a minimalist, modern office with soft lighting and cool-toned accents. The aesthetic is sharp, clean, and trustworthy, matching a high-end civic application." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAJmeqQY1Tlp3lJA_FDV9yqmAYGAYJSuLfiTiLJ41-GwYHV8AEpsCO31ee-dnLh3Tt1824sZ5UtOLWP-aGXM7MOgDilNXwCYyOdxDRADn7pDSioF5Ey9KHI4ATlWlJDWFmd_EFAvtpEj6mFGVgrxB7AYGS_SN_owb6u4MUKXEoicoNziiK3gXREOnb6noXHli_40h0vJ8viJ7hmEm3cQAZ4V2HW1sInQIXs_V--ubE4rEPaFD6Ek9GahrSjhxpRru-WKhJFSZaQ04s"/>
+</div>
+</div>
+</header>
+<main class="mt-16 relative">
+<!-- Hero Section with Animation -->
+<section class="relative w-full h-[450px] overflow-hidden">
+
+<div class="absolute inset-0 vibrancy-overlay"></div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop pt-12 max-w-7xl mx-auto flex flex-col h-full justify-between pb-12">
+<div class="max-w-2xl">
+<span class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container text-on-secondary-container rounded-full neo-border mb-6">
+<span class="material-symbols-outlined text-sm">filter_hdr</span>
+<span class="text-label-sm font-label-sm">DEVBHOOMI PORTAL</span>
+</span>
+<h1 class="text-display-lg font-display-lg mb-2">Namaste, Arjun!</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant">Welcome back to the roof of the world. Your Himalayan services are ready for you.</p>
+</div>
+<!-- Floating Stats Bento Header -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-white p-4 neo-border rounded-2xl shadow-[0px_4px_0px_0px] shadow-on-surface/5">
+<span class="text-label-sm text-on-surface-variant block mb-1">Temperature</span>
+<div class="flex items-end gap-1">
+<span class="text-headline-md font-headline-md">14°C</span>
+<span class="text-label-lg text-primary mb-1">Dehradun</span>
+</div>
+</div>
+<div class="bg-white p-4 neo-border rounded-2xl shadow-[0px_4px_0px_0px] shadow-on-surface/5">
+<span class="text-label-sm text-on-surface-variant block mb-1">Air Quality</span>
+<div class="flex items-end gap-1">
+<span class="text-headline-md font-headline-md text-secondary">Good</span>
+<span class="text-label-lg text-on-surface-variant mb-1">AQI 42</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Area -->
+<div class="px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto -mt-8 relative z-20 space-y-2xl">
+<!-- Highlighted Featured Services -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Devbhoomi Yatra Assistant -->
+<div class="bg-primary text-on-primary p-lg rounded-2xl neo-border shadow-[0px_4px_0px_0px] shadow-on-surface/10 relative overflow-hidden flex flex-col justify-between min-h-[280px]">
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 bg-on-primary/10 rounded-xl flex items-center justify-center border-2 border-on-primary/20">
+<span class="material-symbols-outlined text-3xl">temple_hindu</span>
+</div>
+<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-label-sm font-label-sm border-2 border-on-primary/30">LIVE TRACKING</span>
+</div>
+<h2 class="text-headline-md font-headline-md mb-2">Devbhoomi Yatra Assistant</h2>
+<p class="text-body-md opacity-90 max-w-sm">Real-time weather alerts and crowd density tracking for Kedarnath, Badrinath, Gangotri, and Yamunotri.</p>
+</div>
+<div class="relative z-10 pt-6">
+<button class="bg-white text-primary px-xl py-md rounded-2xl font-label-lg neo-border flex items-center gap-2 hover:scale-95 transition-transform">
+                            Plan Yatra
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Decorative Temple Bell Vector (Abstracted) -->
+<span class="material-symbols-outlined absolute -bottom-8 -right-8 text-[200px] opacity-10 pointer-events-none">notifications_active</span>
+</div>
+<!-- Green Bonus Tracker -->
+<div class="bg-secondary-container text-on-secondary-container p-lg rounded-2xl neo-border shadow-[0px_4px_0px_0px] shadow-on-surface/10 relative overflow-hidden flex flex-col justify-between min-h-[280px]">
+<div class="relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center border-2 border-secondary/20">
+<span class="material-symbols-outlined text-3xl text-secondary">eco</span>
+</div>
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-full text-label-sm font-label-sm">BONUS ACTIVE</span>
+</div>
+<h2 class="text-headline-md font-headline-md mb-2 text-on-secondary-fixed-variant">Green Bonus Tracker</h2>
+<p class="text-body-md text-on-secondary-fixed-variant/80 max-w-sm">Access direct financial benefits for forest conservationists and sustainable agro-entrepreneurs.</p>
+</div>
+<div class="relative z-10 pt-6">
+<button class="bg-secondary text-on-secondary px-xl py-md rounded-2xl font-label-lg neo-border flex items-center gap-2 hover:scale-95 transition-transform">
+                            Check Eligibility
+                            <span class="material-symbols-outlined">account_balance_wallet</span>
+</button>
+</div>
+<!-- Decorative Mountain Vector -->
+<div class="absolute bottom-0 right-0 w-48 h-32 opacity-20 pointer-events-none flex items-end">
+<div class="w-24 h-24 bg-secondary mountain-mask"></div>
+<div class="w-32 h-32 bg-secondary mountain-mask -ml-12"></div>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section>
+<div class="flex justify-between items-end mb-md">
+<div>
+<h3 class="text-headline-md font-headline-md">Quick Actions</h3>
+<p class="text-body-md text-on-surface-variant">Access essential state services instantly.</p>
+</div>
+<button class="text-primary font-label-lg flex items-center gap-1 hover:underline">
+                        View All <span class="material-symbols-outlined">expand_more</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+<!-- Action Cards -->
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">description</span>
+<span class="text-label-lg">Land Records</span>
+</a>
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">receipt_long</span>
+<span class="text-label-lg">Utility Bills</span>
+</a>
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">school</span>
+<span class="text-label-lg">Scholarships</span>
+</a>
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">health_and_safety</span>
+<span class="text-label-lg">Health Card</span>
+</a>
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">commute</span>
+<span class="text-label-lg">E-Passes</span>
+</a>
+<a class="bg-white p-6 rounded-2xl neo-border flex flex-col items-center gap-3 text-center transition-all hover:-translate-y-1 hover:bg-surface-container-high group" href="#">
+<span class="material-symbols-outlined text-3xl text-primary group-hover:scale-110 transition-transform">support_agent</span>
+<span class="text-label-lg">Helpline</span>
+</a>
+</div>
+</section>
+<!-- State Updates & Infrastructure -->
+<section>
+<div class="mb-md">
+<h3 class="text-headline-md font-headline-md">State Updates</h3>
+<p class="text-body-md text-on-surface-variant">Latest news and development progress from the hills.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Update 1 -->
+<div class="bg-white rounded-2xl neo-border overflow-hidden flex flex-col md:flex-row shadow-[0px_4px_0px_0px] shadow-on-surface/5">
+<div class="w-full md:w-48 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A cinematic wide shot of a modern railway bridge under construction in the rugged Himalayan mountains of Uttarakhand. The image captures the immense scale of the Rishikesh-Karnaprayag rail link project against a backdrop of mist-covered peaks and deep river valleys. The lighting is crisp morning sun, emphasizing progress and stability in a high-end civic style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnitPOzPB7FnknVwQnVb4T-BZOy3SK31ke2EzxFXkgdw4xLHNHhyynU72xAM2Vmo9_JNTeTne9dvi8ERoVoZuBvh2i0MbV1Isntm6FuNN77IMJMxj8hyIueRJJEmJARvorXMTA7K2OCcBPnt5VcFApO9A_QRwQrttLuN9F1LfpZtK7K2_fmDbkLDXM9u405le0MMUdg9_9fqLl605HsKs5lE3pH0WNzxNvFDQHqQLzCNeckgOeBgM12BzT5tz5ECYX7XTU3tCKFv3V"/>
+</div>
+<div class="p-lg flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-primary mb-2">INFRASTRUCTURE</span>
+<h4 class="text-title-lg font-headline-md mb-2">Rishikesh-Karnaprayag Rail Link Update</h4>
+<p class="text-body-md text-on-surface-variant mb-4">Tunnelling works complete for Section 3, marking a 75% progress milestone.</p>
+<a class="text-primary font-label-lg flex items-center gap-1" href="#">Read Report <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+<!-- Update 2 -->
+<div class="bg-white rounded-2xl neo-border overflow-hidden flex flex-col md:flex-row shadow-[0px_4px_0px_0px] shadow-on-surface/5">
+<div class="w-full md:w-48 h-48 md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A majestic Bengal tiger walking through the tall golden grass of Jim Corbett National Park. The sun filters through the Sal forest canopy, creating dramatic light rays. The image is high-definition, professional wildlife photography that conveys a sense of environmental preservation and majestic power, fitting the Uttarakhand state identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5eNXoG54iFvJfUmGCEqHttw9o6KCMjU1Dk3kfUoqAYckF0xGDAWRoMo2MU8TGHbwvzvFdlGU9MPW6vmz1aak46BD7ukAw5E8jy1RKdABGZ7R46ee7YjCVoWDK0lS4Ky9ODLPeyZnDe2iN6lCTm53OiuuK4Zagl4XCCjEpbuqzH4NkrDWXOjtjOnrBS1aFtocU-nrk5rFZwp5jyskSpsFIWSS1N54DSlyiumV23qh-2n6stcmbpO3JJCZR5xSLUmdWW1ArVKdGn495"/>
+</div>
+<div class="p-lg flex flex-col justify-center">
+<span class="text-label-sm font-label-sm text-secondary mb-2">CONSERVATION</span>
+<h4 class="text-title-lg font-headline-md mb-2">Corbett Tiger Census Results</h4>
+<p class="text-body-md text-on-surface-variant mb-4">State forest department records a 15% increase in wild tiger population this year.</p>
+<a class="text-primary font-label-lg flex items-center gap-1" href="#">View Data <span class="material-symbols-outlined text-sm">bar_chart</span></a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Bottom Navigation Shell (Mobile Responsive Pivot) -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-safe h-20 bg-surface border-t-3 border-on-surface shadow-[0px_-4px_0px_0px] shadow-on-surface/5 md:hidden">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 translate-y-[-2px] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Desktop Navigation Side Anchor (Simulated within TopAppBar as per rules) -->
+<div class="hidden md:flex fixed top-0 left-1/2 -translate-x-1/2 h-16 items-center gap-8 z-[60]">
+<a class="text-primary font-bold transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-3 py-1 rounded-lg transition-colors" href="#">Services</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-3 py-1 rounded-lg transition-colors" href="#">Yatra</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-3 py-1 rounded-lg transition-colors" href="#">Analytics</a>
+</div>
+<!-- Floating Action Button Contextual Check -->
+<button class="fixed bottom-24 right-margin-mobile md:bottom-8 md:right-margin-desktop w-16 h-16 bg-primary text-on-primary rounded-2xl neo-border shadow-[0px_4px_0px_0px] shadow-on-surface/20 flex items-center justify-center hover:scale-105 active:scale-95 transition-all group z-40">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+<span class="absolute right-full mr-4 bg-on-surface text-surface px-3 py-1 rounded-lg text-label-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Help Desk</span>
+</button>
+<script>
+        // Simple Micro-interaction for neo-brutalism "press" effect
+        document.querySelectorAll('.neo-border').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                el.style.transform = 'translateY(2px)';
+                el.classList.replace('shadow-[0px_4px_0px_0px]', 'shadow-[0px_2px_0px_0px]');
+            });
+            el.addEventListener('mouseup', () => {
+                el.style.transform = 'translateY(0px)';
+                el.classList.replace('shadow-[0px_2px_0px_0px]', 'shadow-[0px_4px_0px_0px]');
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'translateY(0px)';
+                el.classList.replace('shadow-[0px_2px_0px_0px]', 'shadow-[0px_4px_0px_0px]');
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Kerala</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-brutal-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-brutal-shadow-hover:hover {
+            box-shadow: 2px 2px 0px 0px rgba(25, 27, 34, 1);
+            transform: translate(2px, 2px);
+        }
+        .neo-brutal-border {
+            border: 3px solid #191b22;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#ecedf7",
+                    "inverse-primary": "#adc6ff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#004494",
+                    "on-surface": "#191b22",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-background": "#191b22",
+                    "outline": "#727785",
+                    "on-tertiary-container": "#fffbff",
+                    "primary": "#0058bd",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "surface-container-low": "#f2f3fd",
+                    "primary-container": "#2771df",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#fefcff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d8d9e3",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "surface-tint": "#005ac1",
+                    "secondary-container": "#86f898",
+                    "inverse-surface": "#2e3038",
+                    "tertiary-fixed": "#ffdea0",
+                    "primary-fixed": "#d8e2ff",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "surface-variant": "#e1e2eb",
+                    "surface-bright": "#f9f9ff",
+                    "outline-variant": "#c2c6d5",
+                    "on-secondary-fixed": "#002108",
+                    "tertiary-container": "#956e00",
+                    "surface": "#f9f9ff",
+                    "secondary": "#006e2c",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-surface-variant": "#424753",
+                    "surface-container-highest": "#e1e2eb",
+                    "surface-container-high": "#e7e7f1",
+                    "inverse-on-surface": "#eff0fa",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#00722f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "gutter": "16px",
+                    "2xl": "48px",
+                    "3xl": "64px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "xl": "32px",
+                    "margin-mobile": "16px",
+                    "sm": "8px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-sm md:px-md py-xs z-50 bg-background dark:bg-inverse-surface border-b-3 border-on-surface">
+<div class="flex items-center gap-base">
+<span class="text-title-md font-headline-lg font-black text-on-surface">Bharat One</span>
+<div class="hidden md:flex items-center gap-xs px-base py-xs bg-secondary-container neo-brutal-border rounded-lg ml-md">
+<span class="material-symbols-outlined text-on-secondary-container">location_on</span>
+<span class="text-label-md font-label-lg text-on-secondary-container">Kochi, Kerala</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-primary dark:text-inverse-primary font-bold transition-all duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-base py-xs rounded-lg transition-colors" href="#">Schemes</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-base py-xs rounded-lg transition-colors" href="#">Services</a>
+</nav>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined p-base cursor-pointer text-on-surface">location_on</span>
+<span class="material-symbols-outlined p-base cursor-pointer text-on-surface">emergency_home</span>
+<span class="material-symbols-outlined p-base cursor-pointer text-on-surface">account_circle</span>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl mb-32">
+<!-- Hero Section with Shader -->
+<section class="relative w-full h-[450px] neo-brutal-border rounded-xl overflow-hidden mb-2xl">
+<!-- STITCH_SHADER_START:ANIMATION_15 class="absolute inset-0 w-full h-full" -->
+<div class="absolute inset-0 w-full h-full" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_15" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_15');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Lush Greenery and Backwaters
+    vec3 color1 = vec3(0.13, 0.55, 0.13); // Forest Green
+    vec3 color2 = vec3(0.0, 0.45, 0.65);  // Water Blue
+    
+    float wave = sin(uv.x * 6.0 + u_time * 0.8) * 0.1;
+    vec3 baseColor = mix(color1, color2, uv.y + wave);
+
+    // Mural art / Leaf patterns
+    float leaves = abs(sin(uv.x * 20.0) * cos(uv.y * 20.0 + u_time * 0.2));
+    float pattern = smoothstep(0.8, 0.9, leaves) * 0.05;
+    
+    vec3 finalColor = mix(baseColor, baseColor * 1.1, pattern);
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_15 -->
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-lg md:p-xl text-surface">
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg mb-xs">Namaskaram, Arjun!</h1>
+<p class="text-body-lg opacity-90 max-w-lg">Everything you need from your government, simplified. Your gateway to digital Kerala.</p>
+<div class="mt-lg flex flex-wrap gap-md">
+<button class="bg-primary text-on-primary font-label-lg px-xl py-md neo-brutal-border neo-brutal-shadow-sm hover:translate-y-0.5 transition-all flex items-center gap-base rounded-xl">
+<span class="material-symbols-outlined">explore</span>
+                        Explore Services
+                    </button>
+<button class="bg-surface text-on-surface font-label-lg px-xl py-md neo-brutal-border neo-brutal-shadow-sm hover:translate-y-0.5 transition-all flex items-center gap-base rounded-xl">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">bolt</span>
+                        Quick Actions
+                    </button>
+</div>
+</div>
+</section>
+<!-- Featured Section: Kochi Water Metro -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-lg mb-2xl">
+<div class="lg:col-span-8 bg-surface-container-lowest neo-brutal-border rounded-xl p-lg md:p-xl relative overflow-hidden flex flex-col md:flex-row gap-lg">
+<div class="z-10 flex-1">
+<span class="bg-secondary-container text-on-secondary-container text-label-sm font-label-lg px-base py-xs rounded-full neo-brutal-border mb-md inline-block">New Launch</span>
+<h2 class="text-headline-md font-headline-md mb-sm">Kochi Water Metro Guide</h2>
+<p class="text-body-md text-on-surface-variant mb-lg">Seamlessly navigate the world's largest water-based urban transport system. Check routes, timings, and book your tickets instantly.</p>
+<button class="bg-on-surface text-surface px-lg py-sm rounded-xl font-label-lg neo-brutal-shadow-sm hover:translate-x-0.5 transition-transform">Get Started</button>
+</div>
+<div class="flex-1 min-h-[200px] relative rounded-lg neo-brutal-border overflow-hidden">
+<div class="bg-cover bg-center w-full h-full" data-alt="A vibrant digital illustration of the Kochi Water Metro glidind through serene Kerala backwaters. The scene is framed by lush, detailed green palm leaves in the foreground. The lighting is warm golden hour, reflecting off the water, in a clean, modern vector art style consistent with a premium government interface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDJHso9qqGyR99nKE3ftOfW9JL7PvACttny5bzD6rWO11QfCHbU1AlJ7cX6eFJ34XL_AOoTi_qu8EWB4DX9c3VXgDm0AYT3zKuQfYDqWpObvVQKafOc6crb3VvOk54evAwe3AxCHEH3tVEFGzL5X90JP_OvUZLTJk-R8XH1dUkrxiVLxgT-74xGSOznIf8nZj9xj6sdz6wuFnYOY9Q26yUmq3D5RFv8WRQi9GiPgdzaJ1wQs3AT278BJVrAMVr74SR8UpXEbPXfhk7t')"></div>
+</div>
+</div>
+<!-- Weather / Alerts Widget -->
+<div class="lg:col-span-4 flex flex-col gap-lg">
+<div class="bg-tertiary-fixed neo-brutal-border rounded-xl p-lg flex-1">
+<div class="flex justify-between items-start mb-md">
+<span class="text-label-lg font-label-lg text-on-tertiary-fixed">Weather Alert</span>
+<span class="material-symbols-outlined text-on-tertiary-fixed">cloud_queue</span>
+</div>
+<div class="text-center">
+<div class="text-[48px] font-black text-on-tertiary-fixed">31°C</div>
+<div class="text-title-lg font-headline-md text-on-tertiary-fixed">Partly Cloudy</div>
+<div class="mt-sm text-label-md text-on-tertiary-fixed/80">Kochi, Kerala • 10:30 AM</div>
+</div>
+</div>
+<div class="bg-on-surface-variant text-surface-container-lowest neo-brutal-border rounded-xl p-lg flex items-center justify-between">
+<div>
+<div class="text-label-lg font-label-lg mb-xs">Kochi Metro</div>
+<div class="text-label-sm opacity-80">Line-1: Healthy • 5 min wait</div>
+</div>
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</section>
+<!-- Quick Actions Bento Grid -->
+<section class="mb-2xl">
+<div class="flex items-center justify-between mb-lg">
+<h3 class="text-headline-md font-headline-md">Quick Actions</h3>
+<button class="text-primary font-label-lg flex items-center gap-xs">View All <span class="material-symbols-outlined">arrow_forward</span></button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<!-- Action 1 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-error-container text-on-error-container neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">report_problem</span>
+</div>
+<span class="text-label-lg font-label-lg">Report Civic Issue</span>
+</div>
+<!-- Action 2 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-primary-container text-on-primary-container neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">description</span>
+</div>
+<span class="text-label-lg font-label-lg">Find Govt Schemes</span>
+</div>
+<!-- Action 3 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">shield</span>
+</div>
+<span class="text-label-lg font-label-lg">Document Vault</span>
+</div>
+<!-- Action 4 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-tertiary-fixed text-on-tertiary-fixed neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">directions_bus</span>
+</div>
+<span class="text-label-lg font-label-lg">Transport &amp; Metro</span>
+</div>
+<!-- Action 5 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-surface-variant text-on-surface-variant neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">medical_services</span>
+</div>
+<span class="text-label-lg font-label-lg">Health Services</span>
+</div>
+<!-- Action 6 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-secondary-fixed text-on-secondary-fixed neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">work</span>
+</div>
+<span class="text-label-lg font-label-lg">Skill &amp; Jobs</span>
+</div>
+<!-- Action 7 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-outline-variant text-on-surface neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">receipt_long</span>
+</div>
+<span class="text-label-lg font-label-lg">Municipal Bills</span>
+</div>
+<!-- Action 8 -->
+<div class="bg-surface-container-lowest neo-brutal-border p-md rounded-xl neo-brutal-shadow-hover transition-all cursor-pointer group text-center flex flex-col items-center">
+<div class="w-12 h-12 bg-error text-on-error neo-brutal-border flex items-center justify-center rounded-lg mb-sm group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">notifications_active</span>
+</div>
+<span class="text-label-lg font-label-lg">Nearby Alerts</span>
+</div>
+</div>
+</section>
+<!-- Secondary Featured: Kerala Startup Mission -->
+<section class="mb-2xl">
+<div class="bg-surface-container neo-brutal-border rounded-2xl overflow-hidden flex flex-col md:flex-row">
+<div class="flex-1 p-lg md:p-xl flex flex-col justify-center">
+<h2 class="text-headline-md font-headline-md text-on-surface mb-sm">Kerala Startup Mission</h2>
+<p class="text-body-md text-on-surface-variant mb-lg">Empowering the next generation of innovators. Apply for grants, access co-working spaces, and join the vibrant Kerala ecosystem.</p>
+<div>
+<button class="bg-secondary text-on-secondary px-lg py-sm rounded-xl font-label-lg neo-brutal-border neo-brutal-shadow-sm hover:translate-y-0.5 transition-all">Visit KSUM Portal</button>
+</div>
+</div>
+<div class="flex-1 h-[300px] md:h-auto min-h-[300px] relative border-t-3 md:border-t-0 md:border-l-3 border-on-surface">
+<div class="bg-cover bg-center w-full h-full" data-alt="A magnificent digital art piece inspired by traditional Kerala mural painting styles. It depicts a modern scene of technology and innovation with circuit patterns woven into classical floral and vine motifs. Rich earth tones of deep ochre, terracotta, and teal dominate the palette. High-contrast outlines and a flat yet intricate aesthetic, designed for a professional tech interface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjZRDPQ_RNrLmvE5fF9bChyxdPxveWB7RZaxTQiGO1hJLc5LZ3Jk4ZwlgSsDwztl0HoQp3oCZjaL2LtgeqMrvlChb0jfjjm7MPUCSqOGcyokXHVWzvz6TkwaYxU34o802aFd2pvJ4UIXE6OD0Vi9LaLwF6OV_faAhyFH8VFhnD4z3o88ygFQjVHyZIYS-hPyAuo4-FfNsg4i4jupc5gPpjHuE64ccnWmcP4iUqo7zHcUfOEHbSIBuqghJJ4A52fcooEVHyk7ya_BnK')"></div>
+</div>
+</div>
+</section>
+<!-- Energy Saving Alert / Footer Info -->
+<footer class="bg-secondary-container neo-brutal-border rounded-xl p-lg flex flex-col md:flex-row items-center gap-lg">
+<div class="w-16 h-16 bg-on-secondary-container text-secondary-container flex items-center justify-center rounded-full neo-brutal-border shrink-0">
+<span class="material-symbols-outlined text-[32px]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="text-center md:text-left flex-1">
+<h4 class="text-title-lg font-headline-md text-on-secondary-container mb-xs">Kerala's Green Energy Pulse</h4>
+<p class="text-label-md text-on-secondary-container/80">Kochi currently sources 68% of its energy from renewable solar and hydro sources. You're helping maintain God's Own Country by using digital services.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-label-sm font-label-lg text-on-secondary-container uppercase mb-xs tracking-wider">Current Grid Status</div>
+<div class="px-md py-xs bg-on-secondary-container text-secondary-container rounded-full neo-brutal-border font-black text-title-lg">OPTIMAL</div>
+</div>
+</footer>
+</main>
+<!-- Bottom Navigation Bar for Mobile -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] md:hidden rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for cards
+        document.querySelectorAll('.neo-brutal-shadow-hover').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.transform = 'translate(4px, 4px)';
+                card.style.boxShadow = 'none';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.transform = 'translate(2px, 2px)';
+                card.style.boxShadow = '2px 2px 0px 0px rgba(25, 27, 34, 1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'none';
+                card.style.boxShadow = '4px 4px 0px 0px rgba(25, 27, 34, 1)';
+            });
+        });
+    </script>
+</body></html>

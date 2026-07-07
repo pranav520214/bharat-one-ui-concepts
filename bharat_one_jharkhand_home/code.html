@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Jharkhand</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+            color: #191b22;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Custom Sohrai Pattern Backgrounds */
+        .sohrai-pattern {
+            background-color: #ffffff;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l15 30H15L30 0zm0 60L15 30h30L30 60zM0 30l30-15v30L0 30zm60 0L30 45V15l30 15z' fill='%23005320' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        .neo-brutal-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+        }
+
+        .neo-brutal-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(25, 27, 34, 1);
+        }
+
+        .active-nav-shadow {
+            box-shadow: inset 2px 2px 0px 0px rgba(25, 27, 34, 0.1);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e1e2eb",
+                        "surface-container-low": "#f2f3fd",
+                        "on-primary-fixed": "#001a41",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-fixed": "#002108",
+                        "surface-container": "#ecedf7",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-tint": "#005ac1",
+                        "tertiary-fixed": "#ffdea0",
+                        "on-background": "#191b22",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-fixed-variant": "#005320",
+                        "on-primary-container": "#fefcff",
+                        "tertiary-container": "#956e00",
+                        "surface-variant": "#e1e2eb",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#adc6ff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-surface": "#191b22",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#86f898",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c2c6d5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#89fa9b",
+                        "inverse-on-surface": "#eff0fa",
+                        "outline": "#727785",
+                        "secondary": "#006e2c",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#424753",
+                        "on-primary-fixed-variant": "#004494",
+                        "secondary-fixed-dim": "#6ddd81",
+                        "primary-fixed-dim": "#adc6ff",
+                        "inverse-surface": "#2e3038",
+                        "error": "#ba1a1a",
+                        "surface": "#f9f9ff",
+                        "tertiary": "#765700",
+                        "surface-container-high": "#e7e7f1",
+                        "primary": "#0058bd",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2771df",
+                        "on-secondary-container": "#00722f",
+                        "surface-dim": "#d8d9e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "20px": "20px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "lg": "24px",
+                        "3xl": "64px",
+                        "xl": "32px",
+                        "2xl": "48px",
+                        "md": "16px",
+                        "margin-mobile": "16px",
+                        "sm": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                        "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-surface pb-32">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface dark:bg-inverse-surface border-b-[3px] border-on-surface dark:border-outline-variant shadow-[0_4px_0_0_rgba(25,27,34,1)]">
+<div class="flex items-center gap-2">
+<span class="text-title-lg font-title-lg font-black text-primary dark:text-primary-fixed-dim">Bharat One</span>
+<span class="hidden md:block px-2 py-0.5 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-lg border-2 border-on-surface">JHARKHAND</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-colors active:translate-y-[2px]">
+<span class="material-symbols-outlined text-on-surface">location_on</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-surface-container-high transition-colors active:translate-y-[2px]">
+<span class="material-symbols-outlined text-on-surface">partly_cloudy_day</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl bg-error text-on-error border-2 border-on-surface neo-brutal-shadow-sm active:translate-y-[2px]">
+<span class="material-symbols-outlined">emergency_home</span>
+</button>
+</div>
+</header>
+<main class="mt-16 max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full overflow-hidden min-h-[400px] flex flex-col justify-center px-margin-mobile py-xl md:py-2xl">
+<!-- Animated Shader Placeholder -->
+
+<div class="z-10">
+<p class="font-label-lg text-label-lg text-secondary mb-2 uppercase tracking-widest">Johar Jharkhand</p>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-display-lg md:text-display-lg text-on-surface mb-gutter max-w-2xl">
+                    Johar, <span class="text-secondary italic">Arjun!</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-xl">
+                    Welcome to your personalized citizen portal. Discover tribal heritage, track forest health, and access state services.
+                </p>
+<!-- AI Search Bar -->
+<div class="relative w-full max-w-2xl group">
+<div class="absolute inset-0 bg-primary translate-x-2 translate-y-2 rounded-20px -z-10 transition-transform group-focus-within:translate-x-3 group-focus-within:translate-y-3"></div>
+<div class="bg-surface border-[3px] border-on-surface rounded-20px flex items-center p-2 transition-all">
+<span class="material-symbols-outlined ml-4 text-on-surface-variant" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<input class="w-full bg-transparent border-none focus:ring-0 font-body-md text-body-md px-4 py-3 placeholder:text-outline" placeholder="Ask Bharat AI about Jharkhand services..." type="text"/>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-xl font-label-lg text-label-lg border-2 border-on-surface neo-brutal-shadow-sm hover:translate-y-[-2px] active:translate-y-[2px] transition-all">
+                            Search
+                        </button>
+</div>
+</div>
+</div>
+<!-- Background Decorative Tribal Art (Abstracted) -->
+<div class="absolute right-[-5%] top-[10%] opacity-10 pointer-events-none scale-150">
+<svg height="400" viewbox="0 0 100 100" width="400">
+<path d="M50 5 L95 50 L50 95 L5 50 Z" fill="none" stroke="#005320" stroke-width="2"></path>
+<circle cx="50" cy="50" fill="#005320" r="10"></circle>
+<path d="M20 20 L80 80 M80 20 L20 80" stroke="#005320" stroke-width="1"></path>
+</svg>
+</div>
+</section>
+<!-- Localized Features (Bento Grid) -->
+<section class="px-margin-mobile py-xl">
+<div class="flex justify-between items-end mb-gutter">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">State Highlights</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Tailored updates for the Land of Forests</p>
+</div>
+<button class="hidden md:flex items-center gap-2 font-label-lg text-label-lg text-primary underline">
+                    View all initiatives
+                </button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Tribal Craft Registry -->
+<div class="md:col-span-7 bg-white border-[3px] border-on-surface rounded-20px neo-brutal-shadow p-lg flex flex-col md:flex-row gap-lg overflow-hidden relative">
+<div class="flex-1 z-10">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed border-2 border-on-surface rounded-full text-label-sm font-label-sm mb-4">PRESERVE HERITAGE</span>
+<h3 class="font-headline-md text-headline-md mb-2">Tribal Craft Registry</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Register your authentic handicrafts to the GI-tag network and access global markets.</p>
+<button class="w-fit bg-on-surface text-white px-6 py-3 rounded-xl border-2 border-on-surface font-label-lg hover:bg-on-surface-variant transition-colors active:scale-95">
+                            Access Registry
+                        </button>
+</div>
+<div class="flex-1 min-h-[200px] relative">
+<img class="w-full h-full object-cover rounded-xl border-[3px] border-on-surface" data-alt="Close-up high-quality photo of intricate Jharkhand tribal handicraft, featuring earthy terracotta colors, geometric patterns, and hand-woven textures. The lighting is soft studio lighting emphasizing the tactile quality of the art. Modern minimalist framing for a premium government portal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBufC7taOmZh-bTXyyL-50wFK_6OLT2BNT4TgK_4HDQdWd0hwk9e5MhNJnaz1VuldUI-6siZxTn9Ln5TVAkpFbT42R6oPnEJ8rDDc-ludLkHRFDCEhSGXhhsOMs0UNg95j1XTUOVlDxLTBFi3tgevHr_R77zUk-rmC-mIYeYOVoitjv91yRaCwAPYToH6G0XNNNEWF4UWxBwK_IpxePC74WEWt6Qb9qcMeq-oVS3xJlhMrKdIwcJIdxEHjFBuPHjiGyI1TqnmQYam9H"/>
+</div>
+</div>
+<!-- Forest Conservation Alerts -->
+<div class="md:col-span-5 bg-secondary-container border-[3px] border-on-surface rounded-20px neo-brutal-shadow p-lg flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 bg-white border-2 border-on-surface rounded-xl flex items-center justify-center mb-gutter">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">forest</span>
+</div>
+<h3 class="font-headline-md text-headline-md mb-2 text-on-secondary-container">Forest Conservation</h3>
+<p class="font-body-md text-body-md text-on-secondary-container/80 mb-6">Live monitoring and fire alerts for the Palamu region. Report illegal activities anonymously.</p>
+</div>
+<div class="p-4 bg-white/50 rounded-xl border-2 border-secondary font-label-lg flex items-center gap-3">
+<span class="flex h-3 w-3 bg-secondary rounded-full animate-pulse"></span>
+                        Current Alert Level: Low
+                    </div>
+</div>
+<!-- Waterfall Tourism Guide -->
+<div class="md:col-span-4 bg-surface-container-low border-[3px] border-on-surface rounded-20px neo-brutal-shadow p-lg overflow-hidden group">
+<img class="w-full h-40 object-cover rounded-xl border-2 border-on-surface mb-gutter group-hover:scale-105 transition-transform duration-500" data-alt="A majestic cinematic wide shot of Hundru Falls in Jharkhand, surrounded by lush green forests and rocky cliffs. The water is cascading powerfully under golden hour sunlight, creating a mist. The style is travel-photography premium, vibrant but natural colors, clear and sharp composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfcxCqgcFpbZB8JNPGB-OCgyKD6Y9zZYBKOxcnPlUOUt8jgR2M-1frHcKoPHlO0XjtdXFBRrrHrpMbAZmtH7Qv9Ugn60vdx5E2YlikWbMPoceqjL2M1i7zoQvjlxUJkLjS-uv4HteBF1Yb8g7_KlP6ZXTc5OpEskyvCaxNdNTm7yagw_XPS2JaQnpq34C0vOiA9epwfV2_QoJMQBZgotklxlVaNc7mHaxf6x3nJMLof6y8bQzNZkgz8063HgsIBNZP6HCC2sz52uEj"/>
+<h3 class="font-title-lg text-title-lg mb-2">Waterfall Guide</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Explore Hundru, Dassam, and Jonha with live weather updates.</p>
+</div>
+<!-- Ranchi Smart City Progress -->
+<div class="md:col-span-4 bg-white border-[3px] border-on-surface rounded-20px neo-brutal-shadow p-lg">
+<div class="flex justify-between items-start mb-gutter">
+<span class="material-symbols-outlined text-primary text-3xl">location_city</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant font-bold">RANCHI</span>
+</div>
+<h3 class="font-title-lg text-title-lg mb-2">Smart City Hub</h3>
+<div class="space-y-3">
+<div class="w-full bg-surface-container rounded-full h-2">
+<div class="bg-primary h-full rounded-full" style="width: 75%"></div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Infrastructure development: 75% complete</p>
+</div>
+<button class="mt-xl w-full py-2 border-2 border-on-surface rounded-xl font-label-lg hover:bg-surface-container transition-colors">View Map</button>
+</div>
+<!-- Mining Safety Portal -->
+<div class="md:col-span-4 bg-inverse-surface border-[3px] border-on-surface rounded-20px neo-brutal-shadow p-lg text-surface">
+<span class="material-symbols-outlined text-error mb-gutter">minor_crash</span>
+<h3 class="font-title-lg text-title-lg mb-2 text-white">Mining Safety</h3>
+<p class="font-body-md text-body-md text-surface-variant mb-gutter">Compliance tracking for all Jamshedpur mining units.</p>
+<a class="text-secondary-fixed font-label-lg underline decoration-2 underline-offset-4" href="#">Check Compliance</a>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section class="px-margin-mobile py-xl bg-surface-container-lowest border-y-[3px] border-on-surface sohrai-pattern">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-xl text-center">Citizen Services</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-gutter">
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<p class="font-label-lg text-label-lg">Taxes</p>
+</div>
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">description</span>
+</div>
+<p class="font-label-lg text-label-lg">Certificates</p>
+</div>
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-tertiary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-tertiary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">health_and_safety</span>
+</div>
+<p class="font-label-lg text-label-lg">Health</p>
+</div>
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">school</span>
+</div>
+<p class="font-label-lg text-label-lg">Education</p>
+</div>
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-secondary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">agriculture</span>
+</div>
+<p class="font-label-lg text-label-lg">Agriculture</p>
+</div>
+<div class="bg-white p-gutter border-[3px] border-on-surface rounded-20px text-center hover:translate-y-[-4px] active:translate-y-[2px] transition-all cursor-pointer group">
+<div class="w-12 h-12 bg-tertiary-container rounded-xl flex items-center justify-center mx-auto mb-3 border-2 border-on-surface group-hover:bg-tertiary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">work</span>
+</div>
+<p class="font-label-lg text-label-lg">Jobs</p>
+</div>
+</div>
+</section>
+<!-- Tribal Art Gallery Interstice -->
+<section class="px-margin-mobile py-2xl text-center overflow-hidden">
+<h3 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface-variant mb-gutter italic">"Where Nature meets Tradition"</h3>
+<div class="flex justify-center gap-8 overflow-x-auto pb-gutter scrollbar-hide">
+<div class="min-w-[280px] h-[350px] bg-white border-[3px] border-on-surface rounded-20px p-2 rotate-2">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Traditional Sohrai art painting on a wall, depicting birds, cattle, and geometric patterns in black, white, and ochre natural pigments. Authentic tribal aesthetic from Jharkhand, captured in high resolution with natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5mga-QvBOq_F-FYJjOZKef-5CiP_XfzW7OFYIxGybfYsQr2qcUgxHXBxK_P64ArgmMu5ugHuP155hoiwygWUSGDg6EkV6AJpxRZBKEoMXqKeIISWh6zJ7bgxiKIauSEkvrZ46xVs__ca7_Of5nq7RLqEVySnZi1QN3njT1wwNdUDTTLYJC6z0e5t2PZ3q4epS2gBxkIYNwEhW4WHElUSipg9gMnad-nFv_uT369BpJCAA_yZSePozB-xMVFUasFG_TCRnDjBp57tW"/>
+</div>
+<div class="min-w-[280px] h-[350px] bg-white border-[3px] border-on-surface rounded-20px p-2 -rotate-2">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="Dense Saal forest in Jharkhand during a misty morning, rays of sunlight filtering through the tall trees. Deep emerald greens and moody atmospheric lighting. Cinematic landscape photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXtLrGLymL2pZS7F6YxiuOSlrHq0txJzFvvvHCynzsw1c_kvF2_eNCs0dZR_-JY6aoamTENhNuBCOc2BxjJ6GZM4rKQUznhgsMyPC84rkgWhVgd8DPqSo2SP-Zwt1h6lZr8_NzJiRu2EmQGPtXG0qIU5-s_NnJh4gRTgkzW7qwFqzN_DvdbQl4UdspaPbhcz7jX3A-rzH27KLBW-ezdDctILq-xPksoke2QMf4on2LA73Atwa5yZQXhlK6Oca0n9OE3A7mTZoh-Kfa"/>
+</div>
+<div class="min-w-[280px] h-[350px] bg-white border-[3px] border-on-surface rounded-20px p-2 rotate-1">
+<img class="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition-all duration-700" data-alt="A portrait of a tribal woman from Jharkhand in traditional attire, wearing silver jewelry and a bright red and white saree. She is smiling warmly in a village setting. High-quality editorial portrait style with a soft bokeh background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMtEsTnrTBmEPHllQBQl8eDlmjKpFZFCiWXlo4yLblKlJjp5vUgaGwGymXJdgELAIqtMl6QfN-VrJzGZYXg9CMRhpQ4maMdGqeK5xO2IHNTNNM8TGsKALq70up7sInsP5GURtPU6XwQ8nJ9yC8Sn8yXdphoGAiQvPR3HKSc5oYpDRFX3DP2n2W-kBVaF8DVcvAJw4Dgrwox9DnPfldc-N05wBXUK1oVrlcLFmCllDlUBbZ6YyQgA-1uOn_bqDsT2JjXB5PGmb6ILfM"/>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface dark:bg-inverse-surface border-t-[3px] border-on-surface dark:border-outline-variant shadow-[0_-4px_0_0_rgba(25,27,34,0.05)]">
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-xl px-3 py-1.5 active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container dark:hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm text-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container dark:hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-sm text-label-sm">Ask AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container dark:hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="font-label-sm text-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container dark:hover:bg-surface-variant rounded-xl transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button (Contextual: Book a Walk/Help) -->
+<button class="fixed bottom-24 right-margin-mobile w-14 h-14 bg-secondary text-on-secondary rounded-full border-2 border-on-surface flex items-center justify-center neo-brutal-shadow hover:translate-y-[-4px] active:translate-y-[2px] transition-all z-40">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</button>
+<script>
+        // Micro-interactions for hard-shadows on hover
+        document.querySelectorAll('.neo-brutal-shadow').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.boxShadow = '0px 0px 0px 0px rgba(25, 27, 34, 1)';
+                card.style.transform = 'translate(4px, 4px)';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.boxShadow = '4px 4px 0px 0px rgba(25, 27, 34, 1)';
+                card.style.transform = 'translate(0px, 0px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '4px 4px 0px 0px rgba(25, 27, 34, 1)';
+                card.style.transform = 'translate(0px, 0px)';
+            });
+        });
+    </script>
+</body></html>

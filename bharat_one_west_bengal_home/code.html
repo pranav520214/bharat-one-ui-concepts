@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | West Bengal</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .alpona-pattern {
+            background-color: #f9f9ff;
+            background-image:  radial-gradient(#ba1a1a 1.5px, transparent 1.5px), radial-gradient(#ba1a1a 1.5px, #f9f9ff 1.5px);
+            background-size: 60px 60px;
+            background-position: 0 0,30px 30px;
+            opacity: 0.05;
+        }
+        .neo-brutalist-card {
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-brutalist-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .glass-header {
+            backdrop-filter: blur(8px);
+            background: rgba(249, 249, 255, 0.8);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e1e2eb",
+                        "surface-container-low": "#f2f3fd",
+                        "on-primary-fixed": "#001a41",
+                        "surface-bright": "#f9f9ff",
+                        "on-secondary-fixed": "#002108",
+                        "surface-container": "#ecedf7",
+                        "on-tertiary-fixed": "#261a00",
+                        "surface-tint": "#005ac1",
+                        "tertiary-fixed": "#ffdea0",
+                        "on-background": "#191b22",
+                        "on-tertiary-container": "#fffbff",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "primary-fixed": "#d8e2ff",
+                        "on-secondary-fixed-variant": "#005320",
+                        "on-primary-container": "#fefcff",
+                        "tertiary-container": "#956e00",
+                        "surface-variant": "#e1e2eb",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#adc6ff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "on-surface": "#191b22",
+                        "on-secondary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "secondary-container": "#86f898",
+                        "on-primary": "#ffffff",
+                        "outline-variant": "#c2c6d5",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed": "#89fa9b",
+                        "inverse-on-surface": "#eff0fa",
+                        "outline": "#727785",
+                        "secondary": "#006e2c",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#424753",
+                        "on-primary-fixed-variant": "#004494",
+                        "secondary-fixed-dim": "#6ddd81",
+                        "primary-fixed-dim": "#adc6ff",
+                        "inverse-surface": "#2e3038",
+                        "error": "#ba1a1a",
+                        "surface": "#f9f9ff",
+                        "tertiary": "#765700",
+                        "surface-container-high": "#e7e7f1",
+                        "primary": "#0058bd",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#2771df",
+                        "on-secondary-container": "#00722f",
+                        "surface-dim": "#d8d9e3"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px",
+                        "brand": "20px"
+                    },
+                    "spacing": {
+                        "gutter": "16px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "lg": "24px",
+                        "3xl": "64px",
+                        "xl": "32px",
+                        "2xl": "48px",
+                        "md": "16px",
+                        "margin-mobile": "16px",
+                        "sm": "8px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "title-lg": ["Inter"],
+                        "label-sm": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface border-b-[3px] border-on-surface shadow-[0_4px_0_0_rgba(25,27,34,1)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">temple_hindu</span>
+<span class="text-title-lg font-title-lg font-black text-primary uppercase tracking-tighter">Bharat One</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface hover:bg-surface-container-high p-2 rounded-full transition-colors cursor-pointer">location_on</span>
+<span class="material-symbols-outlined text-on-surface hover:bg-surface-container-high p-2 rounded-full transition-colors cursor-pointer">partly_cloudy_day</span>
+<div class="w-10 h-10 rounded-full border-2 border-on-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a young Indian man named Arjun, smiling confidently, wearing a clean white linen shirt. The background is a soft-focus office environment with warm sunlight filtering through. High-quality photography, sharp focus, vibrant skin tones, and professional lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzOPhGQkshfoTO5QVq-ySB84B06Ioc7VcaI5vHJYdt_jsagpWjWA---ATjZn8uVC11pgVJff7hwAydY5J7MxZW_8BOdg0ZvHLxAeH3EhF0yv4d-4YaqHWsbS6s91ElCoCVOZqHVnSAyIJ8s5WRpoIf5haOOWKzmDS3mRXtuv-SR0_gKmSUQfErjLnNwKBtfgNHxxb2MUaA-0ncVRH3TbWLmQlU6c1_Czoqv48uuFHxFBpSVZulrwXn48MruxT4zJ5LmCwfHQQgWi0i"/>
+</div>
+</div>
+</nav>
+<main class="pt-16 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto">
+<!-- Hero Section with Animated Shader Background -->
+<section class="relative mt-8 rounded-brand overflow-hidden border-[3px] border-on-surface h-80 md:h-[450px] flex items-center justify-center neo-brutalist-card">
+
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+<div class="relative z-10 text-center px-6">
+<h1 class="text-headline-lg font-headline-lg mb-2 text-on-surface">Namaskar, Arjun!</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant mb-8">Welcome back to the Heart of Bengal.</p>
+<!-- AI Search Bar -->
+<div class="relative max-w-2xl mx-auto">
+<input class="w-full h-16 pl-14 pr-6 bg-surface border-[3px] border-on-surface rounded-brand text-lg focus:ring-4 focus:ring-primary/20 outline-none shadow-[4px_4px_0px_0px_rgba(0,88,189,1)] transition-all" placeholder="Ask Bharat AI anything about West Bengal..." type="text"/>
+<span class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-primary text-3xl">smart_toy</span>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section class="mt-xl">
+<div class="flex items-center justify-between mb-gutter">
+<h2 class="text-headline-md font-headline-md">Digital Services</h2>
+<button class="text-primary font-bold flex items-center gap-1 hover:underline">
+                    View All <span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-container-lowest p-6 border-[3px] border-on-surface rounded-brand neo-brutalist-card flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 bg-error-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-error text-3xl" style="font-variation-settings: 'FILL' 1;">report</span>
+</div>
+<span class="font-bold text-label-lg">Report Issue</span>
+</div>
+<div class="bg-surface-container-lowest p-6 border-[3px] border-on-surface rounded-brand neo-brutalist-card flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 bg-primary-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">account_balance</span>
+</div>
+<span class="font-bold text-label-lg">Govt Schemes</span>
+</div>
+<div class="bg-surface-container-lowest p-6 border-[3px] border-on-surface rounded-brand neo-brutalist-card flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+</div>
+<span class="font-bold text-label-lg">Tax Payments</span>
+</div>
+<div class="bg-surface-container-lowest p-6 border-[3px] border-on-surface rounded-brand neo-brutalist-card flex flex-col items-center text-center group cursor-pointer">
+<div class="w-16 h-16 bg-tertiary-fixed rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-3xl" style="font-variation-settings: 'FILL' 1;">history_edu</span>
+</div>
+<span class="font-bold text-label-lg">E-Certificates</span>
+</div>
+</div>
+</section>
+<!-- Localized Features Bento Grid -->
+<section class="mt-2xl">
+<h2 class="text-headline-md font-headline-md mb-gutter">Bengal Highlights</h2>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[500px]">
+<!-- Howrah Bridge Traffic -->
+<div class="md:col-span-8 bg-surface border-[3px] border-on-surface rounded-brand overflow-hidden neo-brutalist-card relative flex flex-col">
+<div class="absolute top-4 left-4 z-10 bg-error text-white px-3 py-1 rounded-full text-label-sm font-bold flex items-center gap-2">
+<span class="w-2 h-2 bg-white rounded-full animate-pulse"></span> LIVE TRAFFIC
+                    </div>
+<div class="h-2/3 bg-surface-variant overflow-hidden relative">
+<img class="w-full h-full object-cover" data-alt="A wide cinematic shot of the iconic Howrah Bridge in Kolkata at dusk. The bridge's steel structure is illuminated against a deep orange and purple sky. Below, the Hooghly river reflects the city lights. The scene shows steady vehicle traffic on the bridge, capturing the energetic pulse of West Bengal. Modern civic photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB78wzVOad-CdKFOob2PZ6Sd1C2wHcHKVd959CHou0xZ1MK7DHTw7sj1Lanf-aWno1GWJN2YCyehTmEcPed-uXLUMaYZ-DfhuWTyD9TgKVr2r6AhnoVE52Q3WJgYx-bU8PqzSzsSCzea3LrP_mnlM1ZgL14LYTXru2WiuJkIZc9MXtBXVK_7WhMWZcVoNR6eQg2wKz853cHbhPxQhM-NVZf4VjL_JKtfAgGjll0EhGaMrDuT8IVO2Ll_Q5iBBXyJpjLs6S40bAWHc_Z"/>
+<div class="absolute inset-0 bg-black/20"></div>
+</div>
+<div class="p-6 flex flex-col justify-between flex-grow">
+<div>
+<h3 class="text-title-lg font-bold mb-1">Howrah Bridge Status</h3>
+<p class="text-on-surface-variant">Congestion observed at the Burrabazar entry point. Estimated delay: 12 mins.</p>
+</div>
+<div class="mt-4 flex gap-4">
+<span class="bg-surface-container-high px-4 py-2 border-[2px] border-on-surface rounded-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">check_circle</span> Northbound: Clear
+                            </span>
+<span class="bg-surface-container-high px-4 py-2 border-[2px] border-on-surface rounded-xl font-bold flex items-center gap-2">
+<span class="material-symbols-outlined text-error">warning</span> Southbound: Slow
+                            </span>
+</div>
+</div>
+</div>
+<!-- Alpona Workshop -->
+<div class="md:col-span-4 bg-[#ba1a1a] text-white border-[3px] border-on-surface rounded-brand neo-brutalist-card p-6 flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-48 h-48 opacity-20 transform rotate-12">
+
+</div>
+<div class="z-10">
+<h3 class="text-headline-md font-bold leading-tight">Alpona Art Workshops</h3>
+<p class="mt-2 text-white/80">Preserve the sacred floor art heritage. New batches starting from Oct 1st across 12 Kolkata venues.</p>
+</div>
+<button class="mt-8 bg-white text-[#ba1a1a] font-bold h-14 border-[3px] border-on-surface rounded-brand hover:scale-105 transition-transform">
+                        Enroll Now
+                    </button>
+</div>
+</div>
+</section>
+<!-- Secondary Bento Row -->
+<section class="mt-xl grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Durga Puja Guide -->
+<div class="bg-surface-container-low border-[3px] border-on-surface rounded-brand p-6 neo-brutalist-card flex gap-6 items-center">
+<div class="w-32 h-32 flex-shrink-0 bg-surface border-[3px] border-on-surface rounded-brand overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up artistic detail of a Durga idol's eye being painted by a traditional craftsman in Kumartuli, Kolkata. The eye is bold and powerful, following traditional artistic motifs. The image has a rich, earthy color palette with warm terracotta and bright white highlights. Cultural documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOkL81IuMDy1TVmVglm1MdcDHAPRLnu-f6YrWJoXN-GARs6lRWZzDcAQRTwZnHPQo3GJv1a_A3M_kFYehpSeFRdt_6Z8rEw3IYJGIADuGhQCc7YlMyvPAIu9C_T1evvjBuOmbjR0vDYb4X1RFLIdmRIfZEIaAOyNrwOWfwA1-Vliwc06bZ9Mq5gl5ArPPMYMC5fyZdw_zyD4J6JS_s17Pysv1iYGthGgL2z1ZTS11gz23_9LABh1hOWpWJyDh1i_KjYCHtQdz6Wmzs"/>
+</div>
+<div>
+<h3 class="text-title-lg font-bold">Durga Puja Pandal Guide</h3>
+<p class="text-on-surface-variant text-label-lg mt-1">Interactive map, VIP pass bookings, and crowd management updates for 2024.</p>
+<button class="mt-4 text-primary font-bold flex items-center gap-1 group">
+                        Explore Pandal Map <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Kolkata Metro Expansion -->
+<div class="bg-surface-container-low border-[3px] border-on-surface rounded-brand p-6 neo-brutalist-card flex gap-6 items-center">
+<div class="w-32 h-32 flex-shrink-0 bg-surface border-[3px] border-on-surface rounded-brand overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A modern, sleek Kolkata Metro train speeding along an elevated track with the cityscape of Salt Lake Sector V in the background. The train is blue and silver. The lighting is crisp morning light. Professional architectural and infrastructure photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi6CbqEdDefViL4F-eknBqi4De45SLWdT4Fmtovx47wt8JTe_XHnY0pM1I0XZhQ4pltOUIi9qQNMtRYS_M30yA5pXBDj_7oBqN8ENXtSJ0nly-aRdLiUN7JUWaIg7L3dMggfuw4sLfF2i09Tk9veb4YboCGtIyvrmENWyR7sJbs--t1sCe1T88jZ_eOZntweYgP2IRKe2ySZjd-4imIZlNGQtttYyOPjGClDsoA49XWLugZuipgt9IUJgtA_tho-VO60IvV35uTBym"/>
+</div>
+<div>
+<h3 class="text-title-lg font-bold">Kolkata Metro Expansion</h3>
+<p class="text-on-surface-variant text-label-lg mt-1">Updates on the Green Line underwater tunnel and Salt Lake connectivity phases.</p>
+<button class="mt-4 text-primary font-bold flex items-center gap-1 group">
+                        Track Progress <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- State Updates & Initiatives -->
+<section class="mt-2xl mb-12">
+<div class="flex items-center justify-between mb-gutter">
+<h2 class="text-headline-md font-headline-md">Biswa Bangla Updates</h2>
+</div>
+<div class="bg-surface border-[3px] border-on-surface rounded-brand overflow-hidden neo-brutalist-card">
+<div class="p-8 border-b-[3px] border-on-surface flex flex-col md:flex-row gap-6 items-start md:items-center hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="text-label-sm font-black bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded-full">ECONOMY</span>
+<div class="flex-grow">
+<h4 class="text-title-lg font-bold">New IT Hub in Newtown Siliguri</h4>
+<p class="text-on-surface-variant">State government announces 50-acre dedicated tech park to boost local employment.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<div class="p-8 border-b-[3px] border-on-surface flex flex-col md:flex-row gap-6 items-start md:items-center hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="text-label-sm font-black bg-secondary-fixed text-on-secondary-fixed px-3 py-1 rounded-full">TOURISM</span>
+<div class="flex-grow">
+<h4 class="text-title-lg font-bold">Sundarbans Eco-Tourism Initiative</h4>
+<p class="text-on-surface-variant">Launch of 5 new sustainable boat circuits with certified naturalist guides.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+<div class="p-8 flex flex-col md:flex-row gap-6 items-start md:items-center hover:bg-surface-container-low transition-colors cursor-pointer">
+<span class="text-label-sm font-black bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full">GOVERNANCE</span>
+<div class="flex-grow">
+<h4 class="text-title-lg font-bold">Duare Sarkar Phase 8 Dates</h4>
+<p class="text-on-surface-variant">Service camps reaching doorstep level starting from next Monday across 23 districts.</p>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">open_in_new</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Shell -->
+<footer class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface border-t-[3px] border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,0.05)]">
+<button class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-4 py-1.5 active:scale-95 transition-transform">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">Ask Bharat AI</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1.5 hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</button>
+</footer>
+<!-- Interactive Scripts -->
+<script>
+        // Simple search interaction
+        const searchInput = document.querySelector('input[type="text"]');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.classList.add('scale-[1.02]');
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.classList.remove('scale-[1.02]');
+        });
+
+        // Floating Action Button logic if needed (suppressed per instructions)
+    </script>
+</body></html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Punjab</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&amp;family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#00722f",
+                    "on-surface": "#191b22",
+                    "surface-container-highest": "#e1e2eb",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#956e00",
+                    "surface-variant": "#e1e2eb",
+                    "on-background": "#191b22",
+                    "inverse-on-surface": "#eff0fa",
+                    "secondary": "#006e2c",
+                    "surface-dim": "#d8d9e3",
+                    "background": "#f9f9ff",
+                    "tertiary-fixed": "#ffdea0",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "primary-fixed": "#d8e2ff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary": "#0058bd",
+                    "primary-container": "#2771df",
+                    "outline-variant": "#c2c6d5",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "on-primary-fixed-variant": "#004494",
+                    "on-error-container": "#93000a",
+                    "inverse-primary": "#adc6ff",
+                    "on-tertiary": "#ffffff",
+                    "on-primary-container": "#fefcff",
+                    "surface-bright": "#f9f9ff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-secondary-fixed": "#002108",
+                    "tertiary": "#765700",
+                    "on-surface-variant": "#424753",
+                    "outline": "#727785",
+                    "secondary-fixed": "#89fa9b",
+                    "on-primary": "#ffffff",
+                    "surface-container-high": "#e7e7f1",
+                    "surface": "#f9f9ff",
+                    "on-tertiary-container": "#fffbff",
+                    "surface-container-low": "#f2f3fd",
+                    "inverse-surface": "#2e3038",
+                    "on-primary-fixed": "#001a41",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "secondary-container": "#86f898",
+                    "surface-container": "#ecedf7",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#005ac1",
+                    "error": "#ba1a1a",
+                    "on-tertiary-fixed": "#261a00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "grid-columns-desktop": "12",
+                    "xl": "64px",
+                    "gutter": "20px",
+                    "base": "4px",
+                    "sm": "16px",
+                    "grid-columns-mobile": "4",
+                    "border-width": "3px",
+                    "md": "24px",
+                    "xs": "8px",
+                    "lg": "40px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "label-sm": ["Geist"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "label-md": ["Geist"],
+                    "display-lg": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "600"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .neo-brutal-shadow {
+            box-shadow: 4px 4px 0px 0px #191b22;
+        }
+        .neo-brutal-shadow-lg {
+            box-shadow: 8px 8px 0px 0px #191b22;
+        }
+        .active-interaction:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .state-pattern {
+            mask-image: radial-gradient(circle at 2px 2px, black 1px, transparent 0);
+            mask-size: 16px 16px;
+            opacity: 0.1;
+        }
+        body {
+            background-color: #f9f9ff;
+            color: #191b22;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+</head>
+<body class="font-body-md overflow-x-hidden">
+<!-- TopAppBar Navigation -->
+<header class="sticky top-0 w-full flex justify-between items-center px-sm md:px-md py-xs z-50 bg-background dark:bg-inverse-surface border-b-3 border-on-surface dark:border-outline-variant">
+<div class="flex items-center gap-3">
+<span class="text-title-md font-headline-lg font-black text-on-surface dark:text-inverse-on-surface">Bharat One</span>
+<div class="hidden md:flex items-center gap-4 ml-6">
+<a class="text-primary dark:text-inverse-primary font-bold text-label-md transition-transform duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md hover:bg-surface-container-high p-2 rounded-lg transition-all" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant text-label-md hover:bg-surface-container-high p-2 rounded-lg transition-all" href="#">Explore</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</button>
+<button class="p-2 hover:bg-surface-container-high rounded-full transition-colors relative">
+<span class="material-symbols-outlined text-primary">emergency_home</span>
+<span class="absolute top-1 right-1 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<button class="p-1 border-3 border-on-surface rounded-full overflow-hidden w-10 h-10 active-interaction">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a friendly young Indian man named Arjun, wearing a casual shirt, set against a minimalist studio background with soft warm lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9zDu94dXCrOSLltITUTTGW937qHNHLvv_GYIQPy1kHSfnPM1y9VPEmgezsUzz5D_aJurh6fCioxdABk6KAvgeLIB7DNV7BOiQHvZQegBAG7Q2xCeDwiWCR-YfEvjaetFYW3cbh7l9Q310A-uBgKA0_aob98yr_VD2I0QkY25K-KaQYT3pKSzxXlrzaI2CA9Cv0YEth3veC4bqjE5vNICpTJHbmcuO4g43Y9MfnzWlZ3TOYh3983wTq5Ssn9ElUIg4GUngWqYZ0AjR"/>
+</button>
+</div>
+</header>
+<main class="pb-24 max-w-[1280px] mx-auto">
+<!-- Hero Section with Animation -->
+<section class="relative w-full overflow-hidden px-sm md:px-md pt-6 pb-12">
+<div class="absolute inset-0 z-0">
+<!-- STITCH_SHADER_START:ANIMATION_11 class="w-full h-full opacity-60" -->
+<div class="w-full h-full opacity-60" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_11" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_11');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Base warm mustard/gold gradient
+    vec3 color1 = vec3(0.98, 0.74, 0.02); // Golden Yellow
+    vec3 color2 = vec3(0.99, 0.90, 0.50); // Soft Cream/Wheat
+    vec3 baseColor = mix(color1, color2, uv.y + 0.2 * sin(uv.x * 3.0 + u_time * 0.5));
+
+    // Subtle Phulkari-inspired geometric pattern (diamond grid)
+    vec2 p = uv * 10.0;
+    vec2 ip = floor(p);
+    vec2 fp = fract(p);
+    float grid = abs(sin(fp.x * 3.1415) * sin(fp.y * 3.1415));
+    float pattern = smoothstep(0.4, 0.5, grid) * 0.1;
+
+    // Moving "Wheat Field" waves
+    float waves = sin(uv.x * 10.0 + u_time) * 0.02 + sin(uv.x * 5.0 - u_time * 0.8) * 0.01;
+    float wheat = smoothstep(0.48, 0.5, uv.y + waves + pattern * 0.1);
+    
+    vec3 finalColor = mix(baseColor, baseColor * 0.95, pattern);
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_11 -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-background/50 to-background"></div>
+</div>
+<div class="relative z-10 space-y-6">
+<!-- Greeting -->
+<div class="space-y-1">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg">Sat Sri Akal, Arjun! 🙏</h1>
+<p class="text-on-surface-variant text-body-md">Good morning from the land of five rivers.</p>
+</div>
+<!-- Hero Status Card -->
+<div class="bg-surface-container-lowest border-3 border-on-surface rounded-xl p-6 neo-brutal-shadow-lg flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-secondary-container">location_on</span>
+<span class="font-bold text-title-md">Ludhiana, Punjab</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary">wb_sunny</span>
+<span class="text-display-lg font-display-lg">32°C</span>
+</div>
+<div class="h-10 w-[2px] bg-outline-variant"></div>
+<div class="text-label-md text-on-surface-variant uppercase tracking-widest">Sunny<br/>AQI: 112</div>
+</div>
+</div>
+<div class="w-full md:w-auto flex flex-col gap-3">
+<div class="bg-secondary-container border-3 border-on-surface px-4 py-3 rounded-xl flex items-center gap-3">
+<div class="w-3 h-3 bg-on-secondary-container rounded-full animate-pulse"></div>
+<span class="font-bold text-on-secondary-container">System Stable</span>
+</div>
+<p class="text-label-sm text-on-surface-variant text-right px-1 italic">No active emergencies in your sector.</p>
+</div>
+</div>
+<!-- Central AI Search Bar -->
+<div class="max-w-3xl mx-auto w-full pt-4">
+<div class="bg-surface-container-lowest border-3 border-on-surface rounded-full p-1 pl-6 flex items-center gap-4 neo-brutal-shadow active-interaction group transition-all focus-within:ring-4 focus-within:ring-primary/20">
+<span class="material-symbols-outlined text-primary-container">search</span>
+<input class="bg-transparent border-none focus:ring-0 w-full text-body-md font-medium placeholder:text-on-surface-variant/60" placeholder="What can Bharat AI do for you today?" type="text"/>
+<div class="flex items-center gap-1 pr-1">
+<button class="p-3 hover:bg-surface-container-high rounded-full transition-colors text-red-500">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mic</span>
+</button>
+<button class="p-3 bg-primary text-white border-3 border-on-surface rounded-full neo-brutal-shadow active-interaction -translate-x-1 -translate-y-1">
+<span class="material-symbols-outlined">google_lens_2</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section class="px-sm md:px-md py-8">
+<div class="flex justify-between items-end mb-6">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Quick Actions</h2>
+<a class="text-primary font-bold text-label-md flex items-center gap-1 hover:underline" href="#">View All <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-sm">
+<!-- Action 1 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-red-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-red-600">report</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Report Civic Issue</span>
+</button>
+<!-- Action 2 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-blue-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-blue-600">search_check</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Find Govt Schemes</span>
+</button>
+<!-- Action 3 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-amber-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-amber-600">description</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Document Vault</span>
+</button>
+<!-- Action 4 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-green-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-green-600">directions_subway</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Transport &amp; Metro</span>
+</button>
+<!-- Action 5 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-purple-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-purple-600">medical_services</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Health Services</span>
+</button>
+<!-- Action 6 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-pink-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-pink-600">work</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Skill &amp; Jobs</span>
+</button>
+<!-- Action 7 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-cyan-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-cyan-600">receipt_long</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Municipal Bills</span>
+</button>
+<!-- Action 8 -->
+<button class="flex flex-col items-start gap-4 p-5 bg-white border-3 border-on-surface rounded-xl neo-brutal-shadow hover:scale-[1.02] active-interaction transition-transform text-left">
+<div class="bg-orange-100 border-3 border-on-surface p-2 rounded-lg">
+<span class="material-symbols-outlined text-orange-600">notifications_active</span>
+</div>
+<span class="font-bold text-label-md leading-tight">Nearby Alerts</span>
+</button>
+</div>
+</section>
+<!-- Featured for Punjab -->
+<section class="px-sm md:px-md py-8">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-6 flex items-center gap-2">
+                Featured for Punjab <span class="bg-tertiary-fixed text-on-tertiary-fixed text-xs px-2 py-0.5 rounded-full border-2 border-on-surface">New</span>
+</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-low border-3 border-on-surface rounded-xl overflow-hidden neo-brutal-shadow flex flex-col h-full group">
+<div class="h-48 w-full overflow-hidden border-b-3 border-on-surface relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A cinematic photo of a modern university building in Chandigarh, Punjab, during sunset with students walking with laptops, captured with vibrant colors and high-contrast neo-brutalist framing." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxK5l1u5jR3eIuwR1WVhpbYbErDWS9jOIwjAI7SElAakxXgKC8DfHyK0DblZVtWxPZQk49Ho1AZplWzxzb8eOZ6KvgA-yOnIuF3QkcebNgK7cFPEW8y2Zn5CPqANKuQpiJcRoexVkePR-8oJbgzdouqfznGeOxWMZ4oJ2w6H7B2-zTa4olTCs6CcW76TQkg1B7h0CbjRjhOrFnf8Dct5Jdr0jEFV3Lg5PZxvbQoKxbsXwcHDdBr9FIjbdEdVm4ZA7dTXUe_s5cl3ES"/>
+<div class="absolute top-4 left-4 bg-primary text-white font-bold text-label-sm px-3 py-1 rounded-full border-2 border-on-surface">Education</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2">
+<h3 class="font-headline-lg-mobile text-title-md leading-tight">Post-Matric Scholarship Scheme</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">Financial assistance for SC/OBC students of Punjab for higher education. Apply before Oct 30.</p>
+</div>
+<button class="w-full bg-secondary-container text-on-secondary-container font-black py-4 border-3 border-on-surface rounded-full neo-brutal-shadow active-interaction flex items-center justify-center gap-2">
+                            Apply Now <span class="material-symbols-outlined">launch</span>
+</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low border-3 border-on-surface rounded-xl overflow-hidden neo-brutal-shadow flex flex-col h-full group">
+<div class="h-48 w-full overflow-hidden border-b-3 border-on-surface relative">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A high-tech digital agricultural dashboard overlaid on a lush green wheat field in Punjab. The image is bright, with golden sunlight and crisp details of modern farming technology, emphasizing growth and innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgBJZ2414vNMjKhoGxfjBahIsRXKNF0L4BxAJPNns1GxKeYi13CkrV_qXs1JfKmJEFkJhdphOi3C4Hs_0MzYjNVmV65hRhUSeJurWtWfoeISi5wUC2p3Zt4AyY57B42GEhEUu27GJ7emVBdwFYZ_H0WNA9PpN4RdR7yz0oJRtRE27trIyq7ICqa73TVFbjLyDxOvZ4XbKRsS3z8Wqej12ojp4iJze9-2HIzpvacsaOqwleDBWS1C8YK6n3MKvf3nKGU5Ydg2NdJKYu"/>
+<div class="absolute top-4 left-4 bg-on-secondary-container text-white font-bold text-label-sm px-3 py-1 rounded-full border-2 border-on-surface">Agriculture</div>
+</div>
+<div class="p-6 flex flex-col flex-grow justify-between gap-4">
+<div class="space-y-2">
+<h3 class="font-headline-lg-mobile text-title-md leading-tight">Punjab Agriculture Portal</h3>
+<p class="text-on-surface-variant text-body-md line-clamp-2">Real-time mandi rates, subsidy tracking, and weather-smart irrigation advice for farmers.</p>
+</div>
+<button class="w-full bg-white text-on-surface font-black py-4 border-3 border-on-surface rounded-full neo-brutal-shadow active-interaction flex items-center justify-center gap-2">
+                            Explore Portal <span class="material-symbols-outlined">agriculture</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Information Banner (Optional Contextual Layer) -->
+<section class="px-sm md:px-md mb-8">
+<div class="bg-tertiary-container text-on-tertiary-container border-3 border-on-surface rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 state-pattern"></div>
+<div class="z-10 flex-shrink-0 w-16 h-16 bg-white/20 rounded-full flex items-center justify-center border-2 border-white/40">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">electric_bolt</span>
+</div>
+<div class="z-10 text-center md:text-left">
+<h4 class="font-bold text-title-md">Energy Saving Alert</h4>
+<p class="opacity-90">Punjab state is running on peak load. Opt-in for the 'Smart Meter' program to reduce your bills by up to 15% this month.</p>
+</div>
+<button class="z-10 whitespace-nowrap bg-on-tertiary-container text-tertiary-container px-6 py-3 rounded-full font-black border-2 border-on-surface active-interaction">Learn More</button>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface dark:border-outline shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl md:hidden">
+<a class="flex flex-col items-center justify-center bg-secondary-container dark:bg-on-secondary-container text-on-secondary-container dark:text-on-tertiary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Desktop Navigation Shell Extension (Implicitly handled by header but structured here for clarity) -->
+<script>
+        // Micro-interactions for the Quick Actions grid
+        document.querySelectorAll('button.active-interaction').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.style.transform = 'translate(2px, 2px)';
+                button.style.boxShadow = '0px 0px 0px 0px #191b22';
+            });
+            button.addEventListener('mouseup', () => {
+                button.style.transform = '';
+                button.style.boxShadow = '';
+            });
+            button.addEventListener('mouseleave', () => {
+                button.style.transform = '';
+                button.style.boxShadow = '';
+            });
+        });
+    </script>
+</body></html>

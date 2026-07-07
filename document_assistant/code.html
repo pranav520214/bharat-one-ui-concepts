@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Civic Vault &amp; Assistant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+        }
+        /* Custom scrollbar for a premium feel */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f2f3fd;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c2c6d5;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface-bright": "#f9f9ff",
+                      "inverse-primary": "#adc6ff",
+                      "surface-container-lowest": "#ffffff",
+                      "on-secondary-fixed-variant": "#005320",
+                      "outline": "#727785",
+                      "surface-tint": "#005ac1",
+                      "primary-container": "#2771df",
+                      "secondary-fixed-dim": "#6ddd81",
+                      "on-secondary": "#ffffff",
+                      "background": "#f9f9ff",
+                      "on-primary-container": "#fefcff",
+                      "surface-container-highest": "#e1e2eb",
+                      "on-primary-fixed-variant": "#004494",
+                      "inverse-on-surface": "#eff0fa",
+                      "surface-container-high": "#e7e7f1",
+                      "surface-variant": "#e1e2eb",
+                      "secondary-container": "#86f898",
+                      "primary-fixed": "#d8e2ff",
+                      "primary": "#0058bd",
+                      "error": "#ba1a1a",
+                      "tertiary-container": "#956e00",
+                      "tertiary": "#765700",
+                      "on-surface": "#191b22",
+                      "on-secondary-fixed": "#002108",
+                      "on-tertiary-container": "#fffbff",
+                      "on-primary-fixed": "#001a41",
+                      "outline-variant": "#c2c6d5",
+                      "surface-dim": "#d8d9e3",
+                      "on-tertiary": "#ffffff",
+                      "on-secondary-container": "#00722f",
+                      "surface": "#f9f9ff",
+                      "primary-fixed-dim": "#adc6ff",
+                      "inverse-surface": "#2e3038",
+                      "on-error": "#ffffff",
+                      "secondary": "#006e2c",
+                      "on-surface-variant": "#424753",
+                      "surface-container": "#ecedf7",
+                      "tertiary-fixed": "#ffdea0",
+                      "on-tertiary-fixed": "#261a00",
+                      "on-background": "#191b22",
+                      "on-tertiary-fixed-variant": "#5c4300",
+                      "error-container": "#ffdad6",
+                      "tertiary-fixed-dim": "#fbbc06",
+                      "on-primary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-container-low": "#f2f3fd",
+                      "secondary-fixed": "#89fa9b"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "16px",
+                      "xl": "32px",
+                      "margin-desktop": "40px",
+                      "base": "8px",
+                      "md": "16px",
+                      "margin-mobile": "16px",
+                      "lg": "24px",
+                      "3xl": "64px",
+                      "xs": "4px",
+                      "2xl": "48px",
+                      "sm": "8px"
+              },
+              "fontFamily": {
+                      "label-lg": ["Inter"],
+                      "body-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "title-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "headline-md": ["Inter"]
+              },
+              "fontSize": {
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface dark:bg-inverse-surface border-b-[3px] border-on-surface dark:border-outline-variant shadow-[0_4px_0_0_rgba(25,27,34,1)]">
+<div class="flex items-center gap-3">
+<span class="text-title-lg font-title-lg font-black text-primary dark:text-primary-fixed-dim">Bharat One</span>
+</div>
+<div class="hidden md:flex items-center gap-6">
+<a class="text-primary dark:text-primary-fixed-dim font-bold text-label-lg font-label-lg hover:bg-surface-container-high transition-colors px-3 py-1 rounded-lg" href="#">Vault</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-label-lg font-label-lg hover:bg-surface-container-high transition-colors px-3 py-1 rounded-lg" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-outline-variant text-label-lg font-label-lg hover:bg-surface-container-high transition-colors px-3 py-1 rounded-lg" href="#">AI Assistant</a>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:bg-surface-container-high p-2 rounded-full transition-all">location_on</span>
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer hover:bg-surface-container-high p-2 rounded-full transition-all">partly_cloudy_day</span>
+<div class="w-8 h-8 rounded-full border-2 border-on-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a middle-aged Indian man with a friendly smile, set against a clean, corporate blue background. The lighting is crisp and cinematic, emphasizing a sense of reliability and civic leadership. He wears a modern, high-quality ethnic waistcoat, blending traditional and professional styles seamlessly." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSGKBY0O1aUD1qDmVppRLlx6BnAm04SnTwL7rkuKdcQqaGUt3TQw3AcX-_u4MuwHO8Rzolktq7fmAyi1esSE1Yliu9IopkURqWHawdpliRpgFv35b8mfQauT92t3GwGGXLssIBJfoE9Tbke98it1LvpWfMPYgQCM9vkYjloOmY9PEoZvWIbjYZjPIt_-GY22TsJLQaGxy2E7HRs47u7p_7wdNEA51zNNXOextq5fppm5zBXTbVEffn8qaFYc7gVGnFNuR1eoEisrrR"/>
+</div>
+</div>
+</nav>
+<main class="pt-24 px-margin-mobile max-w-[1200px] mx-auto">
+<!-- Header & Toggle Section -->
+<header class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-lg">
+<div>
+<h1 class="text-headline-lg-mobile md:text-headline-lg font-headline-lg text-on-surface">Civic Vault &amp; Assistant</h1>
+<p class="text-body-md font-body-md text-on-surface-variant">Manage and secure your national identities.</p>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-high p-1.5 rounded-xl border-[3px] border-on-surface">
+<span class="text-label-lg font-label-lg px-2">Translate to Hindi</span>
+<button class="relative inline-flex h-6 w-11 items-center rounded-full bg-outline-variant transition-colors duration-200 focus:outline-none" id="hindiToggle" onclick="this.classList.toggle('bg-primary'); this.children[0].classList.toggle('translate-x-5')">
+<span class="inline-block h-4 w-4 transform rounded-full bg-white transition-transform duration-200 translate-x-1"></span>
+</button>
+</div>
+</header>
+<!-- Search Bar -->
+<div class="relative mb-xl group">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="w-full h-14 pl-12 pr-4 bg-white border-[3px] border-on-surface rounded-xl focus:ring-0 focus:border-primary text-body-md font-body-md shadow-[4px_4px_0_0_rgba(25,27,34,1)] group-hover:translate-y-[-2px] group-hover:shadow-[6px_6px_0_0_rgba(25,27,34,1)] transition-all duration-200" placeholder="Find your documents..." type="text"/>
+</div>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- AI Summary Card (Bento Large) -->
+<div class="md:col-span-8 bg-primary-container text-on-primary-container p-lg rounded-xl border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] relative overflow-hidden">
+<div class="absolute -right-12 -top-12 opacity-10">
+<span class="material-symbols-outlined !text-[160px]">smart_toy</span>
+</div>
+<div class="flex items-start gap-4 mb-4">
+<div class="bg-on-primary-container text-primary p-2 rounded-lg">
+<span class="material-symbols-outlined fill-icon">auto_awesome</span>
+</div>
+<h2 class="text-title-lg font-title-lg">Bharat AI Insight</h2>
+</div>
+<p class="text-body-lg font-body-lg mb-6 max-w-2xl font-semibold">
+                    You have 3 documents expiring soon: <span class="underline decoration-on-primary-container underline-offset-4 decoration-2">Driving License</span>, <span class="underline decoration-on-primary-container underline-offset-4 decoration-2">Passport</span>, and <span class="underline decoration-on-primary-container underline-offset-4 decoration-2">Insurance</span>.
+                </p>
+<div class="flex flex-wrap gap-3">
+<button class="bg-white text-primary border-[3px] border-on-surface px-6 py-2 rounded-lg font-label-lg text-label-lg shadow-[2px_2px_0_0_rgba(25,27,34,1)] active:translate-y-px transition-all">Start Renewal</button>
+<button class="bg-transparent text-on-primary-container border-[3px] border-on-primary-container px-6 py-2 rounded-lg font-label-lg text-label-lg hover:bg-white/10 transition-all">Dismiss</button>
+</div>
+</div>
+<!-- Checklist Section (Bento Right) -->
+<div class="md:col-span-4 bg-white p-lg rounded-xl border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)]">
+<h3 class="text-title-lg font-title-lg mb-lg">Steps to Renew DL</h3>
+<div class="relative space-y-6">
+<!-- Vertical Timeline Bar -->
+<div class="absolute left-[11px] top-2 bottom-2 w-[3px] bg-outline-variant">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-secondary"></div>
+</div>
+<div class="flex gap-4 relative">
+<div class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center z-10 shrink-0">
+<span class="material-symbols-outlined !text-sm">check</span>
+</div>
+<div>
+<p class="text-label-lg font-label-lg">Upload Form 1A</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Completed on Oct 12</p>
+</div>
+</div>
+<div class="flex gap-4 relative">
+<div class="w-6 h-6 rounded-full bg-secondary text-white flex items-center justify-center z-10 shrink-0">
+<span class="material-symbols-outlined !text-sm">check</span>
+</div>
+<div>
+<p class="text-label-lg font-label-lg">Address Verification</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Aadhaar linked successfully</p>
+</div>
+</div>
+<div class="flex gap-4 relative">
+<div class="w-6 h-6 rounded-full bg-surface border-[3px] border-on-surface flex items-center justify-center z-10 shrink-0">
+<div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+</div>
+<div>
+<p class="text-label-lg font-label-lg text-primary">Biometric Appointment</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Schedule for next Tuesday</p>
+</div>
+</div>
+<div class="flex gap-4 relative">
+<div class="w-6 h-6 rounded-full bg-surface-container-low border-[3px] border-outline-variant flex items-center justify-center z-10 shrink-0">
+</div>
+<div>
+<p class="text-label-lg font-label-lg text-outline">Payment of Fees</p>
+<p class="text-label-sm font-label-sm text-outline">Awaiting appointment clearance</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Document Grid Section -->
+<div class="md:col-span-12 mt-md">
+<h3 class="text-headline-md font-headline-md mb-lg">Your Secured Documents</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-lg">
+<!-- Aadhaar Card -->
+<div class="bg-white p-lg rounded-xl border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_0_rgba(25,27,34,1)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-lg">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg border-2 border-on-surface">
+<span class="material-symbols-outlined text-primary !text-3xl">fingerprint</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-lg border-2 border-on-secondary-container">
+<span class="material-symbols-outlined !text-xs fill-icon">verified</span> Verified
+                            </span>
+</div>
+<h4 class="text-title-lg font-title-lg mb-1">Aadhaar Card</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-xl">UID: XXXX XXXX 4521</p>
+<div class="flex justify-between items-center">
+<button class="text-primary font-bold text-label-lg flex items-center gap-1">View Details <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary">more_vert</span>
+</div>
+</div>
+<!-- PAN Card -->
+<div class="bg-white p-lg rounded-xl border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_0_rgba(25,27,34,1)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-lg">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg border-2 border-on-surface">
+<span class="material-symbols-outlined text-primary !text-3xl">payments</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-lg border-2 border-on-secondary-container">
+<span class="material-symbols-outlined !text-xs fill-icon">verified</span> Verified
+                            </span>
+</div>
+<h4 class="text-title-lg font-title-lg mb-1">PAN Card</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-xl">PAN: ABCDE 1234 F</p>
+<div class="flex justify-between items-center">
+<button class="text-primary font-bold text-label-lg flex items-center gap-1">View Details <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary">more_vert</span>
+</div>
+</div>
+<!-- Voter ID -->
+<div class="bg-white p-lg rounded-xl border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] hover:translate-y-[-4px] hover:shadow-[8px_8px_0_0_rgba(25,27,34,1)] transition-all cursor-pointer">
+<div class="flex justify-between items-start mb-lg">
+<div class="w-12 h-12 bg-surface-container flex items-center justify-center rounded-lg border-2 border-on-surface">
+<span class="material-symbols-outlined text-primary !text-3xl">how_to_vote</span>
+</div>
+<span class="flex items-center gap-1 px-2 py-1 bg-secondary-container text-on-secondary-container text-label-sm font-label-sm rounded-lg border-2 border-on-secondary-container">
+<span class="material-symbols-outlined !text-xs fill-icon">verified</span> Verified
+                            </span>
+</div>
+<h4 class="text-title-lg font-title-lg mb-1">Voter ID</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant mb-xl">EPIC: TN/04/122/4567</p>
+<div class="flex justify-between items-center">
+<button class="text-primary font-bold text-label-lg flex items-center gap-1">View Details <span class="material-symbols-outlined !text-sm">arrow_forward</span></button>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-primary">more_vert</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Upload New FAB -->
+<button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 bg-primary text-white flex items-center gap-3 px-6 py-4 rounded-full border-[3px] border-on-surface shadow-[4px_4px_0_0_rgba(25,27,34,1)] active:translate-y-[2px] active:shadow-none transition-all z-40">
+<span class="material-symbols-outlined">add_circle</span>
+<span class="text-label-lg font-label-lg">Upload New</span>
+</button>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface dark:bg-inverse-surface border-t-[3px] border-on-surface dark:border-outline-variant shadow-[0_-4px_0_0_rgba(25,27,34,0.05)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container transition-colors rounded-xl">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<!-- Active: Vault (Services equivalent) -->
+<div class="flex flex-col items-center justify-center bg-primary-container dark:bg-on-primary-fixed-variant text-on-primary-container dark:text-primary-fixed rounded-xl px-3 py-1.5 scale-95 transition-transform">
+<span class="material-symbols-outlined fill-icon">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container transition-colors rounded-xl">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">Ask Bharat AI</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container transition-colors rounded-xl">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant px-3 py-1.5 hover:bg-surface-container transition-colors rounded-xl">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</div>
+</nav>
+<script>
+        // Simple micro-interaction for the cards
+        document.querySelectorAll('.cursor-pointer').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.transform = 'translateY(2px)';
+                card.style.boxShadow = '2px 2px 0 0 rgba(25,27,34,1)';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.boxShadow = '8px 8px 0 0 rgba(25,27,34,1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    </script>
+</body></html>
