@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Sikkim</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-primary-fixed-variant": "#474746",
+                "error-container": "#ffdad6",
+                "primary-container": "#212121",
+                "on-surface-variant": "#444748",
+                "background": "#f8f9fa",
+                "error": "#ba1a1a",
+                "tertiary": "#0b0a09",
+                "surface-container-lowest": "#ffffff",
+                "surface-tint": "#5f5e5e",
+                "on-surface": "#191c1d",
+                "outline": "#747878",
+                "secondary-container": "#da3433",
+                "on-secondary-container": "#fffbff",
+                "surface-dim": "#d9dadb",
+                "on-tertiary-fixed-variant": "#484645",
+                "on-secondary-fixed": "#410003",
+                "secondary-fixed-dim": "#ffb3ac",
+                "tertiary-fixed": "#e6e2e0",
+                "surface-bright": "#f8f9fa",
+                "surface-variant": "#e1e3e4",
+                "primary-fixed-dim": "#c8c6c5",
+                "on-tertiary-container": "#8b8886",
+                "tertiary-container": "#222120",
+                "on-error-container": "#93000a",
+                "tertiary-fixed-dim": "#c9c6c4",
+                "inverse-surface": "#2e3132",
+                "on-tertiary": "#ffffff",
+                "on-error": "#ffffff",
+                "on-background": "#191c1d",
+                "on-primary-container": "#898888",
+                "surface": "#f8f9fa",
+                "on-primary-fixed": "#1b1c1c",
+                "secondary": "#0056B3", /* Prayer Blue Override for Sikkim Theme */
+                "primary": "#0a0a0a",
+                "surface-container-high": "#e7e8e9",
+                "on-primary": "#ffffff",
+                "outline-variant": "#c4c7c7",
+                "on-secondary": "#ffffff",
+                "primary-fixed": "#e5e2e1",
+                "surface-container": "#edeeef",
+                "inverse-on-surface": "#f0f1f2",
+                "surface-container-low": "#f3f4f5",
+                "on-tertiary-fixed": "#1c1b1a",
+                "on-secondary-fixed-variant": "#930010",
+                "orchid-purple": "#A45EE5",
+                "prayer-blue": "#0056B3",
+                "prayer-yellow": "#FFD700",
+                "prayer-red": "#E01E26",
+                "prayer-green": "#009E49",
+                "prayer-white": "#FFFFFF"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+            },
+            "spacing": {
+                "margin-mobile": "16px",
+                "xl": "64px",
+                "lg": "40px",
+                "gutter": "20px",
+                "xs": "8px",
+                "md": "24px",
+                "margin-desktop": "32px",
+                "base": "4px",
+                "sm": "16px"
+            },
+            "fontFamily": {
+                "headline-lg-mobile": ["Plus Jakarta Sans"],
+                "body-lg": ["Plus Jakarta Sans"],
+                "display-lg": ["Plus Jakarta Sans"],
+                "headline-lg": ["Plus Jakarta Sans"],
+                "title-md": ["Plus Jakarta Sans"],
+                "body-sm": ["Plus Jakarta Sans"],
+                "label-bold": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .neo-brutalist-border {
+        border: 3px solid #0a0a0a;
+      }
+      .neo-brutalist-shadow {
+        box-shadow: 4px 4px 0px 0px rgba(10,10,10,1);
+      }
+      .neo-brutalist-shadow-hover:hover {
+        box-shadow: 8px 8px 0px 0px rgba(10,10,10,1);
+        transform: translate(-2px, -2px);
+      }
+      .active-press:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0px 0px 0px 0px rgba(10,10,10,1);
+      }
+      @keyframes flutter {
+        0%, 100% { transform: rotate(-1deg) skewX(1deg); }
+        50% { transform: rotate(2deg) skewX(-1deg); }
+      }
+      .animate-flutter {
+        animation: flutter 3s ease-in-out infinite;
+      }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-lg min-h-screen pb-24">
+<!-- WebGL Background -->
+<div class="fixed inset-0 z-[-1] opacity-40">
+
+</div>
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile py-4 border-b-3 border-primary shadow-[4px_4px_0px_0px_rgba(10,10,10,1)]">
+<div class="flex items-center gap-3">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold tracking-tight">Bharat One | Assam</span>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden md:flex bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full border-3 border-primary font-label-bold neo-brutalist-shadow active-press">
+                Emergency
+            </button>
+<span class="material-symbols-outlined text-3xl cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-margin-mobile mt-8 space-y-8">
+<!-- Welcome Section -->
+<section class="relative p-8 rounded-[20px] neo-brutalist-border bg-white overflow-hidden neo-brutalist-shadow">
+<div class="relative z-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div>
+<h2 class="font-display-lg text-display-lg text-primary mb-2">Namaste!</h2>
+<p class="font-title-md text-title-md text-on-surface-variant max-w-xl">Welcome to the digital gateway of Sikkim. Breathe in the mountain air and explore our organic heritage.</p>
+</div>
+<div class="flex gap-2">
+<div class="w-8 h-12 bg-prayer-blue neo-brutalist-border animate-flutter"></div>
+<div class="w-8 h-12 bg-prayer-white neo-brutalist-border animate-flutter" style="animation-delay: 0.2s"></div>
+<div class="w-8 h-12 bg-prayer-red neo-brutalist-border animate-flutter" style="animation-delay: 0.4s"></div>
+<div class="w-8 h-12 bg-prayer-green neo-brutalist-border animate-flutter" style="animation-delay: 0.6s"></div>
+<div class="w-8 h-12 bg-prayer-yellow neo-brutalist-border animate-flutter" style="animation-delay: 0.8s"></div>
+</div>
+</div>
+<!-- Decorative Orchid illustration placeholder -->
+<div class="absolute -bottom-10 -right-10 opacity-20 pointer-events-none">
+<img class="w-64 h-64" data-alt="A highly detailed illustration of a Noble Orchid, Sikkim's state flower, rendered in a modern botanical style with vibrant orchid purple and deep magenta petals. The artwork features crisp 3px black outlines and flat color fills, consistent with a neo-brutalist and high-contrast UI design aesthetic. The orchid is surrounded by stylized mountain mist." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU-qqxsRgOAoQ1BYrN55DjX6EA0wSTqB0S6drom4UZ0HI87bu0urk6lyYTDIxJXes9dPrUvkqIqJoj-aPhcDCfxcxKH9S9waYvu-sZl2pcDcqtZvu1DSvQoJ5RapmANkGssg81pwnuYWR34HuxXpVrk7YtIQmjVWwSwV0IWew8vluvT4UVckJZtupjEwYf_VdF6S1aWtwjHmVzw1_lWwgchjVg6yNVXOs3Lupxi79cj2FiP5a6p9os7IXk9aNx0qMofOP9kqrGntc1"/>
+</div>
+</section>
+<!-- Bento Grid for Features -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Kanchenjunga Expedition Portal -->
+<div class="md:col-span-8 group relative overflow-hidden bg-prayer-blue rounded-[20px] neo-brutalist-border neo-brutalist-shadow neo-brutalist-shadow-hover transition-all h-[400px]">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A majestic panoramic view of the Kanchenjunga mountain range during sunrise. The snow-capped peaks are bathed in a soft golden light, contrasting against a clear, deep blue Himalayan sky. In the foreground, colorful prayer flags flutter violently in the mountain wind, their textures sharp and vibrant against the icy landscape. The composition is epic and serene." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBxG6A2uIP0eGN_vHK8M3by3OTAv_Iph__RBA24DP2GCOeC7APIoORO_NhPaSCNvu_-p9emuoWzu1A3xAFxAjWkIRpkLqG5vx51gG9InexKzujBdO0W_Fi1ee7tPlclbq9gc6bJ_VtNZuEwb8gdd7dOvXcIp0ixEDhT3da_Q2WuuTMdaMvLkCjzr7GBUx2BvHh7F7gGjXhGfU4sIEShORUlgGjyss5LHTfFSSafyzJ-0SutmZjKjLppPRf7rnONwsk0pE59ilLbEoi3')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+</div>
+<div class="relative z-10 p-8 h-full flex flex-col justify-end text-white">
+<span class="font-label-bold bg-white text-primary px-3 py-1 rounded-full w-fit mb-4">MOUNTAINEERING</span>
+<h3 class="font-headline-lg text-headline-lg mb-2">Kanchenjunga Expedition</h3>
+<p class="font-body-lg text-gray-200 mb-6 max-w-md">Track ongoing ascents, weather patterns, and permits for the world's third-highest peak.</p>
+<button class="bg-white text-primary font-title-md py-4 px-8 rounded-[20px] neo-brutalist-border flex items-center justify-center gap-2 neo-brutalist-shadow active-press w-fit">
+                        Explore Routes <span class="material-symbols-outlined">mountain_flag</span>
+</button>
+</div>
+</div>
+<!-- Sikkim Organic Mission -->
+<div class="md:col-span-4 bg-white rounded-[20px] neo-brutalist-border neo-brutalist-shadow p-6 flex flex-col">
+<div class="flex items-center justify-between mb-6">
+<h3 class="font-title-md text-title-md">Organic Mission</h3>
+<span class="material-symbols-outlined text-prayer-green text-3xl" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex-grow space-y-4">
+<div class="p-4 bg-surface-container rounded-xl border-1 border-outline/20">
+<p class="font-label-bold text-on-surface-variant mb-1">SOIL HEALTH INDEX</p>
+<div class="flex items-center gap-4">
+<span class="font-headline-lg text-headline-lg text-prayer-green">98.2%</span>
+<div class="flex-grow h-3 bg-gray-200 rounded-full overflow-hidden neo-brutalist-border border-[1px]">
+<div class="bg-prayer-green h-full w-[98%]"></div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-prayer-green/10 rounded-xl neo-brutalist-border border-prayer-green/30">
+<span class="material-symbols-outlined text-prayer-green">agriculture</span>
+<p class="font-label-bold mt-2">CERTIFIED FARMS</p>
+<p class="font-title-md">75k+</p>
+</div>
+<div class="p-4 bg-prayer-green/10 rounded-xl neo-brutalist-border border-prayer-green/30">
+<span class="material-symbols-outlined text-prayer-green">water_drop</span>
+<p class="font-label-bold mt-2">RAIN HARVEST</p>
+<p class="font-title-md">89%</p>
+</div>
+</div>
+</div>
+<button class="mt-6 w-full py-3 bg-prayer-green text-white rounded-full font-label-bold border-3 border-primary neo-brutalist-shadow active-press">
+                    TRACK HARVEST DATA
+                </button>
+</div>
+<!-- Prayer Flag Messaging System -->
+<div class="md:col-span-12 bg-orchid-purple/10 rounded-[20px] neo-brutalist-border neo-brutalist-shadow p-8 flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" style="font-variation-settings: 'FILL' 1;">local_florist</span>
+</div>
+<div class="md:w-1/3">
+<div class="w-16 h-16 bg-orchid-purple text-white flex items-center justify-center rounded-[20px] neo-brutalist-border mb-4">
+<span class="material-symbols-outlined text-4xl">vibration</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary">Prayer Flag</h3>
+<p class="font-body-lg text-on-surface-variant">Send digital spiritual messages and intentions across the mountains. Every message adds a virtual flag to the digital peak.</p>
+</div>
+<div class="md:w-2/3 w-full bg-white p-6 rounded-[20px] neo-brutalist-border neo-brutalist-shadow">
+<label class="font-label-bold block mb-2">WHISPER TO THE WINDS</label>
+<div class="flex gap-4">
+<input class="flex-grow bg-surface border-3 border-primary rounded-[20px] px-6 py-4 font-body-lg focus:outline-none focus:ring-2 focus:ring-orchid-purple" placeholder="Enter your prayer or intention..." type="text"/>
+<button class="bg-orchid-purple text-white p-4 rounded-[20px] border-3 border-primary neo-brutalist-shadow active-press">
+<span class="material-symbols-outlined text-3xl">send</span>
+</button>
+</div>
+<div class="mt-6 flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-prayer-blue/20 text-prayer-blue rounded-full font-label-bold border-1 border-prayer-blue/30 cursor-pointer hover:bg-prayer-blue hover:text-white transition-colors">PEACE</span>
+<span class="px-4 py-2 bg-prayer-red/20 text-prayer-red rounded-full font-label-bold border-1 border-prayer-red/30 cursor-pointer hover:bg-prayer-red hover:text-white transition-colors">STRENGTH</span>
+<span class="px-4 py-2 bg-prayer-yellow/20 text-prayer-yellow rounded-full font-label-bold border-1 border-prayer-yellow/30 cursor-pointer hover:bg-prayer-yellow hover:text-white transition-colors">WISDOM</span>
+<span class="px-4 py-2 bg-prayer-green/20 text-prayer-green rounded-full font-label-bold border-1 border-prayer-green/30 cursor-pointer hover:bg-prayer-green hover:text-white transition-colors">COMPASSION</span>
+</div>
+</div>
+</div>
+<!-- News & Updates -->
+<div class="md:col-span-6 space-y-6">
+<h4 class="font-headline-lg text-headline-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">newspaper</span> Himalayan Bulletins
+                </h4>
+<div class="space-y-4">
+<div class="p-6 bg-white rounded-[20px] neo-brutalist-border neo-brutalist-shadow flex gap-6 hover:translate-x-2 transition-transform cursor-pointer">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden neo-brutalist-border">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of fresh, organic ginger roots harvested in Sikkim, covered in rich dark mountain soil. The lighting is bright and natural, highlighting the textures of the produce against a blurred green farmland background. High-density, professional photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwiEfw16GEFFPOoxQ9B5APYoUst4-FQjsZEghJJGR6fzFn94XT94d9LPNxVvEfpfNR9DMMjTdEqIQw41fL2mxR1OrtsKdG2KvkL39fWB_4IJNokHot1QxwxPbz1WvOd7aOJeNh4w54eJj8XILjEawf-9hSG3dzhJTKhueh_8oE8N5N-yac2iU4Eght_bju2e300zkcTgIz7QUhkIbo2RMGTMrw9724nlljpEby091HNqeSwsZTOAuvvLWbFGuU4o5EJ8fHlXqfZHTk"/>
+</div>
+<div>
+<span class="font-label-bold text-prayer-green">AGRICULTURE</span>
+<h5 class="font-title-md text-title-md mt-1">Sikkim Ginger Export Reaches All-Time High</h5>
+<p class="font-body-sm text-on-surface-variant line-clamp-2">The state's organic ginger harvest has surpassed previous records, with new trade corridors opening...</p>
+</div>
+</div>
+<div class="p-6 bg-white rounded-[20px] neo-brutalist-border neo-brutalist-shadow flex gap-6 hover:translate-x-2 transition-transform cursor-pointer">
+<div class="w-24 h-24 shrink-0 rounded-xl overflow-hidden neo-brutalist-border">
+<img class="w-full h-full object-cover" data-alt="A modern architectural structure of a mountain homestay in Sikkim, built with sustainable materials like bamboo and local stone. The house is perched on a hillside overlooking a misty valley, surrounded by flowering orchids. The visual style is crisp and modern with a focus on sustainable Himalayan luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYiNjjS63UIq-aKEizA2EQ3dlSQ4E8ABz7R1VEe9WDK5OM_pLZ4-3bVqK1DHGIrNHzyWaPeThPW8wnfY-B-doQwPpSR3Bz7mfwIhpYgbzV6CwVeloJoK3w2_hSKGuqWee2tbkPAldcR1FZSaVYpMGULe1ICnETJkMWu02_VIY86cd8CmUvJCUZUyAmwNOyzNOEtkhiOrbLCi6W4BGgBppCDKgk1B2HAOEmz2nol7yXUg2pUsG0Ag78T728JFZLwopz7ne0fVtDHWkU"/>
+</div>
+<div>
+<span class="font-label-bold text-prayer-blue">TOURISM</span>
+<h5 class="font-title-md text-title-md mt-1">Homestay Revolution: 200 New Permits Issued</h5>
+<p class="font-body-sm text-on-surface-variant line-clamp-2">Supporting local families through sustainable tourism initiatives in remote areas of North Sikkim...</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Calendar/Events -->
+<div class="md:col-span-6 bg-tertiary-container text-tertiary-fixed rounded-[20px] neo-brutalist-border neo-brutalist-shadow p-8 flex flex-col">
+<h4 class="font-headline-lg text-headline-lg mb-8 text-white">Mountain Almanac</h4>
+<div class="flex-grow space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex flex-col items-center justify-center text-center border-1 border-white/20">
+<span class="text-xs font-bold text-prayer-white">OCT</span>
+<span class="text-2xl font-extrabold text-white">24</span>
+</div>
+<div>
+<h5 class="font-title-md text-white">Pang Lhabsol Festival</h5>
+<p class="font-body-sm text-gray-400">Celebrating Mt. Kanchenjunga as the guardian deity of Sikkim.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex flex-col items-center justify-center text-center border-1 border-white/20">
+<span class="text-xs font-bold text-prayer-white">NOV</span>
+<span class="text-2xl font-extrabold text-white">05</span>
+</div>
+<div>
+<h5 class="font-title-md text-white">Organic Farmer's Summit</h5>
+<p class="font-body-sm text-gray-400">Annual gathering for organic certification and soil workshops in Gangtok.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-16 h-16 bg-white/10 rounded-xl flex flex-col items-center justify-center text-center border-1 border-white/20">
+<span class="text-xs font-bold text-prayer-white">DEC</span>
+<span class="text-2xl font-extrabold text-white">12</span>
+</div>
+<div>
+<h5 class="font-title-md text-white">Winter Orchid Show</h5>
+<p class="font-body-sm text-gray-400">A display of rare high-altitude orchids at the White Hall Complex.</p>
+</div>
+</div>
+</div>
+<button class="mt-8 bg-white text-primary py-3 rounded-full font-label-bold neo-brutalist-shadow active-press">
+                    VIEW FULL CALENDAR
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-6 bg-surface border-t-3 border-primary rounded-t-xl shadow-[0px_-4px_0px_0px_rgba(10,10,10,1)]">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 border-3 border-primary scale-95 transition-transform duration-100" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-bold text-label-bold mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-bold text-label-bold mt-1">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-bold text-label-bold mt-1">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-bold text-label-bold mt-1">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-bold text-label-bold mt-1">Profile</span>
+</a>
+</nav>
+<!-- FAB for Quick Actions -->
+<button class="fixed bottom-24 right-6 w-16 h-16 bg-prayer-blue text-white rounded-full neo-brutalist-border neo-brutalist-shadow active-press z-40 flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl">map</span>
+</button>
+<script>
+        // Micro-interactions and simple state management
+        document.querySelectorAll('.active-press').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+
+        // Simple animation for the prayer flag items to feel organic
+        const flags = document.querySelectorAll('.animate-flutter');
+        flags.forEach((flag, index) => {
+            flag.style.animationDelay = `${index * 0.15}s`;
+        });
+    </script>
+</body></html>

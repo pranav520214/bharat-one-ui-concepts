@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Gujarat</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bandhani-pattern {
+            background-image: radial-gradient(#0058bd 1px, transparent 1px);
+            background-size: 12px 12px;
+            opacity: 0.1;
+        }
+        .neo-shadow {
+            box-shadow: 0px 4px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-shadow-sm {
+            box-shadow: 0px 3px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .active-nav-shadow {
+            box-shadow: 0px -4px 0px 0px rgba(25, 27, 34, 1);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-secondary-fixed": "#002108",
+                      "on-secondary-container": "#00722f",
+                      "surface-tint": "#005ac1",
+                      "error": "#ba1a1a",
+                      "secondary-fixed-dim": "#6ddd81",
+                      "tertiary-fixed": "#ffdea0",
+                      "on-primary-container": "#fefcff",
+                      "surface-variant": "#e1e2eb",
+                      "surface": "#f9f9ff",
+                      "primary-fixed": "#d8e2ff",
+                      "surface-container-low": "#f2f3fd",
+                      "inverse-on-surface": "#eff0fa",
+                      "on-error-container": "#93000a",
+                      "surface-container-highest": "#e1e2eb",
+                      "surface-container-high": "#e7e7f1",
+                      "secondary": "#006e2c",
+                      "on-primary-fixed": "#001a41",
+                      "on-surface": "#191b22",
+                      "secondary-fixed": "#89fa9b",
+                      "on-secondary-fixed-variant": "#005320",
+                      "on-background": "#191b22",
+                      "secondary-container": "#86f898",
+                      "on-primary-fixed-variant": "#004494",
+                      "surface-container": "#ecedf7",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#d8d9e3",
+                      "on-tertiary-fixed-variant": "#5c4300",
+                      "on-tertiary-fixed": "#261a00",
+                      "outline-variant": "#c2c6d5",
+                      "outline": "#727785",
+                      "on-surface-variant": "#424753",
+                      "tertiary-container": "#956e00",
+                      "primary-fixed-dim": "#adc6ff",
+                      "error-container": "#ffdad6",
+                      "on-secondary": "#ffffff",
+                      "primary": "#0058bd",
+                      "on-error": "#ffffff",
+                      "background": "#f9f9ff",
+                      "primary-container": "#2771df",
+                      "surface-bright": "#f9f9ff",
+                      "inverse-surface": "#2e3038",
+                      "inverse-primary": "#adc6ff",
+                      "tertiary": "#765700",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#fbbc06",
+                      "on-tertiary-container": "#fffbff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "sm": "8px",
+                      "xs": "4px",
+                      "md": "16px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "40px",
+                      "base": "8px",
+                      "2xl": "48px",
+                      "xl": "32px",
+                      "3xl": "64px",
+                      "lg": "24px",
+                      "gutter": "16px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter"],
+                      "label-lg": ["Inter"],
+                      "title-lg": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-background">
+<!-- Header Navigation -->
+<header class="sticky top-0 w-full flex justify-between items-center px-sm md:px-md py-xs z-50 bg-background dark:bg-inverse-surface border-b-3 border-on-surface">
+<div class="flex items-center gap-2">
+<span class="text-title-md font-headline-lg font-black text-on-surface dark:text-inverse-on-surface">Bharat One</span>
+<span class="hidden md:block px-2 py-0.5 border-2 border-primary text-primary text-label-sm font-bold rounded-lg bg-primary-fixed/30">GUJARAT</span>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden md:flex gap-lg items-center">
+<a class="text-primary dark:text-inverse-primary font-bold transition-transform duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high px-2 py-1 rounded" href="#">Explore</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-container-high px-2 py-1 rounded" href="#">Governance</a>
+</div>
+<div class="flex gap-sm">
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="emergency_home">emergency_home</span>
+</button>
+<button class="w-12 h-12 flex items-center justify-center rounded-full border-3 border-on-surface bg-surface-container-lowest neo-shadow-sm overflow-hidden ml-2">
+<img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a modern Indian young man with a friendly smile, styled for a digital profile. The lighting is soft and warm, set against a clean, minimalist white-desert aesthetic studio background. High-end photography with a focus on sharp detail and civic professional vibe." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRGjJUBRDkkRPCxMcenyvfHxi_UalzKbh3klmo6QpOpobKLiZgaMvbsGF5tDV6H2x2igJCIBpISdK5FRhR5h9VyPMFa32ijA4nqnJuI0ewgSmooZswELrQXjKuRxr7mdljeRORPZzn3C4Aem8lY78bLrCZSJw6Ir-qrgBM71aslwGUvP045X0401Hboj9UTejPVkEsAc9mPHsY0kEn0qAnpepy2YPFMFOm6bySn51l5QW-H03nCMbws_1zBmAzcZ2_bCgxt22clAmJ"/>
+</button>
+</div>
+</div>
+</header>
+<main class="relative min-h-screen pb-32">
+<!-- Hero Section with Shader Background -->
+<section class="relative w-full h-[614px] md:h-[716px] flex items-center overflow-hidden">
+
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary-container border-3 border-on-surface rounded-full mb-6 neo-shadow-sm">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="celebration">celebration</span>
+<span class="text-label-lg text-on-secondary-container">International Kite Festival 2024</span>
+</div>
+<h1 class="text-display-lg font-display-lg text-on-surface mb-4 leading-none">
+                        Kem Cho, Arjun!
+                    </h1>
+<p class="text-headline-md font-headline-md text-on-surface-variant mb-8 max-w-xl">
+                        Welcome to the vibrant heart of Gujarat. From the white salt flats to the depths of heritage.
+                    </p>
+<div class="flex flex-wrap gap-md">
+<button class="h-14 px-8 bg-primary text-on-primary border-3 border-on-surface rounded-xl font-bold neo-shadow hover:translate-y-1 hover:shadow-none transition-all flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="rocket_launch">rocket_launch</span>
+                            Start Journey
+                        </button>
+<button class="h-14 px-8 bg-surface-container-lowest text-on-surface border-3 border-on-surface rounded-xl font-bold hover:bg-surface-container-low transition-all">
+                            View Services
+                        </button>
+</div>
+</div>
+</div>
+<!-- Floating Kites Decoration -->
+<div class="absolute right-0 top-20 w-1/3 h-full hidden lg:block pointer-events-none">
+
+</div>
+</section>
+<!-- Bento Grid: Main Features -->
+<section class="container mx-auto px-margin-mobile md:px-margin-desktop py-2xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- International Kite Festival Large Card -->
+<div class="md:col-span-8 group relative bg-surface-container-lowest border-3 border-on-surface rounded-xl overflow-hidden neo-shadow hover:-translate-y-1 transition-all duration-300">
+<div class="absolute inset-0 bandhani-pattern"></div>
+<div class="relative h-64 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A wide-angle breathtaking shot of thousands of colorful kites in diverse shapes filling the bright blue sky above the white salt desert of Rann of Kutch. The lighting is intense and golden, capturing the vibrant festival atmosphere. The photography style is sharp, editorial, and captures the scale of the International Kite Festival with high contrast and saturation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQqgGQ6J_dJ_E0S7ovkR42lqqBSrI8m6T3__335CWJ-dJIP-dqWCnGLT_tHr-tKiAU4JSwbPGnErYQX8qkmLWecjkoZOwhawCUUwBQ25tI8FiltxLyY89PLXYkzGt6taihdfihtHm9tJdjDjuH00f8ZrM36uoG7wSCT0yXbISmXs8Uak4tdX-GV0qXlLLNy_5V7Q6zg0LD43PpKJNeCmRMFtdfdGLPR_xTLTpR_x0J_37WQ9d7MHrP41idXqoh95rP-OoQ4aDFyagz"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h3 class="text-headline-lg font-headline-lg">Uttarayan Festival</h3>
+<p class="text-body-lg opacity-90">Experience the symphony of strings and colors in the sky.</p>
+</div>
+</div>
+<div class="p-lg flex justify-between items-center bg-white">
+<div class="flex gap-md">
+<div class="flex flex-col">
+<span class="text-label-sm uppercase text-outline">Date</span>
+<span class="font-bold">Jan 14-15</span>
+</div>
+<div class="flex flex-col border-l border-outline-variant pl-md">
+<span class="text-label-sm uppercase text-outline">Location</span>
+<span class="font-bold">Sabarmati Riverfront</span>
+</div>
+</div>
+<button class="px-6 py-3 bg-secondary text-on-secondary border-3 border-on-surface rounded-xl font-bold neo-shadow-sm">Join Festival</button>
+</div>
+</div>
+<!-- Rani Ki Vav Virtual Tour Card -->
+<div class="md:col-span-4 bg-surface-container-lowest border-3 border-on-surface rounded-xl overflow-hidden neo-shadow flex flex-col hover:-translate-y-1 transition-all">
+<div class="h-48 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An intricate architectural detail of Rani Ki Vav stepwell in Patan, Gujarat. The shot focuses on the masterfully carved stone sculptures of deities and geometric patterns under soft, dramatic lighting that emphasizes depth and texture. The style is cinematic, heritage-focused, with a warm earthy palette typical of ancient Indian sandstone monuments." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzu62PBGnfMLkeU_j19BKsa5gVELZ_WfeugIGdiBLIfLvzaEvzX-Rb9U9QmMkO0TYsQTty9Pe8XJdTaYyssBKezkS70OI4T7v8enJMmc7r0CL5CmkYNUb0tyGtfAqe1WXSBRkyOODT1KPftm4VOa_5M9ul2KYAV47UbLuXxpFHf4D-UHoQeuZ6zoR2Dd8tPrCA1SRQn_TWHOXLT06LY62i4EEQxlL642HlX4juFXUG1Ye5GEYcv9NshitPs8iHwfDVVtF1DiG7Xbtl"/>
+<div class="absolute top-4 right-4 px-2 py-1 bg-white border-2 border-on-surface rounded-lg text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]" data-icon="360">360</span>
+                            VR READY
+                        </div>
+</div>
+<div class="p-lg flex-1">
+<h3 class="text-title-lg font-headline-md mb-2">Rani Ki Vav</h3>
+<p class="text-on-surface-variant text-body-md mb-6">Explore the UNESCO World Heritage stepwell through an immersive 3D spatial experience.</p>
+<button class="w-full py-4 bg-white border-3 border-on-surface rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+                            Start Virtual Tour
+                        </button>
+</div>
+</div>
+<!-- Bandhani Marketplace -->
+<div class="md:col-span-12 bg-on-secondary-fixed text-white border-3 border-on-surface rounded-xl overflow-hidden neo-shadow relative min-h-[300px] flex items-center">
+<div class="absolute inset-0 opacity-20 pointer-events-none bandhani-pattern"></div>
+<div class="grid md:grid-cols-2 w-full">
+<div class="p-xl relative z-10">
+<div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mb-6 border-2 border-white">
+<span class="material-symbols-outlined text-white" data-icon="shopping_bag">shopping_bag</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg mb-4">Bandhani Artisans Marketplace</h2>
+<p class="text-body-lg text-secondary-fixed-dim mb-8 max-w-md">Directly support local weavers from Jamnagar and Kutch. Authentic, hand-dyed masterpieces delivered worldwide.</p>
+<button class="px-8 py-4 bg-secondary-fixed text-on-secondary-fixed border-3 border-white rounded-xl font-bold neo-shadow-sm hover:translate-y-1 hover:shadow-none transition-all">
+                                Shop Collection
+                            </button>
+</div>
+<div class="relative h-64 md:h-auto overflow-hidden">
+<div class="flex gap-4 p-md animate-scroll-horizontal h-full">
+<img class="h-full aspect-[3/4] object-cover rounded-lg border-2 border-white shrink-0" data-alt="A vibrant deep indigo Bandhani silk saree with intricate white and yellow tie-dye patterns. The fabric is draped elegantly over a rustic wooden loom, with soft morning light illuminating the texture of the silk. High-fashion textile photography, focused on craftsmanship and traditional Gujarat aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQ90CzaNCdweOjCRyGZoTK6twZY-KiFNk-kEm1CqBbnDS3ekcpvWuXSh5FCV_rjlREVb5fr0bgNty0T0zam0ivk5QfJL46yY4mMiioTGKevEcAByuoKHAkHR60zE0Evov9v6B8usALxBiVVIikodnXuJ446SSV4dwnp6zxKYC_inJ4MFtwaHyagaKb32AMlS3P_IJYciER_EyKQzh59V4DLgRpgyo0HtDVsM8afoW9yeLpSYFnXsMVxnc61QoIg8LL623bS4FNC3tB"/>
+<img class="h-full aspect-[3/4] object-cover rounded-lg border-2 border-white shrink-0" data-alt="A close-up of a bright red Bandhani dupatta featuring classic circular motifs. The fabric is light and airy, glowing in natural sunlight. Professional product photography with a focus on rich colors and traditional Indian patterns." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADljCe6g7Soap7zT7IcxM_yU9dZCcmDUG2GGtgWTLMIJ2rr8lgzgqtWvkB7hwQiXXUe35AzSq6MGUwvnEHoCX6XHy2ALHaBHcv7nVrHvbUhQAMq7fSN02G5ZEgWWkgMjZN8lJHlqRGXz-QUmAMUK0SqdKCD972bSMFdvwmvLjChCvaCzZl6uO8xfNhhN-NE1lDpxT25QYxICez9_aqjPKhG95LGrrZ1JLLDuiZMRiO_TNK0saV7epqDGkRRaDORB1EV5ntt8Vqma3b"/>
+<img class="h-full aspect-[3/4] object-cover rounded-lg border-2 border-white shrink-0" data-alt="Hands of a Gujarati artisan carefully tying knots for Bandhani fabric. The scene is intimate, showing the meticulous detail of the craft in a sunlit village workshop. Authentic, warm documentary-style photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgKtJa5Z3c4zHcFentemf-xotkCUWey_nwlsJykBXoFFRCDUZG4ZIo6nFcrH3YW8qMvZ1oFrigb9Ff_61fuFh3Nrfn6uM6jJh9mQO8sdIY2oW8VX0RS9aXoVOIOBLFtfRNSJt9KYF61OORthyP-D0sZKwIt5Kat75BkiulsU-nnarhNBym_nUf5EOByI8skCkGTQ6AAD2HpK8RUleBTBuMjX3MCYyepMSSft_tjQkOObG2CaNZdZ0VqVSMK1lG0Y5gM5dIVpFBCnUu"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Access Services -->
+<section class="bg-surface-container-low py-2xl border-y-3 border-on-surface">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex justify-between items-end mb-xl">
+<div>
+<h2 class="text-headline-lg font-headline-lg mb-2">Citizen Services</h2>
+<p class="text-on-surface-variant">Access everything you need from Digital Gujarat</p>
+</div>
+<button class="text-primary font-bold hover:underline flex items-center gap-1">
+                        View All <span class="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-lg">
+<div class="bg-white p-lg border-3 border-on-surface rounded-xl neo-shadow hover:-translate-y-1 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-primary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors border-2 border-on-surface">
+<span class="material-symbols-outlined" data-icon="receipt_long">receipt_long</span>
+</div>
+<h4 class="font-bold text-title-lg">Taxes &amp; Bills</h4>
+<p class="text-label-sm text-on-surface-variant mt-2">Pay electricity and property tax</p>
+</div>
+<div class="bg-white p-lg border-3 border-on-surface rounded-xl neo-shadow hover:-translate-y-1 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-secondary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary group-hover:text-white transition-colors border-2 border-on-surface">
+<span class="material-symbols-outlined" data-icon="agriculture">agriculture</span>
+</div>
+<h4 class="font-bold text-title-lg">Krishi Sahay</h4>
+<p class="text-label-sm text-on-surface-variant mt-2">Farmer subsidies and resources</p>
+</div>
+<div class="bg-white p-lg border-3 border-on-surface rounded-xl neo-shadow hover:-translate-y-1 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-tertiary-fixed rounded-xl flex items-center justify-center mb-6 group-hover:bg-tertiary group-hover:text-white transition-colors border-2 border-on-surface">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+</div>
+<h4 class="font-bold text-title-lg">Scholarships</h4>
+<p class="text-label-sm text-on-surface-variant mt-2">Education grants and portals</p>
+</div>
+<div class="bg-white p-lg border-3 border-on-surface rounded-xl neo-shadow hover:-translate-y-1 transition-all cursor-pointer group">
+<div class="w-14 h-14 bg-error-container rounded-xl flex items-center justify-center mb-6 group-hover:bg-error group-hover:text-white transition-colors border-2 border-on-surface">
+<span class="material-symbols-outlined" data-icon="health_and_safety">health_and_safety</span>
+</div>
+<h4 class="font-bold text-title-lg">Health Records</h4>
+<p class="text-label-sm text-on-surface-variant mt-2">Vaccination and e-Mamta</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile only via script logic) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200" href="#">
+<span class="material-symbols-outlined" data-icon="home" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="apps">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center text-white border-2 border-on-surface">
+<span class="material-symbols-outlined" data-icon="smart_toy">smart_toy</span>
+</div>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.neo-shadow').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.transform = 'translateY(4px)';
+                card.style.boxShadow = 'none';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.transform = 'translateY(-4px)';
+                card.style.boxShadow = '0px 4px 0px 0px rgba(25,27,34,1)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0px)';
+                card.style.boxShadow = '0px 4px 0px 0px rgba(25,27,34,1)';
+            });
+        });
+
+        // Simple scroll animation for Bandhani showcase
+        const scrollContainer = document.querySelector('.animate-scroll-horizontal');
+        if(scrollContainer) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+
+            scrollContainer.addEventListener('mousedown', (e) => {
+                isDown = true;
+                startX = e.pageX - scrollContainer.offsetLeft;
+                scrollLeft = scrollContainer.scrollLeft;
+            });
+            scrollContainer.addEventListener('mouseleave', () => { isDown = false; });
+            scrollContainer.addEventListener('mouseup', () => { isDown = false; });
+            scrollContainer.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - scrollContainer.offsetLeft;
+                const walk = (x - startX) * 2;
+                scrollContainer.scrollLeft = scrollLeft - walk;
+            });
+        }
+    </script>
+</body></html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Nagaland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#474746",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#212121",
+                    "on-surface-variant": "#444748",
+                    "background": "#f8f9fa",
+                    "error": "#ba1a1a",
+                    "tertiary": "#0b0a09",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#5f5e5e",
+                    "on-surface": "#191c1d",
+                    "outline": "#747878",
+                    "secondary-container": "#da3433",
+                    "on-secondary-container": "#fffbff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "on-secondary-fixed": "#410003",
+                    "secondary-fixed-dim": "#ffb3ac",
+                    "tertiary-fixed": "#e6e2e0",
+                    "surface-bright": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#8b8886",
+                    "tertiary-container": "#222120",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c9c6c4",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#898888",
+                    "surface": "#f8f9fa",
+                    "on-primary-fixed": "#1b1c1c",
+                    "secondary": "#b6171e",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#ffdad6",
+                    "primary": "#0a0a0a",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-container": "#edeeef",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "on-secondary-fixed-variant": "#930010"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "xl": "64px",
+                    "lg": "40px",
+                    "gutter": "20px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "margin-desktop": "32px",
+                    "base": "4px",
+                    "sm": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .naga-pattern {
+            background-image: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(182, 23, 30, 0.05) 10px, rgba(182, 23, 30, 0.05) 20px);
+        }
+        .hard-drop {
+            box-shadow: 4px 4px 0px 0px rgba(10, 10, 10, 1);
+        }
+        .hard-drop-hover:hover {
+            box-shadow: 8px 8px 0px 0px rgba(10, 10, 10, 1);
+            transform: translate(-2px, -2px);
+        }
+        .active-tab-shadow {
+            box-shadow: 0px -4px 0px 0px rgba(10, 10, 10, 1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg text-body-lg overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="bg-surface sticky top-0 z-50 border-b-3 border-primary shadow-[4px_4px_0px_0px_rgba(10,10,10,1)] flex justify-between items-center w-full px-margin-mobile py-4">
+<div class="flex items-center gap-4">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold tracking-tight">Bharat One | Nagaland</h1>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-secondary text-on-secondary px-4 py-2 rounded-[20px] font-label-bold text-label-bold border-3 border-primary hard-drop active:translate-y-1 active:shadow-none transition-all">
+                Emergency
+            </button>
+<div class="p-2 rounded-full hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+</div>
+</div>
+</header>
+<main class="relative min-h-screen pb-32">
+<!-- WebGL Background Placeholder -->
+<div class="fixed inset-0 -z-10 opacity-30">
+
+</div>
+<!-- Hero Section -->
+<section class="px-margin-mobile pt-8">
+<div class="bg-white border-3 border-primary rounded-[20px] p-6 relative overflow-hidden hard-drop">
+<div class="relative z-10">
+<span class="font-label-bold text-label-bold text-secondary uppercase tracking-[0.2em]">Nagaland Welcome</span>
+<h2 class="font-display-lg text-display-lg text-primary mt-2">Hallo!</h2>
+<p class="text-on-surface-variant max-w-md mt-4">Experience the soul of the 'Land of Festivals'. Discover authentic Naga weaving, cultural heritage, and the grand Hornbill celebration.</p>
+</div>
+<!-- Decorative Spear Tip Silhouette -->
+<div class="absolute right-0 bottom-0 opacity-10 pointer-events-none transform translate-x-1/4 translate-y-1/4">
+<span class="material-symbols-outlined text-[300px]">architecture</span>
+</div>
+</div>
+</section>
+<!-- Hornbill Festival Countdown & Live Stream -->
+<section class="px-margin-mobile mt-gutter">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Live Stream Card -->
+<div class="md:col-span-8 bg-white border-3 border-primary rounded-[20px] overflow-hidden hard-drop flex flex-col">
+<div class="bg-secondary-container p-4 border-b-3 border-primary flex justify-between items-center">
+<div class="flex items-center gap-2">
+<span class="flex h-3 w-3 rounded-full bg-error animate-pulse"></span>
+<span class="font-label-bold text-label-bold text-on-secondary-container">LIVE FROM KISAMA HERITAGE VILLAGE</span>
+</div>
+<span class="font-label-bold text-label-bold text-on-secondary-container">25K WATCHING</span>
+</div>
+<div class="aspect-video relative bg-black">
+<img class="w-full h-full object-cover opacity-80" data-alt="A cinematic cinematic live stream view of the Hornbill Festival in Nagaland. Vibrant Naga warriors in traditional colorful headgear and red-and-black woven shawls perform a rhythmic tribal dance around a central fire. The scene is high-density, featuring intricate wooden tribal architecture in the background under a warm, late afternoon sun. The visual style is premium and high-contrast, following a neo-brutalist aesthetic with bold shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUxSPfwwMF1Bx1HdVq1JttVK4fR0qONdQ1_X5yLCzcwO-sZOsZNH_BxfUSUXUw9nbHrmia3xfJcMXlh9RX9pgMdV0nrmsdbGEJhaEmuaqKN-1QMatXKZxUjiFQTnTL0VdzQNpf0PZAzNTACTJ_lLZVpEOzousAy-LNsuj9iIIlLHWTcfIF0fozidhHSwgdCs4chBznsZgRpeyVaUpeN-s2SIL4uYl7hSMS9qdGx4fIZksXLvm8eUmh1ez2ThmqbcI8KhYYFLGCdLXx"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="bg-white/90 p-6 rounded-full border-3 border-primary shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="p-4">
+<h3 class="font-title-md text-title-md text-primary">Hornbill Festival 2024: Cultural Performance</h3>
+</div>
+</div>
+<!-- Countdown Card -->
+<div class="md:col-span-4 bg-primary text-on-primary border-3 border-primary rounded-[20px] p-6 hard-drop flex flex-col justify-between">
+<div>
+<h3 class="font-title-md text-title-md mb-6">Countdown to Hornbill Finale</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary-container p-4 rounded-xl border-2 border-on-primary-container text-center">
+<div class="text-3xl font-extrabold">04</div>
+<div class="text-[10px] font-label-bold opacity-70">DAYS</div>
+</div>
+<div class="bg-primary-container p-4 rounded-xl border-2 border-on-primary-container text-center">
+<div class="text-3xl font-extrabold">12</div>
+<div class="text-[10px] font-label-bold opacity-70">HOURS</div>
+</div>
+<div class="bg-primary-container p-4 rounded-xl border-2 border-on-primary-container text-center">
+<div class="text-3xl font-extrabold">45</div>
+<div class="text-[10px] font-label-bold opacity-70">MINS</div>
+</div>
+<div class="bg-primary-container p-4 rounded-xl border-2 border-on-primary-container text-center">
+<div class="text-3xl font-extrabold">18</div>
+<div class="text-[10px] font-label-bold opacity-70">SECS</div>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 bg-secondary text-on-secondary py-3 rounded-xl border-3 border-white font-label-bold text-label-bold hard-drop-hover transition-all">
+                        GET FESTIVAL PASS
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Weave Registry & Morung Guide -->
+<section class="px-margin-mobile mt-gutter">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Naga Weave Registry -->
+<div class="md:col-span-7 bg-white border-3 border-primary rounded-[20px] overflow-hidden hard-drop flex flex-col">
+<div class="bg-primary text-on-primary p-4 border-b-3 border-primary flex items-center gap-3">
+<span class="material-symbols-outlined">texture</span>
+<h3 class="font-title-md text-title-md">Naga Weave Registry</h3>
+</div>
+<div class="p-6 flex flex-col md:flex-row gap-6">
+<div class="w-full md:w-1/2 rounded-[20px] border-3 border-primary overflow-hidden h-48 md:h-auto">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of an authentic Naga handloom textile. The fabric features a bold geometric pattern in deep tribal red, weave black, and ivory white. The texture is rich and tactile, showing the intricate crisscross of the yarns. The composition is focused on the rhythmic repetition of the Naga spear and shield motifs. Professional product photography lighting emphasizes the heritage quality and artisanal craftsmanship." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrjNybbUESi5Py4PWme3EFA98g8aoOQYbUZdDfmshui03SVLWDw7BJ6U6Lfe98GU46H3I79zEfZhX4Qf9fHKlirxVN_M8jrMl37xfDNI1NqRr25eDWyW7J6B7ssx38ols7k4eJHicifuFDAlgAg0IdnWfQu0GIHgu_fBA609zDMlplpSECEpmIguUj7ZsRXdSiO1ac4s7Mn4aipNmGbfK-DE408Crynl1Zt7QN_fru7HyZYhtbHOGrERDvBonrbBrCDMzVUYn7SaL-"/>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<p class="text-on-surface-variant font-body-sm text-body-sm mb-4">Verify the authenticity of your Naga handloom. Every registered piece supports local tribal weavers and preserves our ancient heritage.</p>
+<div class="space-y-3">
+<div class="flex items-center gap-2 p-3 bg-surface-container rounded-lg border-2 border-outline/20">
+<span class="material-symbols-outlined text-secondary">verified</span>
+<span class="font-label-bold text-label-bold">GI TAGGED AUTHENTICITY</span>
+</div>
+<button class="w-full border-3 border-primary py-2 rounded-full font-label-bold text-label-bold hover:bg-primary hover:text-on-primary transition-colors">
+                                    SCAN QR CODE
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Morung Heritage Guide -->
+<div class="md:col-span-5 bg-white border-3 border-primary rounded-[20px] overflow-hidden hard-drop flex flex-col">
+<div class="bg-secondary p-4 border-b-3 border-primary">
+<h3 class="font-title-md text-title-md text-on-secondary">Morung Heritage Guide</h3>
+</div>
+<div class="p-0 flex-1 relative min-h-[200px]">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="An architectural detail of a traditional Naga Morung, a tribal communal house. The structure is made of massive dark wood beams with intricate carvings of hornbill heads and spiritual guardians. The roof is steeply thatched, reaching toward a clear blue sky. The visual style is crisp and bold, using deep contrast to highlight the sculptural forms of the tribal architecture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDogFyO6jvJWMBFzBJ5dOi9O9JfKFOkxizgbWTGb8_yQyVECsVQKNugmj92k10PElI8IBmn0rE1NuR-zCObBwZ0S6KM4kyXuON4qGnKZuh4hRYsnNbRHjrWq4OWmgSYD5MzKZdZwo2zaS6Tzci-XaVbNpZjZ4bFF_ZUwSrdte5_C1UYSBMKIy-UOInMKWH8hYQmvTpA4vOJ5H6Y91q34STIIMM90RTgtjLxSm0z_fi42CN3_cSblkp4A1Tzs5U0y2efvz96A9uN8sf7"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+</div>
+<div class="absolute bottom-4 left-4 right-4 z-10">
+<p class="text-white/90 font-label-bold text-label-bold mb-2">CHAPTER 03: THE AO MORUNG</p>
+<h4 class="text-white font-title-md text-title-md">Architectural Wisdom of Elders</h4>
+<button class="mt-4 flex items-center gap-2 text-white font-label-bold text-label-bold bg-white/20 backdrop-blur-md px-4 py-2 rounded-full border border-white/40 hover:bg-white hover:text-primary transition-all">
+                                EXPLORE <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Regional Palette Display (Informational) -->
+<section class="px-margin-mobile mt-gutter mb-20">
+<div class="bg-surface-container-low border-3 border-primary rounded-[20px] p-6 naga-pattern">
+<h3 class="font-label-bold text-label-bold text-primary mb-4 tracking-[0.2em]">CURRENT STATE: NAGALAND</h3>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-secondary border-2 border-primary"></div>
+<span class="font-label-bold text-[10px]">TRIBAL RED</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-primary border-2 border-outline"></div>
+<span class="font-label-bold text-[10px]">WEAVE BLACK</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-white border-2 border-primary"></div>
+<span class="font-label-bold text-[10px]">IVORY SHELL</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface flex justify-around items-center px-4 py-3 pb-6 border-t-3 border-primary rounded-t-xl active-tab-shadow">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 border-3 border-primary scale-95 transition-transform duration-100" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-bold text-label-bold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 transition-all" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-bold text-label-bold">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-bold text-label-bold">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-bold text-label-bold">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low p-2 transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-bold text-label-bold">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for hard drop buttons
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => {
+                if(el.classList.contains('hard-drop')) {
+                    el.style.transform = 'translate(2px, 2px)';
+                    el.style.boxShadow = 'none';
+                }
+            });
+            el.addEventListener('mouseup', () => {
+                if(el.classList.contains('hard-drop')) {
+                    el.style.transform = '';
+                    el.style.boxShadow = '';
+                }
+            });
+            el.addEventListener('mouseleave', () => {
+                if(el.classList.contains('hard-drop')) {
+                    el.style.transform = '';
+                    el.style.boxShadow = '';
+                }
+            });
+        });
+
+        // Simple Countdown Logic
+        const countdownItems = document.querySelectorAll('.text-3xl');
+        let days = 4, hours = 12, mins = 45, secs = 18;
+        
+        setInterval(() => {
+            secs--;
+            if(secs < 0) { secs = 59; mins--; }
+            if(mins < 0) { mins = 59; hours--; }
+            if(hours < 0) { hours = 23; days--; }
+            
+            countdownItems[0].innerText = String(days).padStart(2, '0');
+            countdownItems[1].innerText = String(hours).padStart(2, '0');
+            countdownItems[2].innerText = String(mins).padStart(2, '0');
+            countdownItems[3].innerText = String(secs).padStart(2, '0');
+        }, 1000);
+    </script>
+</body></html>

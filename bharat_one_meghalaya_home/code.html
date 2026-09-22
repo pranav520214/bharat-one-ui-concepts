@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Meghalaya</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#474746",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#212121",
+                    "on-surface-variant": "#444748",
+                    "background": "#f8f9fa",
+                    "error": "#ba1a1a",
+                    "tertiary": "#0b0a09",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#5f5e5e",
+                    "on-surface": "#191c1d",
+                    "outline": "#747878",
+                    "secondary-container": "#da3433",
+                    "on-secondary-container": "#fffbff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "on-secondary-fixed": "#410003",
+                    "secondary-fixed-dim": "#ffb3ac",
+                    "tertiary-fixed": "#e6e2e0",
+                    "surface-bright": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#8b8886",
+                    "tertiary-container": "#222120",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c9c6c4",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#898888",
+                    "surface": "#f8f9fa",
+                    "on-primary-fixed": "#1b1c1c",
+                    "secondary": "#2196F3", /* Overriding locally for Waterfall Azure */
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#ffdad6",
+                    "primary": "#0a0a0a",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-container": "#edeeef",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "on-secondary-fixed-variant": "#930010"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "xl": "64px",
+                    "lg": "40px",
+                    "gutter": "20px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "margin-desktop": "32px",
+                    "base": "4px",
+                    "sm": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+        .cloud-gradient {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+        }
+        .root-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10 Q 30 10, 50 50 T 90 90' stroke='%230a0a0a22' fill='none' stroke-width='2'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background">
+<!-- WebGL Background Placeholder -->
+<div class="fixed inset-0 -z-10 opacity-40">
+
+</div>
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-background text-primary dark:text-on-primary-fixed font-title-md text-title-md border-b-3 border-primary dark:border-outline shadow-[4px_4px_0px_0px_rgba(10,10,10,1)] flex justify-between items-center w-full px-margin-mobile py-4 sticky top-0 z-50">
+<div class="flex items-center gap-4">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary dark:text-primary-fixed-dim font-extrabold">Bharat One | Assam</span>
+</div>
+<div class="flex items-center gap-xs">
+<div class="hidden md:flex bg-surface-container px-4 py-2 rounded-full border-2 border-primary items-center gap-2">
+<span class="material-symbols-outlined text-primary">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-sm p-0 w-48" placeholder="Search Meghalaya..." type="text"/>
+</div>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-xl font-label-bold active:translate-y-1 active:shadow-none transition-all shadow-[2px_2px_0px_0px_rgba(10,10,10,1)]">
+                Emergency
+            </button>
+<span class="material-symbols-outlined text-primary text-3xl">account_circle</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 md:px-margin-desktop py-8 mb-24">
+<!-- Hero Section: Khublei! -->
+<section class="mb-lg">
+<div class="bg-white border-3 border-primary rounded-[20px] p-8 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] relative overflow-hidden cloud-gradient">
+<div class="relative z-10 max-w-2xl">
+<span class="font-label-bold text-secondary tracking-widest uppercase mb-2 block">Welcome to the Abode of Clouds</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Khublei!</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6">Experience the mystic beauty of Meghalaya, where the living roots connect the earth and the clouds kiss the peaks.</p>
+<div class="flex gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-[20px] border-3 border-primary font-title-md shadow-[4px_4px_0px_0px_rgba(10,10,10,1)] hover:shadow-[6px_6px_0px_0px_rgba(10,10,10,1)] transition-all">
+                            Explore Trails
+                        </button>
+<button class="bg-white text-primary px-8 py-4 rounded-[20px] border-3 border-primary font-title-md hover:bg-surface-container-low transition-all">
+                            View Gallery
+                        </button>
+</div>
+</div>
+<!-- Artistic Cloud Vector Placeholder -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 opacity-20">
+
+</div>
+</div>
+</section>
+<div class="bento-grid">
+<!-- Real-time Weather Tracker -->
+<div class="col-span-12 md:col-span-4 bg-white border-3 border-primary rounded-[20px] p-6 shadow-[4px_4px_0px_0px_rgba(10,10,10,1)] flex flex-col justify-between overflow-hidden relative">
+<div class="flex justify-between items-start relative z-10">
+<div>
+<h3 class="font-title-md text-title-md">Abode of Clouds</h3>
+<p class="font-label-bold text-on-surface-variant">Cherrapunji, Meghalaya</p>
+</div>
+<span class="material-symbols-outlined text-4xl text-secondary">cloudy_snowing</span>
+</div>
+<div class="mt-8 relative z-10">
+<div class="flex items-baseline gap-2">
+<span class="text-6xl font-extrabold text-primary">18°</span>
+<span class="text-body-lg text-on-surface-variant">Mist &amp; Rain</span>
+</div>
+<div class="mt-4 flex flex-col gap-2">
+<div class="flex justify-between font-label-bold">
+<span>Rainfall Today</span>
+<span class="text-secondary">142mm</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-3 border-2 border-primary">
+<div class="bg-secondary h-full rounded-full" style="width: 75%"></div>
+</div>
+</div>
+</div>
+<div class="absolute inset-0 root-pattern opacity-10"></div>
+</div>
+<!-- Living Root Bridge Trail Map -->
+<div class="col-span-12 md:col-span-8 bg-white border-3 border-primary rounded-[20px] p-0 shadow-[4px_4px_0px_0px_rgba(10,10,10,1)] overflow-hidden group">
+<div class="p-6 border-b-3 border-primary bg-surface flex justify-between items-center">
+<div>
+<h3 class="font-title-md text-title-md">Living Root Bridge Trail</h3>
+<p class="font-body-sm text-body-sm">Interactive Sacred Forest Navigation</p>
+</div>
+<button class="bg-primary text-on-primary w-12 h-12 rounded-full flex items-center justify-center border-2 border-primary shadow-[2px_2px_0px_0px_rgba(10,10,10,1)] active:translate-y-1 active:shadow-none">
+<span class="material-symbols-outlined">map</span>
+</button>
+</div>
+<div class="h-64 md:h-80 relative bg-surface-container">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700" data-alt="A highly detailed cartographic illustration of a lush Meghalayan forest trail with organic living root bridges, stylized with deep jungle greens and misty blue waterfalls. The map uses thick neo-brutalist lines and vibrant icons to mark key landmarks like Mawlynnong and the Double Decker bridge. Soft lighting highlights the intricate patterns of the roots against a textured paper background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAuSVp4BxolAXtj4FqGv02UK3HfGpSAiV0bjacFv2NEEk0hhbtk1u5AmrGxW51QMGejQsRj1LpDIhmPOqc6P_tKTE5lwyn3JDJYVS_Ik4cZslxnnzlEw-mWViqcCWnbvT1cEIwmvo7-OeSGonmG8rPTtEpY9kVTrx9S55UbOpjF09ZOWVTZcbirLjHdE7yqAYQvJcPzPeCWCpHA4EqRc455N6jgMfKfH5TNX12lQQxjZcS9rOjNryUI30j_RaS2Wehm8_D8jJM40OYP')"></div>
+<div class="absolute bottom-4 left-4 flex gap-2">
+<span class="bg-white border-2 border-primary px-3 py-1 rounded-full font-label-bold text-[10px] shadow-[2px_2px_0px_0px_rgba(10,10,10,1)]">4.8km Walk</span>
+<span class="bg-white border-2 border-primary px-3 py-1 rounded-full font-label-bold text-[10px] shadow-[2px_2px_0px_0px_rgba(10,10,10,1)]">Moderate Difficulty</span>
+</div>
+</div>
+</div>
+<!-- Virtual Tour Portal -->
+<div class="col-span-12 md:col-span-12 bg-primary text-on-primary rounded-[20px] p-8 shadow-[8px_8px_0px_0px_rgba(10,10,10,1)] flex flex-col md:flex-row items-center gap-8 relative overflow-hidden">
+<div class="flex-1 z-10">
+<h2 class="font-headline-lg text-headline-lg mb-4">Waterfalls of Meghalaya</h2>
+<p class="font-body-lg text-on-primary-container mb-6 opacity-80">Dive into a 360-degree virtual odyssey through the Seven Sisters Falls and Nohkalikai. Experience the roar of the water in high-fidelity spatial audio.</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-primary-container border-2 border-on-primary-container p-4 rounded-xl text-center hover:bg-on-primary-container hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-2 block">waves</span>
+<span class="font-label-bold">Nohkalikai</span>
+</div>
+<div class="bg-primary-container border-2 border-on-primary-container p-4 rounded-xl text-center hover:bg-on-primary-container hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-2 block">waterfall_chart</span>
+<span class="font-label-bold">Elephant Falls</span>
+</div>
+<div class="bg-primary-container border-2 border-on-primary-container p-4 rounded-xl text-center hover:bg-on-primary-container hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-2 block">nature_people</span>
+<span class="font-label-bold">Dainthlen</span>
+</div>
+<div class="bg-primary-container border-2 border-on-primary-container p-4 rounded-xl text-center hover:bg-on-primary-container hover:text-primary transition-all cursor-pointer">
+<span class="material-symbols-outlined mb-2 block">explore</span>
+<span class="font-label-bold">Krang Suri</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/3 aspect-square border-3 border-on-primary rounded-[20px] overflow-hidden relative shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)]">
+<div class="w-full h-full bg-cover bg-center" data-alt="A mesmerizing cinemagraph of Nohkalikai Falls in Meghalaya, showing the immense height of the plunge waterfall into a turquoise pool. The surrounding cliffs are covered in vibrant mossy greens and shrouded in a soft, ethereal cloud mist. The style is cinematic and high-contrast, capturing the power and serenity of the water in a high-density, professional photography aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBzBaNpdnDKkGfUINtupaaXld4ziS-MiVe0ggQs93Tm4JZS2IqiTd4yPT58TMtDvtvOSXijrFago6USn0ca1zukXZ4ilEJAaIU2h9x7gTNv-ftUkzv1grEv3MVLo8CAcJMXWTxPHKM3iZCQzg8ETYuKqkFSPK8qXSVDScxldnqQBKqkgVXx_7H8WcEj27VkxX1FAMXIzg1hE_NUqj674o9COEfdjHQ4JAxVpSDYSMlkLGS2ue4cUbCYMAsclLTqMXU1UOXzKg9T140E')"></div>
+<div class="absolute inset-0 flex items-center justify-center bg-black/30 backdrop-blur-sm group cursor-pointer">
+<div class="w-16 h-16 bg-white rounded-full flex items-center justify-center text-primary border-4 border-primary group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Seasonal Highlights -->
+<div class="col-span-12 md:col-span-6 bg-white border-3 border-primary rounded-[20px] p-6 shadow-[4px_4px_0px_0px_rgba(10,10,10,1)]">
+<h3 class="font-title-md text-title-md mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">eco</span>
+                    Organic Heritage
+                </h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 border-2 border-outline-variant rounded-xl hover:border-primary transition-all cursor-pointer">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 border-2 border-primary">
+<div class="w-full h-full bg-cover" data-alt="A close-up high-resolution shot of fresh Meghalayan Lakadong turmeric powder and sliced roots on a dark stone surface. The vibrant orange of the spice contrasts beautifully with the deep gray of the stone, presented in a minimalist, gourmet culinary style with soft natural lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvSm67PjP4Pa5Vj62zm4p5qqrx0PkYDcVId5J02dVqSaSVWJYYTFcvUWHvw2nwFmA0yUHRA_O2mW8JK4QhdvWGgBDpkghKIQ9wq8bpXd53561h009yZIPAIJunKjt8xIi31Jmg_Pv2iFZNQSs3EbWvbzPer5_pD7_80q00y0Sgi8X5VKPQ2p_MDKQsMgx7f7__TJmAne-mBVGgVMWExblZ9I2prAJ1lLyYT8AqoujoujvDLEi0oLEBWLfJtLTcjygbD25ED5NDcXSb')"></div>
+</div>
+<div>
+<h4 class="font-label-bold text-sm">Lakadong Turmeric</h4>
+<p class="text-[10px] text-on-surface-variant">The world's highest curcumin content.</p>
+</div>
+<span class="material-symbols-outlined ml-auto">chevron_right</span>
+</div>
+<div class="flex items-center gap-4 p-4 border-2 border-outline-variant rounded-xl hover:border-primary transition-all cursor-pointer">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 border-2 border-primary">
+<div class="w-full h-full bg-cover" data-alt="A beautifully crafted traditional Meghalayan bamboo basket sitting on a hand-woven textile. The intricate weaving patterns of the cane are highlighted by a warm, golden side-light, emphasizing the craftsmanship and cultural heritage of the North-East in a high-density, museum-quality visual." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-wPUC2tWEBXKesS6uwMIv1KXhVLeYb-vd0bOyR_TLYsFz0qZbYgcJ9-cHolNG_mWjcS86_7cpTLic-GfrnRsvK9W0y2Fzl3UiqUlIPPk0xMbBj5g_yqJ0WOsZDxoQRBcZ-BNhjz6SP4H-yeEMTqkJVdloFqpKh2bRtrTstBiVnj7miy1kD_JCFyIr7OtndXDjfYWSSzj_27M6daphQT5PxsRz7nuLhR4ok-HcMDx7wutqx1-nzmRC7XaaYvEAjUkgO1Zvibx3zyvt')"></div>
+</div>
+<div>
+<h4 class="font-label-bold text-sm">Cane &amp; Bamboo Crafts</h4>
+<p class="text-[10px] text-on-surface-variant">Sustainable art from the hill tribes.</p>
+</div>
+<span class="material-symbols-outlined ml-auto">chevron_right</span>
+</div>
+</div>
+</div>
+<!-- Tribal Calendar -->
+<div class="col-span-12 md:col-span-6 bg-surface-container-low border-3 border-primary rounded-[20px] p-6 shadow-[4px_4px_0px_0px_rgba(10,10,10,1)]">
+<h3 class="font-title-md text-title-md mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary">calendar_today</span>
+                    Cultural Calendar
+                </h3>
+<div class="bg-white border-2 border-primary rounded-xl p-4 mb-4">
+<div class="flex justify-between items-center mb-2">
+<span class="font-label-bold text-secondary">UPCOMING</span>
+<span class="bg-primary text-on-primary text-[10px] px-2 py-0.5 rounded-full">Nov 15-18</span>
+</div>
+<h4 class="font-title-md text-primary">Wangala Festival</h4>
+<p class="text-body-sm text-on-surface-variant">The 100 Drums Festival of the Garo tribe.</p>
+</div>
+<button class="w-full py-3 bg-white border-2 border-primary rounded-xl font-label-bold text-primary flex items-center justify-center gap-2 hover:bg-primary hover:text-on-primary transition-all">
+                    View Full Schedule
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-surface dark:bg-surface-container-lowest border-t-3 border-primary dark:border-outline shadow-[0px_-4px_0px_0px_rgba(10,10,10,1)] flex justify-around items-center px-4 py-3 pb-6 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 border-3 border-primary scale-95 transition-transform duration-100" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-label-bold text-label-bold">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">apps</span>
+<span class="font-label-bold text-label-bold">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-bold text-label-bold">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">location_on</span>
+<span class="font-label-bold text-label-bold">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-all" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-bold text-label-bold">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interactions for button active states
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mousedown', () => el.style.transform = 'scale(0.95)');
+            el.addEventListener('mouseup', () => el.style.transform = 'scale(1)');
+            el.addEventListener('mouseleave', () => el.style.transform = 'scale(1)');
+        });
+
+        // Simple parallax effect on scroll for clouds
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const bg = document.querySelector('.fixed.inset-0');
+            if (bg) {
+                bg.style.transform = `translateY(${scrolled * 0.2}px)`;
+            }
+        });
+    </script>
+</body></html>

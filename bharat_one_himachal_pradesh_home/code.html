@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Himachal Pradesh</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutalism-card {
+            box-shadow: 4px 4px 0px 0px #1A1A1B;
+            transition: all 0.2s ease;
+        }
+        .neo-brutalism-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #1A1A1B;
+        }
+        .neo-brutalism-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #1A1A1B;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #1A1A1B;
+            border-radius: 10px;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9ff;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-primary-container": "#fefcff",
+                    "tertiary-container": "#956e00",
+                    "surface-variant": "#e1e2eb",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "primary-fixed": "#d8e2ff",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "on-surface": "#191b22",
+                    "on-secondary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#adc6ff",
+                    "surface-container-low": "#f2f3fd",
+                    "on-primary-fixed": "#001a41",
+                    "surface-bright": "#f9f9ff",
+                    "on-secondary-fixed": "#002108",
+                    "surface-container-highest": "#e1e2eb",
+                    "tertiary-fixed": "#ffdea0",
+                    "surface-tint": "#005ac1",
+                    "on-tertiary-container": "#fffbff",
+                    "on-background": "#191b22",
+                    "surface-container": "#ecedf7",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-primary-fixed-variant": "#004494",
+                    "on-surface-variant": "#424753",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "primary-fixed-dim": "#adc6ff",
+                    "secondary": "#006e2c",
+                    "error-container": "#ffdad6",
+                    "primary": "#0058bd",
+                    "tertiary": "#765700",
+                    "surface-container-high": "#e7e7f1",
+                    "surface-dim": "#d8d9e3",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#2771df",
+                    "on-secondary-container": "#00722f",
+                    "surface": "#f9f9ff",
+                    "inverse-surface": "#2e3038",
+                    "error": "#ba1a1a",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9ff",
+                    "secondary-container": "#86f898",
+                    "secondary-fixed": "#89fa9b",
+                    "inverse-on-surface": "#eff0fa",
+                    "outline": "#727785",
+                    "outline-variant": "#c2c6d5",
+                    "on-error-container": "#93000a",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "lg": "24px",
+                    "3xl": "64px",
+                    "gutter": "16px",
+                    "base": "8px",
+                    "md": "16px",
+                    "xl": "32px",
+                    "2xl": "48px",
+                    "margin-mobile": "16px",
+                    "sm": "8px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 bg-surface border-b-3 border-on-surface shadow-[0px_4px_0px_0px] shadow-on-surface/10">
+<div class="flex items-center gap-4">
+<span class="text-title-lg font-headline-md font-black text-primary">Bharat One</span>
+</div>
+<nav class="hidden md:flex items-center space-x-xl">
+<a class="text-primary font-bold text-label-lg transition-transform active:scale-95" href="#">Home</a>
+<a class="text-on-surface-variant font-label-lg hover:bg-surface-container-high transition-colors px-2 py-1 rounded" href="#">Services</a>
+<a class="text-on-surface-variant font-label-lg hover:bg-surface-container-high transition-colors px-2 py-1 rounded" href="#">Governance</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined p-2 hover:bg-surface-container-high rounded-full transition-colors">notifications</button>
+<div class="w-10 h-10 rounded-full border-2 border-on-surface overflow-hidden bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a young Indian man named Arjun, wearing a formal Nehru jacket, with a warm and friendly expression against a clean, minimalist off-white background. The lighting is soft and flattering, highlighting detailed skin textures and a sharp, modern appearance consistent with a premium civic application identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcnDPbRb2n-VAx_45vLBGdRXxAho791oac9xSL_yj5DhR3W67H2-82QW9_3cyf-Yu15FE-trRzLVq5o5UJxIYYWu8H15yS9JdiA98T9S-lusqSj9kzPZ1e_vGQYlJBLw2usRJk5SuOr9SmDSfI1Jj5kBsKT6MX47wLMfp0oB4zqzOyS6mdXD7Q8L-ClHsLoB9g4bPoYcM4NpLy2iLdRCOdL47gqCOu5Pex2IGXJABVB9rG8z3nSY3BVE8TnmrGL25Gtxui4bVWCc6W"/>
+</div>
+</div>
+</header>
+<!-- Hero Section with Animated Background -->
+<section class="relative pt-32 pb-20 px-margin-mobile md:px-margin-desktop min-h-[614px] flex flex-col justify-center overflow-hidden">
+
+<div class="max-w-4xl mx-auto text-center md:text-left z-10 bg-surface/40 backdrop-blur-md p-lg rounded-[20px] border-3 border-on-surface neo-brutalism-card">
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-on-surface mb-2">Namaste, Arjun!</h1>
+<p class="font-body-lg text-on-surface-variant mb-6">Welcome back to the Land of Gods. Your digital gateway to Himachal's hills, orchards, and services.</p>
+<div class="flex flex-wrap gap-4 justify-center md:justify-start">
+<div class="flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full border-2 border-on-surface">
+<span class="material-symbols-outlined text-[20px]">cloud</span>
+<span class="font-label-lg">14°C in Shimla</span>
+</div>
+<div class="flex items-center gap-2 bg-tertiary-container text-on-tertiary-container px-4 py-2 rounded-full border-2 border-on-surface">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+<span class="font-label-lg">Fruit Harvest Season</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Content Grid -->
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-2xl space-y-2xl">
+<!-- Bento Grid Highlights -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-lg">
+<!-- Apple Farmer Portal -->
+<div class="md:col-span-8 neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] overflow-hidden flex flex-col md:flex-row">
+<div class="w-full md:w-1/2 h-48 md:h-auto relative">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-resolution, vibrant close-up photograph of lush green apple orchards in the Kinnaur valley of Himachal Pradesh. Ripe, red Himachal apples hang heavily from branches under a crisp blue sky with snow-capped Himalayan peaks in the far distance. The scene is bright, crisp, and exudes agricultural prosperity and fresh mountain air." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAF3_2oDCgA2icJCFvTLXlKtVbzkw81F1U5iWdlaDLuOX4g7vLcYFITorHMOU2BE3gzbWehh-w2X6SJSUpCJGEC_xw3fKbkeBCXj9LNbJomGDEoDmucwosKBngp5eyG1egue_mC8AcJdav6YsklpStDCC8KzCvmw4LbYi_Sp5m4jQXwWxe0kQ-T3OIz5j2kRZFbCfdUkMIM1BRnNIZrvLtAjwI-bq1JXEo2qi5uJIllEZkGyXgMU2t6kEiBAJiGPQ4aB-df_oI-Mr4m')"></div>
+</div>
+<div class="p-lg flex flex-col justify-between md:w-1/2">
+<div>
+<span class="bg-secondary-container text-on-secondary-container text-label-sm px-2 py-1 rounded border border-on-surface mb-4 inline-block">Portal</span>
+<h2 class="font-headline-md text-on-surface mb-2">Apple Farmer Portal</h2>
+<p class="font-body-md text-on-surface-variant mb-4">Real-time mandi rates for Shimla, Solan, and Kullu. Check verified cold storage availability across the state.</p>
+</div>
+<button class="bg-primary text-on-primary font-label-lg h-14 rounded-[20px] border-3 border-on-surface neo-brutalism-card flex items-center justify-center gap-2 px-xl">
+                        Check Rates
+                        <span class="material-symbols-outlined">trending_up</span>
+</button>
+</div>
+</div>
+<!-- Himalayan Homestays -->
+<div class="md:col-span-4 neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] p-lg flex flex-col">
+<div class="h-40 bg-surface-container-low rounded-xl border-2 border-outline-variant mb-4 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="An architectural photograph of a traditional Kath Kuni style wooden house in Himachal Pradesh, featuring intricate wood carvings and stone layering. The building is surrounded by deodar trees with a soft morning mist rolling over the background hills. The mood is tranquil, rustic, and authentic to Himachali culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-6I8vCJdE9SFIRdnDSAkVIMieK24T4qRu9-RN9A76-pGX8S3Yl7IWUyHlBHjstQAzmWgYE97ZIkQqszW3ZQ-4JLUQTPX6BPAe1YqWeSxksxdAwjF55VnlIPfM3gNmJuOa5A8C0cFzTp0-wWLfa87ACWeNzfoRrL-EEz3LSHD9CFh1cd60uZ209uWlIxuRRd93RkdY2bK4wdb2-G4elF-JDNe8Whap_nMD9zljisjXiLZbTIEBIS98L0V2Qk1ECIKzul4dIUH7ShKV"/>
+</div>
+<h2 class="font-title-lg text-on-surface mb-2">Himalayan Homestays</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Verified eco-tourism directory for the Land of Gods. Support local hosts.</p>
+<button class="mt-auto border-3 border-primary text-primary font-label-lg h-12 rounded-[20px] hover:bg-primary/5 transition-colors">
+                    Explore
+                </button>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section>
+<h3 class="font-headline-md mb-lg">Quick Actions</h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md">
+<button class="neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] p-md flex flex-col items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined">description</span>
+</div>
+<span class="font-label-lg">E-District</span>
+</button>
+<button class="neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] p-md flex flex-col items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined">payments</span>
+</div>
+<span class="font-label-lg">Utility Bills</span>
+</button>
+<button class="neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] p-md flex flex-col items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined">emergency_share</span>
+</div>
+<span class="font-label-lg">HP Police</span>
+</button>
+<button class="neo-brutalism-card bg-white border-3 border-on-surface rounded-[20px] p-md flex flex-col items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined">map</span>
+</div>
+<span class="font-label-lg">Land Records</span>
+</button>
+</div>
+</section>
+<!-- State Updates & Infrastructure -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-lg">
+<div class="p-lg bg-surface-container-high border-3 border-on-surface rounded-[20px] neo-brutalism-card">
+<div class="flex items-center justify-between mb-lg">
+<h3 class="font-headline-md">State Updates</h3>
+<span class="material-symbols-outlined text-primary">rss_feed</span>
+</div>
+<div class="space-y-md">
+<div class="flex gap-md p-md bg-white border-2 border-on-surface rounded-xl">
+<div class="flex-shrink-0 w-12 h-12 bg-error-container text-on-error-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">traffic</span>
+</div>
+<div>
+<p class="font-label-lg">Atal Tunnel Traffic Report</p>
+<p class="font-body-md text-on-surface-variant">Smooth flow. LMV transit allowed 24/7. Use cautioned speed.</p>
+</div>
+</div>
+<div class="flex gap-md p-md bg-white border-2 border-on-surface rounded-xl">
+<div class="flex-shrink-0 w-12 h-12 bg-primary-container text-on-primary-container rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">location_city</span>
+</div>
+<div>
+<p class="font-label-lg">Shimla Smart City Project</p>
+<p class="font-body-md text-on-surface-variant">Phase 2 pedestrian corridors now 85% complete. Scheduled launch next month.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Himalayan Visual Anchor -->
+<div class="hidden md:block relative h-full rounded-[20px] border-3 border-on-surface overflow-hidden neo-brutalism-card">
+<div class="w-full h-full bg-cover bg-center" data-alt="A wide panoramic vista of the Dhauladhar mountain range in Himachal Pradesh during sunset. The sharp, jagged snow-capped peaks are bathed in a warm golden and purple light, reflecting the serenity of the majestic Himalayas. The foreground shows silhouetted pine trees against the colorful sky, conveying an atmosphere of peace and stability." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKXqO_5QmS3I-5B4eXJ6hAmf-_6ApcbpAek7zng6UR3gmdkWz91CydFjwiH9E4iM40WpFfoRRSyeDjgbiVfiSzLj1ocCMEWUWl3fXjykHyROk5VP7ZtRkhwhQTgwGJ7t5xYuslT1bmPr85u2OHTQXMGeiehBfF91peYC4fwholJzHhbAFHtxFRnD1PjCZyDRwJzrht89jV_8XF1QRKgNmGh78O4t5hWT86xXx2uCyx-sHg4wpsLpctGT9ytefzWIoloiVMyf9do8-W')"></div>
+<div class="absolute bottom-0 left-0 w-full p-lg bg-gradient-to-t from-black/80 to-transparent">
+<p class="text-white font-headline-md">Preserving the Hills</p>
+<p class="text-white/80 font-body-md">Join the mission for Plastic-Free Himachal. Earn green credits for every eco-action.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar (Mobile only as per Platform Rule) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 pb-safe h-20 bg-surface border-t-3 border-on-surface shadow-[0px_-4px_0px_0px] shadow-on-surface/5 rounded-t-xl">
+<a class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 translate-y-[-2px] transition-transform duration-200" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="font-label-sm">AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-4 py-1 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-sm">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button (Only on Home) -->
+<button class="fixed bottom-24 right-margin-mobile md:bottom-margin-desktop md:right-margin-desktop w-14 h-14 bg-primary text-on-primary rounded-full border-3 border-on-surface shadow-[4px_4px_0px_0px] shadow-on-surface flex items-center justify-center hover:scale-105 active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined">support_agent</span>
+</button>
+<footer class="bg-surface-container pb-32 md:pb-xl pt-xl px-margin-mobile md:px-margin-desktop text-center border-t border-outline-variant">
+<p class="font-label-lg text-on-surface-variant">© 2024 Bharat One • Himachal Pradesh State Portal</p>
+<p class="font-label-sm text-outline mt-2 italic">Secured by National Digital Infrastructure</p>
+</footer>
+<script>
+        // Micro-interactions for Neo-brutalism buttons
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body></html>

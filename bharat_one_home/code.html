@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One - Modern Civic Infrastructure</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#f9f9ff",
+                    "inverse-primary": "#adc6ff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#005320",
+                    "outline": "#727785",
+                    "surface-tint": "#005ac1",
+                    "primary-container": "#2771df",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "on-secondary": "#ffffff",
+                    "background": "#f9f9ff",
+                    "on-primary-container": "#fefcff",
+                    "surface-container-highest": "#e1e2eb",
+                    "on-primary-fixed-variant": "#004494",
+                    "inverse-on-surface": "#eff0fa",
+                    "surface-container-high": "#e7e7f1",
+                    "surface-variant": "#e1e2eb",
+                    "secondary-container": "#86f898",
+                    "primary-fixed": "#d8e2ff",
+                    "primary": "#0058bd",
+                    "error": "#ba1a1a",
+                    "tertiary-container": "#956e00",
+                    "tertiary": "#765700",
+                    "on-surface": "#191b22",
+                    "on-secondary-fixed": "#002108",
+                    "on-tertiary-container": "#fffbff",
+                    "on-primary-fixed": "#001a41",
+                    "outline-variant": "#c2c6d5",
+                    "surface-dim": "#d8d9e3",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#00722f",
+                    "surface": "#f9f9ff",
+                    "primary-fixed-dim": "#adc6ff",
+                    "inverse-surface": "#2e3038",
+                    "on-error": "#ffffff",
+                    "secondary": "#006e2c",
+                    "on-surface-variant": "#424753",
+                    "surface-container": "#ecedf7",
+                    "tertiary-fixed": "#ffdea0",
+                    "on-tertiary-fixed": "#261a00",
+                    "on-background": "#191b22",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "error-container": "#ffdad6",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "on-primary": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "surface-container-low": "#f2f3fd",
+                    "secondary-fixed": "#89fa9b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "20px": "20px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "gutter": "16px",
+                    "xl": "32px",
+                    "margin-desktop": "40px",
+                    "base": "8px",
+                    "md": "16px",
+                    "margin-mobile": "16px",
+                    "lg": "24px",
+                    "3xl": "64px",
+                    "xs": "4px",
+                    "2xl": "48px",
+                    "sm": "8px"
+            },
+            "fontFamily": {
+                    "label-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .neo-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .neo-shadow-sm {
+            box-shadow: 2px 2px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .active-press:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px rgba(25, 27, 34, 1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(8px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen pb-24">
+<!-- TopNavBar -->
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile h-16 bg-surface border-b-[3px] border-on-surface shadow-[0_4px_0_0_rgba(25,27,34,1)]">
+<div class="flex items-center gap-2">
+<span class="text-title-lg font-title-lg font-black text-primary">Bharat One</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex flex-col items-end">
+<span class="text-label-lg font-label-lg text-on-surface">New Delhi</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">32°C</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-xl border-2 border-on-surface bg-surface hover:bg-surface-container-high transition-colors active:translate-y-[2px]">
+<span class="material-symbols-outlined text-on-surface">location_on</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-xl border-2 border-on-surface bg-error-container hover:bg-error transition-colors active:translate-y-[2px]">
+<span class="material-symbols-outlined text-error" data-weight="fill" style="font-variation-settings: 'FILL' 1;">emergency_home</span>
+</button>
+<div class="w-10 h-10 rounded-full border-2 border-on-surface overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional studio portrait of a young Indian man with a friendly and confident expression. He is wearing a minimalist smart-casual outfit against a clean, neutral grey background. The lighting is soft and directional, highlighting his features with a high-end editorial feel, aligning with a premium digital identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBywWBwxsmJdu7bQCYUhXO2Fn4RXngfiA6GYZradzrDboc4c1e5xA2fZQnV8R7cBhZ_Ib3XWgKKim0x_hGO8XQRAKxIJTqk0822u3gRHqCKYJfO4CJNYQdMlyJvBZnfNZrAcBp_CNTa0di8kJaVm2tlQrcER4G87x4n6gHOE67GsTXCnRI7kqh1WF2vuyOS7XwePeg3Gg6WRsE4mDxF2IfCmh4rSFjmWt8-DPrj7gHETi0upTr47hOdBj77AOCV2iyCa5tSo5JE8JKs"/>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-24 px-margin-mobile max-w-7xl mx-auto space-y-xl">
+<!-- Hero Section with Abstract Background -->
+<section class="relative overflow-hidden rounded-20px border-[3px] border-on-surface bg-primary min-h-[320px] flex flex-col justify-end p-lg neo-shadow">
+
+<div class="relative z-10 space-y-md">
+<div class="bg-surface-container-lowest/90 backdrop-blur inline-block px-4 py-2 rounded-xl border-2 border-on-surface neo-shadow-sm">
+<h1 class="text-headline-md font-headline-md text-on-surface">Good Morning, Arjun 👋</h1>
+</div>
+<!-- Main AI Search Bar -->
+<div class="w-full max-w-2xl bg-surface-container-lowest border-[3px] border-on-surface rounded-20px p-2 flex items-center gap-2 neo-shadow group focus-within:ring-4 ring-primary/20 transition-all">
+<span class="material-symbols-outlined text-on-surface-variant ml-4">search</span>
+<input class="flex-1 bg-transparent border-none focus:ring-0 text-body-lg font-body-lg text-on-surface placeholder:text-on-surface-variant" placeholder="What do you need today?" type="text"/>
+<div class="flex items-center gap-1 pr-1">
+<button class="p-3 rounded-xl hover:bg-surface-container-high transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary">mic</span>
+</button>
+<button class="p-3 rounded-xl hover:bg-surface-container-high transition-colors active:scale-95">
+<span class="material-symbols-outlined text-primary">center_focus_weak</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Civic Dashboard Grid -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="bg-secondary-container/10 border-[3px] border-on-surface rounded-20px p-md flex items-center justify-between neo-shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined text-on-secondary-fixed">air</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Air Quality</p>
+<p class="text-title-lg font-title-lg text-on-surface">42 (Good)</p>
+</div>
+</div>
+<span class="w-3 h-3 rounded-full bg-secondary animate-pulse"></span>
+</div>
+<div class="bg-tertiary-fixed/10 border-[3px] border-on-surface rounded-20px p-md flex items-center justify-between neo-shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined text-on-tertiary-fixed">traffic</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Traffic</p>
+<p class="text-title-lg font-title-lg text-on-surface">Light</p>
+</div>
+</div>
+</div>
+<div class="bg-primary-fixed/10 border-[3px] border-on-surface rounded-20px p-md flex items-center justify-between neo-shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center border-2 border-on-surface">
+<span class="material-symbols-outlined text-on-primary-fixed">bolt</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm text-on-surface-variant">Power Grid</p>
+<p class="text-title-lg font-title-lg text-on-surface">Stable</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Actions Grid -->
+<section class="space-y-lg">
+<h2 class="text-headline-md font-headline-md text-on-surface px-1">Quick Actions</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-md md:gap-lg">
+<!-- Card 1: Report Issue -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-error/10 border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-error text-3xl">report</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Report Issue</span>
+</button>
+<!-- Card 2: Ask Bharat AI -->
+<button class="group flex flex-col items-start text-left p-lg bg-primary-container border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:brightness-110">
+<div class="w-12 h-12 rounded-xl bg-surface border-2 border-on-surface flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl">smart_toy</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-primary-container">Ask Bharat AI</span>
+</button>
+<!-- Card 3: Govt Schemes -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-secondary-container border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-container text-3xl">account_balance</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Govt Schemes</span>
+</button>
+<!-- Card 4: Doc Assistant -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-tertiary-fixed border-2 border-on-surface flex items-center justify-center mb-4 group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl">description</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Doc Assistant</span>
+</button>
+<!-- Card 5: Transport -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-primary-fixed text-3xl">directions_bus</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Transport</span>
+</button>
+<!-- Card 6: Civic Services -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-outline-variant border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-surface text-3xl">account_tree</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Civic Services</span>
+</button>
+<!-- Card 7: Health -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-error-container border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-error text-3xl">medical_services</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Health</span>
+</button>
+<!-- Card 8: Jobs -->
+<button class="group flex flex-col items-start text-left p-lg bg-surface border-[3px] border-on-surface rounded-20px neo-shadow active-press transition-all hover:bg-surface-container-lowest">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed border-2 border-on-surface flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-on-secondary-fixed text-3xl">work</span>
+</div>
+<span class="text-title-lg font-title-lg text-on-surface">Jobs</span>
+</button>
+</div>
+</section>
+<!-- Informational Banner -->
+<section class="bg-surface-container-highest rounded-20px border-[3px] border-on-surface p-xl flex flex-col md:flex-row items-center gap-xl neo-shadow">
+<div class="flex-1 space-y-md text-center md:text-left">
+<div class="inline-block px-3 py-1 rounded-full bg-secondary/10 border-2 border-secondary text-secondary font-bold text-label-sm">
+                    FEATURED SCHEME
+                </div>
+<h3 class="text-headline-lg font-headline-lg text-on-surface leading-tight">Digital India Internship 2024</h3>
+<p class="text-body-lg text-on-surface-variant max-w-lg">Apply for prestigious government internships in tech and public policy. Registrations close in 2 days.</p>
+<button class="px-8 py-4 bg-on-surface text-surface rounded-xl font-bold neo-shadow active-press hover:bg-on-surface-variant transition-colors">
+                    Apply Now
+                </button>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-xl border-2 border-on-surface overflow-hidden neo-shadow-sm">
+<img class="w-full h-full object-cover" data-alt="A futuristic digital illustration of a vibrant Indian city skyline at sunset, with holographic networks of light connecting skyscrapers and government buildings. The style is inspired by modern architectural renders with a high-contrast cinematic lighting and a dominant palette of indigo, saffron, and emerald. It represents the intersection of tradition and digital innovation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs6667u33oyGTJ0yBnq7ob-EpO1mufJx6E6U-sSqOgf7dnQ8k75zWqPI9PNEzOqW1xHCwm2sl-tSohyXbpCawGL2mi7SsZWvWL3LJBKqCbhH3iYXjG_dA-6kTQtJGqQssiFubMRENDBAUSDbfTCeZh5z1ExMoZ3RaW-xfGkk2QpFYjaFsBI0-tJnCIASI6YrSxYcOlq0WSU4CTd-a2NMzFJkE92sSaUwkk2nGuO15vGrk0DvFkijyVxgUie38qMsFtMyxZP2Wg2_bo"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-2 py-3 bg-surface border-t-[3px] border-on-surface md:hidden">
+<a class="flex flex-col items-center justify-center bg-primary-container text-on-primary-container rounded-xl px-3 py-1.5 scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">Ask Bharat AI</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">analytics</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-surface-variant px-3 py-1.5 hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction: Smooth scroll or interaction logic
+        document.querySelectorAll('button').forEach(button => {
+            button.addEventListener('mousedown', () => {
+                button.classList.add('scale-95');
+            });
+            button.addEventListener('mouseup', () => {
+                button.classList.remove('scale-95');
+            });
+        });
+    </script>
+</body></html>

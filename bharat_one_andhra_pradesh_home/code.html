@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Andhra Pradesh Digital Gateway</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#6ddd81",
+                        "inverse-primary": "#adc6ff",
+                        "background": "#f9f9ff",
+                        "surface-container-high": "#e7e7f1",
+                        "inverse-surface": "#2e3038",
+                        "surface-variant": "#e1e2eb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#00722f",
+                        "on-secondary-fixed-variant": "#005320",
+                        "on-background": "#191b22",
+                        "tertiary-fixed": "#ffdea0",
+                        "error": "#ba1a1a",
+                        "primary-fixed": "#d8e2ff",
+                        "outline": "#727785",
+                        "inverse-on-surface": "#eff0fa",
+                        "tertiary": "#765700",
+                        "tertiary-container": "#956e00",
+                        "on-tertiary-fixed": "#261a00",
+                        "error-container": "#ffdad6",
+                        "secondary-fixed": "#89fa9b",
+                        "on-primary-fixed": "#001a41",
+                        "surface-container-highest": "#e1e2eb",
+                        "secondary-container": "#86f898",
+                        "outline-variant": "#c2c6d5",
+                        "on-primary": "#ffffff",
+                        "secondary": "#006e2c",
+                        "on-surface-variant": "#424753",
+                        "tertiary-fixed-dim": "#fbbc06",
+                        "surface": "#f9f9ff",
+                        "on-tertiary-fixed-variant": "#5c4300",
+                        "primary": "#0058bd",
+                        "on-error-container": "#93000a",
+                        "surface-dim": "#d8d9e3",
+                        "surface-container-low": "#f2f3fd",
+                        "on-tertiary-container": "#fffbff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#002108",
+                        "on-primary-container": "#fefcff",
+                        "on-error": "#ffffff",
+                        "surface-container": "#ecedf7",
+                        "on-surface": "#191b22",
+                        "surface-tint": "#005ac1",
+                        "primary-fixed-dim": "#adc6ff",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#004494",
+                        "surface-bright": "#f9f9ff",
+                        "primary-container": "#2771df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "20px": "20px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "gutter": "16px",
+                        "2xl": "48px",
+                        "margin-desktop": "40px",
+                        "lg": "24px",
+                        "md": "16px",
+                        "base": "8px",
+                        "xs": "4px",
+                        "xl": "32px",
+                        "3xl": "64px",
+                        "sm": "8px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter", "sans-serif"],
+                        "body": ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f9f9ff; }
+        .neo-brutalism-card {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.2s ease;
+        }
+        .neo-brutalism-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #191b22;
+        }
+        .neo-brutalism-button {
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.1s ease;
+        }
+        .neo-brutalism-button:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="text-on-surface overflow-x-hidden">
+<!-- WebGL Background Container -->
+<div class="fixed inset-0 -z-10 w-full h-full opacity-40">
+
+</div>
+<!-- Top AppBar -->
+<header class="sticky top-0 w-full flex justify-between items-center px-md md:px-lg py-sm z-50 bg-background dark:bg-inverse-surface border-b-3 border-on-surface">
+<div class="flex items-center gap-md">
+<span class="text-title-lg font-headline font-black text-on-surface uppercase tracking-tight">Bharat One</span>
+<div class="hidden md:flex gap-md ml-lg">
+<nav class="flex gap-md">
+<a class="text-primary font-bold text-label-lg flex items-center gap-xs" href="#">
+<span class="material-symbols-outlined text-[20px]">home</span>
+                        Home
+                    </a>
+<a class="text-on-surface-variant font-semibold text-label-lg hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-on-surface-variant font-semibold text-label-lg hover:text-primary transition-colors" href="#">Documents</a>
+</nav>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden lg:flex items-center bg-surface-container border-3 border-on-surface rounded-full px-md py-1 mr-md">
+<span class="material-symbols-outlined mr-xs text-on-surface-variant">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-label-md w-48" placeholder="Search services..." type="text"/>
+</div>
+<div class="flex items-center gap-sm">
+<span class="material-symbols-outlined p-xs hover:bg-surface-container-high rounded-full cursor-pointer">location_on</span>
+<span class="material-symbols-outlined p-xs hover:bg-surface-container-high rounded-full cursor-pointer">emergency_home</span>
+<div class="flex items-center gap-xs pl-sm border-l-2 border-outline-variant">
+<span class="material-symbols-outlined fill-icon text-primary" style="font-variation-settings: 'FILL' 1;">account_circle</span>
+<span class="text-label-md font-bold hidden sm:block">Arjun K.</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Emergency Bar -->
+<div class="w-full bg-error-container text-on-error-container px-lg py-xs border-b-3 border-on-surface flex items-center justify-center gap-md z-40 relative">
+<span class="material-symbols-outlined animate-pulse">warning</span>
+<p class="text-label-lg font-bold">Flood Alert: Krishna River levels are being monitored. Stay informed.</p>
+<button class="underline text-label-sm font-bold ml-lg">VIEW MAP</button>
+</div>
+<main class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-xl relative">
+<!-- Local Greeting & Context -->
+<section class="mb-2xl flex flex-col md:flex-row justify-between items-start md:items-end gap-md">
+<div>
+<h1 class="text-display-lg font-headline text-on-surface mb-xs">Namaskaram, Arjun!</h1>
+<div class="flex items-center gap-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span class="text-title-lg font-bold">Amaravati, Andhra Pradesh</span>
+</div>
+</div>
+<div class="flex flex-col items-end">
+<p class="text-label-sm text-on-surface-variant uppercase tracking-widest font-black">Local Weather</p>
+<div class="flex items-center gap-md bg-white border-3 border-on-surface p-sm rounded-20px">
+<span class="material-symbols-outlined text-tertiary text-3xl">wb_sunny</span>
+<div>
+<span class="text-headline-md font-black">32°C</span>
+<span class="text-label-sm block text-on-surface-variant">Mostly Sunny</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-start">
+<!-- Hero Card: State Gateway -->
+<div class="md:col-span-8 neo-brutalism-card bg-primary-container text-on-primary-container p-xl rounded-20px relative overflow-hidden group">
+<div class="relative z-10">
+<div class="flex items-center gap-xs mb-md">
+<span class="bg-secondary-container text-on-secondary-container text-label-sm font-black px-md py-1 rounded-full border-2 border-on-surface">SYSTEM STABLE</span>
+</div>
+<h2 class="text-headline-lg font-headline font-black mb-md">Andhra Pradesh Digital Gateway</h2>
+<p class="text-body-lg mb-xl max-w-xl opacity-90">Access all citizen-centric services, view your benefits dashboard, and participate in building a brighter future for the state.</p>
+<div class="flex flex-wrap gap-md">
+<button class="neo-brutalism-button bg-white text-on-surface px-lg py-md font-bold rounded-20px flex items-center gap-xs">
+<span class="material-symbols-outlined">dashboard</span>
+                            Go to Dashboard
+                        </button>
+<button class="neo-brutalism-button bg-on-surface text-white px-lg py-md font-bold rounded-20px flex items-center gap-xs">
+<span class="material-symbols-outlined">history_edu</span>
+                            Service History
+                        </button>
+</div>
+</div>
+<!-- Abstract Design Elements -->
+<div class="absolute right-[-20px] bottom-[-20px] w-64 h-64 opacity-20 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[200px]">account_balance</span>
+</div>
+</div>
+<!-- Featured Section: Amaravati Project -->
+<div class="md:col-span-4 neo-brutalism-card bg-surface-container-lowest p-lg rounded-20px flex flex-col h-full border-secondary">
+<div class="mb-md">
+<h3 class="text-title-lg font-headline font-black text-secondary uppercase">Amaravati Capital Region</h3>
+<p class="text-label-sm text-on-surface-variant">Capital Development Project</p>
+</div>
+<div class="flex-grow flex items-center justify-center mb-md py-lg">
+<!-- Progress Visualization Placeholder -->
+<div class="w-32 h-32 rounded-full border-[8px] border-secondary-container flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full border-[8px] border-secondary border-t-transparent -rotate-45"></div>
+<span class="text-headline-md font-black">68%</span>
+</div>
+</div>
+<p class="text-body-md font-semibold text-center mb-lg">Tracking progress of the sustainable capital project.</p>
+<button class="w-full neo-brutalism-button bg-secondary text-white py-sm font-bold rounded-xl flex items-center justify-center gap-xs">
+                    View Master Plan
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Quick Actions Grid -->
+<div class="md:col-span-12">
+<h3 class="text-headline-md font-headline font-black mb-lg">Quick Actions</h3>
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-md">
+<!-- Action Item -->
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">report</span>
+</div>
+<span class="text-label-md font-bold text-center">Report Issue</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">search_insights</span>
+</div>
+<span class="text-label-md font-bold text-center">Find Schemes</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">folder_shared</span>
+</div>
+<span class="text-label-md font-bold text-center">Document Vault</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">commute</span>
+</div>
+<span class="text-label-md font-bold text-center">Transport &amp; Metro</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">medical_services</span>
+</div>
+<span class="text-label-md font-bold text-center">Health Services</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">school</span>
+</div>
+<span class="text-label-md font-bold text-center">Skill &amp; Jobs</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">payments</span>
+</div>
+<span class="text-label-md font-bold text-center">Municipal Bills</span>
+</div>
+<div class="flex flex-col items-center gap-sm group cursor-pointer">
+<div class="w-full aspect-square neo-brutalism-card bg-surface-bright rounded-20px flex items-center justify-center group-hover:bg-primary-container group-hover:text-white transition-all">
+<span class="material-symbols-outlined text-4xl">notifications_active</span>
+</div>
+<span class="text-label-md font-bold text-center">Nearby Alerts</span>
+</div>
+</div>
+</div>
+<!-- State Highlight: Kondapalli Craft -->
+<div class="md:col-span-12 lg:col-span-12 neo-brutalism-card bg-white rounded-20px p-xl border-tertiary">
+<div class="flex flex-col lg:flex-row gap-xl items-center">
+<div class="lg:w-1/2">
+<div class="inline-block bg-tertiary-container text-on-tertiary-container text-label-sm font-black px-md py-1 rounded-full border-2 border-on-surface mb-md uppercase">Cultural Heritage</div>
+<h3 class="text-headline-lg font-headline font-black text-on-surface mb-md">Kondapalli Craft Portal</h3>
+<p class="text-body-lg text-on-surface-variant mb-lg">Celebrating the legacy of the Kondapalli Toys. We are supporting local artisans through direct digital markets, global shipping infrastructure, and craft insurance schemes.</p>
+<div class="flex gap-md">
+<button class="neo-brutalism-button bg-tertiary text-white px-lg py-md font-bold rounded-20px">Explore Portal</button>
+<button class="neo-brutalism-button bg-white text-on-surface px-lg py-md font-bold rounded-20px">Apply as Artisan</button>
+</div>
+</div>
+<div class="lg:w-1/2 grid grid-cols-3 gap-md">
+<!-- Heritage Illustration Cards -->
+<div class="aspect-square neo-brutalism-card bg-tertiary-fixed flex items-center justify-center rounded-20px">
+<span class="material-symbols-outlined text-5xl text-tertiary">palette</span>
+</div>
+<div class="aspect-square neo-brutalism-card bg-surface-container-high flex items-center justify-center rounded-20px">
+<span class="material-symbols-outlined text-5xl text-on-surface-variant">handyman</span>
+</div>
+<div class="aspect-square neo-brutalism-card bg-secondary-fixed flex items-center justify-center rounded-20px">
+<span class="material-symbols-outlined text-5xl text-secondary">public</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Bar (Mobile only, hidden on md) -->
+<footer class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface md:hidden rounded-t-xl shadow-[0_-4px_0_0_rgba(25,27,34,1)]">
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1">
+<span class="material-symbols-outlined fill-icon">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</div>
+</footer>
+<!-- Interactive FAB -->
+<button class="fixed right-lg bottom-lg md:right-xl md:bottom-xl w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl border-3 border-on-surface neo-brutalism-button z-40">
+<span class="material-symbols-outlined text-3xl">smart_toy</span>
+</button>
+<script>
+        // Simple micro-interactions
+        document.querySelectorAll('.neo-brutalism-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential for adding small JS animations if needed
+            });
+        });
+
+        // Search highlight effect
+        const searchInput = document.querySelector('input');
+        searchInput.addEventListener('focus', () => {
+            searchInput.parentElement.style.borderColor = '#4285F4';
+        });
+        searchInput.addEventListener('blur', () => {
+            searchInput.parentElement.style.borderColor = '#191b22';
+        });
+    </script>
+</body></html>

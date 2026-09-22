@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Manipur Home</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed-variant": "#474746",
+                    "error-container": "#ffdad6",
+                    "primary-container": "#212121",
+                    "on-surface-variant": "#444748",
+                    "background": "#f8f9fa",
+                    "error": "#ba1a1a",
+                    "tertiary": "#0b0a09",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-tint": "#5f5e5e",
+                    "on-surface": "#191c1d",
+                    "outline": "#747878",
+                    "secondary-container": "#da3433",
+                    "on-secondary-container": "#fffbff",
+                    "surface-dim": "#d9dadb",
+                    "on-tertiary-fixed-variant": "#484645",
+                    "on-secondary-fixed": "#410003",
+                    "secondary-fixed-dim": "#ffb3ac",
+                    "tertiary-fixed": "#e6e2e0",
+                    "surface-bright": "#f8f9fa",
+                    "surface-variant": "#e1e3e4",
+                    "primary-fixed-dim": "#c8c6c5",
+                    "on-tertiary-container": "#8b8886",
+                    "tertiary-container": "#222120",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#c9c6c4",
+                    "inverse-surface": "#2e3132",
+                    "on-tertiary": "#ffffff",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1d",
+                    "on-primary-container": "#898888",
+                    "surface": "#f8f9fa",
+                    "on-primary-fixed": "#1b1c1c",
+                    "secondary": "#b6171e",
+                    "inverse-primary": "#c8c6c5",
+                    "surface-container-highest": "#e1e3e4",
+                    "secondary-fixed": "#ffdad6",
+                    "primary": "#0a0a0a",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#c4c7c7",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#e5e2e1",
+                    "surface-container": "#edeeef",
+                    "inverse-on-surface": "#f0f1f2",
+                    "surface-container-low": "#f3f4f5",
+                    "on-tertiary-fixed": "#1c1b1a",
+                    "on-secondary-fixed-variant": "#930010",
+                    "lake-teal": "#2D6A4F",
+                    "lotus-pink": "#E07A5F"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px",
+                    "petal": "20px"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "xl": "64px",
+                    "lg": "40px",
+                    "gutter": "20px",
+                    "xs": "8px",
+                    "md": "24px",
+                    "margin-desktop": "32px",
+                    "base": "4px",
+                    "sm": "16px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Plus Jakarta Sans"],
+                    "body-lg": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "title-md": ["Plus Jakarta Sans"],
+                    "body-sm": ["Plus Jakarta Sans"],
+                    "label-bold": ["Plus Jakarta Sans"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "body-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "title-md": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "label-bold": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutalist-card {
+            border: 3px solid #0a0a0a;
+            border-radius: 20px;
+            box-shadow: 4px 4px 0px 0px rgba(10,10,10,1);
+            transition: all 0.2s ease;
+        }
+        .neo-brutalist-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px rgba(10,10,10,1);
+        }
+        .petal-shape {
+            border-radius: 20px 2px 20px 2px;
+        }
+        .phumdi-pulse {
+            animation: pulse-teal 3s infinite ease-in-out;
+        }
+        @keyframes pulse-teal {
+            0%, 100% { background-color: #2D6A4F; }
+            50% { background-color: #40916c; }
+        }
+        .floating-petals {
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-lg overflow-x-hidden">
+<!-- WebGL Background Placeholder Integration -->
+<div class="fixed inset-0 -z-10 bg-surface">
+
+</div>
+<!-- Top Navigation Anchor -->
+<header class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile py-4 bg-surface border-b-3 border-primary shadow-[4px_4px_0px_0px_rgba(10,10,10,1)]">
+<div class="flex items-center gap-2">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary font-extrabold tracking-tighter">Bharat One | Assam</span>
+</div>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-primary font-bold font-title-md transition-all hover:bg-surface-container-high px-3 py-1 rounded-lg" href="#">Home</a>
+<a class="text-on-surface-variant font-title-md hover:text-primary transition-all" href="#">Services</a>
+<a class="text-on-surface-variant font-title-md hover:text-primary transition-all" href="#">Explore</a>
+</div>
+<div class="flex items-center gap-3">
+<button class="bg-secondary-container text-on-secondary-container font-label-bold text-label-bold px-4 py-2 border-3 border-primary rounded-xl shadow-[2px_2px_0px_0px_rgba(10,10,10,1)] active:translate-y-1 active:shadow-none transition-all">Emergency</button>
+<span class="material-symbols-outlined text-primary text-3xl">account_circle</span>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-4 md:px-margin-desktop py-8 pb-32">
+<!-- Hero Section: Greeting -->
+<section class="mb-12">
+<div class="neo-brutalist-card bg-white p-8 relative overflow-hidden">
+<div class="absolute top-[-20px] right-[-20px] w-40 h-40 bg-lotus-pink/10 petal-shape -rotate-12"></div>
+<div class="relative z-10">
+<span class="font-label-bold text-label-bold text-lake-teal tracking-widest uppercase mb-2 block">Welcome to the Jewel of India</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-4">Khurumjari!</h1>
+<p class="font-body-lg text-body-lg max-w-2xl text-on-surface-variant">
+                        Experience the ethereal beauty of Loktak Lake, the grace of Manipuri Raas Leela, and the vibrant wild soul of Keibul Lamjao. Manipur welcomes you with open arms and timeless traditions.
+                    </p>
+<div class="mt-8 flex flex-wrap gap-4">
+<button class="neo-brutalist-card bg-lake-teal text-white px-8 py-4 font-title-md flex items-center gap-2">
+<span class="material-symbols-outlined">explore</span> Explore Map
+                        </button>
+<button class="neo-brutalist-card bg-white text-primary px-8 py-4 font-title-md border-3">
+                            State Archive
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Special Features -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Loktak Phumdi Conservation: High Density Tracker -->
+<div class="md:col-span-8 neo-brutalist-card bg-white p-6 overflow-hidden relative">
+<div class="flex justify-between items-start mb-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Loktak Phumdi Conservation</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Live ecosystem health monitoring of the floating islands.</p>
+</div>
+<div class="phumdi-pulse w-4 h-4 rounded-full border-2 border-primary"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+<div class="bg-surface-container-low p-4 border-2 border-primary rounded-xl">
+<p class="text-label-bold font-label-bold text-lake-teal uppercase">Water Level</p>
+<p class="text-title-md font-title-md text-primary">768.4m</p>
+</div>
+<div class="bg-surface-container-low p-4 border-2 border-primary rounded-xl">
+<p class="text-label-bold font-label-bold text-lake-teal uppercase">Biodiversity</p>
+<p class="text-title-md font-title-md text-primary">High</p>
+</div>
+<div class="bg-surface-container-low p-4 border-2 border-primary rounded-xl">
+<p class="text-label-bold font-label-bold text-lake-teal uppercase">Phumdi Health</p>
+<p class="text-title-md font-title-md text-primary">Stable</p>
+</div>
+<div class="bg-surface-container-low p-4 border-2 border-primary rounded-xl">
+<p class="text-label-bold font-label-bold text-lake-teal uppercase">Temp</p>
+<p class="text-title-md font-title-md text-primary">24°C</p>
+</div>
+</div>
+<div class="h-48 w-full bg-slate-100 rounded-xl relative overflow-hidden border-2 border-primary">
+<div class="absolute inset-0 opacity-20" data-alt="A detailed aerial view of Loktak lake showing circular green floating islands called phumdis on blue-teal water, captured in a minimalist, high-contrast photographic style with a clean, light-mode background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD9tvNGcLAMWpYA9rcIwb507VVmRv-e0wxhopBe-vmGFjt2wdQ32YV9slTGSGORkKsPHrFujQ2bbtUOluD5vETKLW0eOi-7O2sORGdbyh6adAVTg3hdL7tRuZE9aE6_sWzcKz4SYCwRHPgUZcsdZaN1wDLLfTlzVxPbx_sineLFNVqXbGk5-tboVYS6IOcnFSVkKosIvksvYGMqWx-uAPr8Xha5fNtvtI_bCvzujfmQilDSK8yE3ihZQYEZix2vA5nZginSdM0Ubm4K')"></div>
+<!-- Mock Graph -->
+<svg class="absolute bottom-0 w-full h-24" preserveaspectratio="none" viewbox="0 0 400 100">
+<path d="M0,100 C50,80 100,90 150,60 C200,30 250,50 300,20 C350,10 400,40 400,40 L400,100 L0,100 Z" fill="#2D6A4F" fill-opacity="0.3" stroke="#2D6A4F" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<!-- Wildlife Portal: Keibul Lamjao -->
+<div class="md:col-span-4 neo-brutalist-card bg-lake-teal text-white p-6 relative">
+<div class="mb-4">
+<span class="material-symbols-outlined text-4xl mb-2">nature_people</span>
+<h2 class="font-headline-lg text-headline-lg">Keibul Lamjao</h2>
+<p class="font-body-sm text-body-sm text-secondary-fixed opacity-90">World's only floating national park.</p>
+</div>
+<div class="aspect-square w-full neo-brutalist-card mb-4 bg-center bg-cover overflow-hidden" data-alt="A majestic Sangai deer with distinctive brow-tined antlers, standing on a floating phumdi in Keibul Lamjao National Park. The background shows golden sunset light hitting the tall grasses and water. The image is crisp, professional nature photography with vibrant greens and earthy tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMrW8ADspMAuHw8jAXC8XzlNgxOMSde_jQfempWxbzCqZDBDshhhor-T4lTHQMhX8LFjAMxeo75A4NCkBK5rxiSjyw64otFRCgHCdSoMYB6P6JFrwg0NA-4FsIDgV31JB_vsF3g6LEB2qpyWle6GBSGeMeVwHjck4mnXnecguQAh_xWFCl-Jy83uxV8L_weOmz6eRhVFQI6hj3aQAMLAzLXeZ2Fwx8Crluw0yKUF_UVyqyjali7G1sVX-tEBMq8MRvtVV2asw2IOLF')">
+</div>
+<button class="w-full bg-white text-primary py-3 font-label-bold rounded-xl border-3 border-primary shadow-[2px_2px_0px_0px_rgba(10,10,10,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
+                    SIGHTING ALERTS
+                </button>
+</div>
+<!-- Manipuri Dance Archive -->
+<div class="md:col-span-12 neo-brutalist-card bg-white p-6">
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-lg text-headline-lg text-primary flex items-center gap-3">
+<span class="material-symbols-outlined text-lotus-pink text-4xl" style="font-variation-settings: 'FILL' 1;">theater_comedy</span>
+                        Manipuri Dance Archive
+                    </h2>
+<a class="text-lake-teal font-label-bold flex items-center gap-1 border-b-2 border-lake-teal" href="#">VIEW ALL PERFORMANCES</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Performance Card 1 -->
+<div class="group cursor-pointer">
+<div class="neo-brutalist-card h-64 mb-4 overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A beautiful close-up of a Manipuri dancer in traditional Potloi costume, featuring a stiff cylindrical skirt with intricate mirrors and gold embroidery. The dancer has a serene expression with graceful hand mudras. The lighting is theatrical and warm, highlighting the textures of the pink and gold fabric." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBawLe8eUk3lvHpiuTCVbYrx771x-V1sD_30iDtx6kU7HombURPGO0crO5k8I7VevqvytTDqrWti6dQI_gzDxPP4AdEK8-Q5_FbyM3LIkDzSgeufO3hCleB7QnK72K_R0_0jJql5kYb-tLGZFZQwg409nrE4n-_m76E1cw9PiAKNB-2UJRlAwMpORirn8eAx2MA_8FBHLuLgA6vL1uoSCh7S7dlmp5tErGxm96AL4sSo8mqi_Hp0eDvcWvK0ZQCHsDkODj7jRNg4Kk9')"></div>
+<div class="absolute bottom-4 left-4 bg-white/90 px-3 py-1 neo-brutalist-card text-label-bold text-primary border-2 shadow-none">
+                                VIRTUAL REALITY
+                            </div>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Raas Leela: Maha Raas</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Devotional dance at Govindajee Temple.</p>
+</div>
+<!-- Performance Card 2 -->
+<div class="group cursor-pointer">
+<div class="neo-brutalist-card h-64 mb-4 overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Dynamic shot of Lai Haraoba festival dancers in Manipur. Men and women in traditional white and red woven wrap-arounds performing synchronized movements in an open-air courtyard. The scene is bright, daylight-filled, and filled with cultural energy. The background shows traditional Manipuri wooden architecture." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAon2nBC6uLEap4--xsc1Afx7pw9lKyWhiMbmiaV59a8PPeQ_0gcFFKOhsnj1Q88FUOksjHmQ-lE2_Vt8_maCqk-_0Oaa_WQ6eqBcpktFHaXAoKkMr_oNR1ofw2VsJGt0_q7Gtj2dYSKuZ2jGjiodS-zYxTh3_24g1AZwXD93Mto78b7D4OsLGZ-G1gX35-BFVsVmJ1cmjaDMB3aoPuZv5MEET_kAEtiGFM7ahlHNao-IeRwcqu7quC8Rus57fdZ1Cx6GAhlPUoOnrD')"></div>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Lai Haraoba</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The festival of deities' pleasure.</p>
+</div>
+<!-- Performance Card 3 -->
+<div class="group cursor-pointer">
+<div class="neo-brutalist-card h-64 mb-4 overflow-hidden relative">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Manipuri Pung Cholom drummers in mid-air leap, wearing white turbans and dhotis. Their traditional hand drums are captured in motion. The image is high-speed action photography with a clean minimalist background to emphasize the physical power and grace of the performers." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANejwGKepP3YKoObPqjPVHQsJ7iO2yxOHHwQIa1Gw8rp1Vcp2AurTbHd2iC57CtWP43gaX2uowA1M5nh86SOuU9WJQIUKjU8rEgMUfb3XfOWhexrc1m-tJQbrmp3zj3mQAhIqSlF5PvrTqqng6RuvTUcUZKZ-PLNxO5KOUER3FjTCbaowFbkeGs-kDgMPnAqTUWmPgzt8sKYcEjZn4l76KPDMSgguUF_xScLt3hl3cRlS0c51BfIFKhvWE5w58_J7Vz4LMnxEzCMTc')"></div>
+</div>
+<h3 class="font-title-md text-title-md text-primary">Pung Cholom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">The thunderous roar of the drum.</p>
+</div>
+</div>
+</div>
+<!-- Lotus Motif Feature -->
+<div class="md:col-span-12 flex flex-col items-center justify-center py-12 px-6 neo-brutalist-card bg-lotus-pink/10 border-dashed">
+<span class="material-symbols-outlined text-6xl text-lotus-pink mb-4" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h3 class="font-headline-lg text-headline-lg text-primary text-center mb-4">Digital Lotus Weave</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant text-center max-w-2xl mb-8">
+                    Discover the intricate geometry behind Manipur's handloom patterns. Our AI-driven motif generator helps local weavers document and evolve traditional designs.
+                </p>
+<button class="neo-brutalist-card bg-primary text-white px-10 py-4 font-title-md">
+                    Launch Motif Designer
+                </button>
+</div>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 pb-6 bg-surface border-t-3 border-primary rounded-t-xl shadow-[0px_-4px_0px_0px_rgba(10,10,10,1)]">
+<div class="flex flex-col items-center justify-center text-on-surface-variant group">
+<span class="material-symbols-outlined text-2xl group-active:scale-95 transition-transform">home</span>
+<span class="font-label-bold text-label-bold">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant group">
+<span class="material-symbols-outlined text-2xl group-active:scale-95 transition-transform">apps</span>
+<span class="font-label-bold text-label-bold">Services</span>
+</div>
+<!-- Active Tab -->
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1.5 border-3 border-primary shadow-sm scale-110 -translate-y-2">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">smart_toy</span>
+<span class="font-label-bold text-label-bold">AI</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant group">
+<span class="material-symbols-outlined text-2xl group-active:scale-95 transition-transform">location_on</span>
+<span class="font-label-bold text-label-bold">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant group">
+<span class="material-symbols-outlined text-2xl group-active:scale-95 transition-transform">person</span>
+<span class="font-label-bold text-label-bold">Profile</span>
+</div>
+</nav>
+<script>
+        // Micro-interactions for hard shadows
+        document.querySelectorAll('.neo-brutalist-card').forEach(card => {
+            card.addEventListener('mousedown', () => {
+                card.style.transform = 'translate(4px, 4px)';
+                card.style.boxShadow = '0px 0px 0px 0px rgba(10,10,10,1)';
+            });
+            card.addEventListener('mouseup', () => {
+                card.style.transform = 'translate(0px, 0px)';
+                card.style.boxShadow = '4px 4px 0px 0px rgba(10,10,10,1)';
+            });
+        });
+
+        // Simple ticker animation for conservation data
+        setInterval(() => {
+            const tempVal = document.querySelector('.phumdi-pulse').parentElement.nextElementSibling.lastElementChild.querySelector('.text-title-md');
+            const currentTemp = parseFloat(tempVal.innerText);
+            const drift = (Math.random() - 0.5) * 0.2;
+            tempVal.innerText = (currentTemp + drift).toFixed(1) + '°C';
+        }, 5000);
+    </script>
+</body></html>

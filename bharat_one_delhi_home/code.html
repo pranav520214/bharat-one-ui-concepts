@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bharat One | Delhi</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#ecedf7",
+                    "inverse-primary": "#adc6ff",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed-variant": "#004494",
+                    "on-surface": "#191b22",
+                    "on-primary-fixed": "#001a41",
+                    "on-secondary-fixed-variant": "#005320",
+                    "on-background": "#191b22",
+                    "outline": "#727785",
+                    "on-tertiary-container": "#fffbff",
+                    "primary": "#0058bd",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#5c4300",
+                    "surface-container-low": "#f2f3fd",
+                    "primary-container": "#2771df",
+                    "on-tertiary": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#fefcff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-dim": "#d8d9e3",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed-dim": "#fbbc06",
+                    "surface-tint": "#005ac1",
+                    "secondary-container": "#86f898",
+                    "inverse-surface": "#2e3038",
+                    "tertiary-fixed": "#ffdea0",
+                    "primary-fixed": "#d8e2ff",
+                    "on-secondary": "#ffffff",
+                    "secondary-fixed-dim": "#6ddd81",
+                    "surface-variant": "#e1e2eb",
+                    "surface-bright": "#f9f9ff",
+                    "outline-variant": "#c2c6d5",
+                    "on-secondary-fixed": "#002108",
+                    "tertiary-container": "#956e00",
+                    "surface": "#f9f9ff",
+                    "secondary": "#006e2c",
+                    "primary-fixed-dim": "#adc6ff",
+                    "on-surface-variant": "#424753",
+                    "surface-container-highest": "#e1e2eb",
+                    "surface-container-high": "#e7e7f1",
+                    "inverse-on-surface": "#eff0fa",
+                    "background": "#f9f9ff",
+                    "on-secondary-container": "#00722f"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "20px",
+                    "xl": "24px",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "margin-desktop": "40px",
+                    "gutter": "16px",
+                    "2xl": "48px",
+                    "3xl": "64px",
+                    "md": "16px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "xl": "32px",
+                    "margin-mobile": "16px",
+                    "sm": "8px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "title-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "headline-lg-mobile": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neo-brutal-card {
+            background: #ffffff;
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.2s ease;
+        }
+        .neo-brutal-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px 0px #191b22;
+        }
+        .neo-brutal-card:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .neo-brutal-button-primary {
+            background: #0058bd;
+            color: #ffffff;
+            border: 3px solid #191b22;
+            box-shadow: 4px 4px 0px 0px #191b22;
+            transition: all 0.1s ease;
+        }
+        .neo-brutal-button-primary:active {
+            transform: translate(2px, 2px);
+            box-shadow: 0px 0px 0px 0px #191b22;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container">
+<!-- Top Navigation Anchor -->
+<header class="sticky top-0 w-full flex justify-between items-center px-4 md:px-12 py-3 z-50 bg-background border-b-3 border-on-surface">
+<div class="flex items-center gap-3">
+<span class="text-primary font-headline-lg font-black tracking-tighter">Bharat One</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<nav class="flex gap-6">
+<a class="text-primary font-bold transition-all duration-100 translate-y-0.5" href="#">Home</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-3 py-1 rounded-lg" href="#">Schemes</a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-3 py-1 rounded-lg" href="#">Directory</a>
+</nav>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:bg-surface-container-high p-2 rounded-full">location_on</span>
+<span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:bg-surface-container-high p-2 rounded-full">emergency_home</span>
+<span class="material-symbols-outlined text-on-surface cursor-pointer p-1 border-2 border-on-surface rounded-full">account_circle</span>
+</div>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface-variant p-2">search</span>
+</div>
+</header>
+<main class="pb-32">
+<!-- Hero Section with Animated Shader -->
+<section class="relative h-[480px] md:h-[600px] w-full overflow-hidden flex flex-col justify-center px-4 md:px-12">
+<!-- STITCH_SHADER_START:ANIMATION_16 class="absolute inset-0 w-full h-full z-0 opacity-80" -->
+<div class="absolute inset-0 w-full h-full z-0 opacity-80" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_16" style="display:block;width:100%;height:100%"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_16');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+varying vec2 v_texCoord;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+void main() {
+    vec2 uv = v_texCoord;
+    
+    // Blue-grey government/metropolitan aesthetic
+    vec3 color1 = vec3(0.45, 0.55, 0.65); // Steel Blue-Grey
+    vec3 color2 = vec3(0.95, 0.95, 0.98); // Metro White
+    vec3 baseColor = mix(color1, color2, uv.y);
+
+    // Grid/Skyline inspired geometry
+    float grid = abs(sin(uv.x * 15.0) * sin(uv.y * 15.0 + u_time * 0.5));
+    float pattern = smoothstep(0.7, 0.8, grid) * 0.04;
+    
+    vec3 finalColor = mix(baseColor, baseColor * 1.05, pattern);
+    
+    gl_FragColor = vec4(finalColor, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_16 -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent z-1"></div>
+<div class="relative z-10 max-w-4xl">
+<div class="flex items-center gap-2 mb-4 bg-white/90 backdrop-blur-md w-fit px-4 py-2 border-2 border-on-surface rounded-full">
+<span class="material-symbols-outlined text-secondary font-bold">location_on</span>
+<span class="font-label-lg text-on-surface">New Delhi, Delhi</span>
+</div>
+<h1 class="font-display-lg text-headline-lg md:text-display-lg text-on-surface leading-tight mb-2">
+                    Namaste, Arjun!
+                </h1>
+<p class="font-body-lg text-on-surface-variant max-w-xl mb-8">
+                    Welcome to your unified civic dashboard. Access all Delhi government services, transport updates, and digital documents in one secure place.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="neo-brutal-button-primary h-14 px-8 font-label-lg flex items-center gap-2">
+<span class="material-symbols-outlined">explore</span>
+                        Explore Services
+                    </button>
+<button class="bg-white border-3 border-on-surface h-14 px-8 font-label-lg text-on-surface shadow-[4px_4px_0px_0px_#191b22] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_#191b22] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all">
+                        Emergency Help
+                    </button>
+</div>
+</div>
+</section>
+<!-- Quick Actions Bento Grid -->
+<section class="px-4 md:px-12 -mt-16 relative z-20 mb-2xl">
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+<!-- Action Buttons -->
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer bg-primary-fixed">
+<span class="material-symbols-outlined text-primary text-3xl">report_problem</span>
+<span class="font-label-sm text-on-surface">Report Civic Issue</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+<span class="font-label-sm text-on-surface">Find Govt Schemes</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">inventory_2</span>
+<span class="font-label-sm text-on-surface">Document Vault</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">directions_subway</span>
+<span class="font-label-sm text-on-surface">Transport &amp; Metro</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">medical_services</span>
+<span class="font-label-sm text-on-surface">Health Services</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">work</span>
+<span class="font-label-sm text-on-surface">Skill &amp; Jobs</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer">
+<span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+<span class="font-label-sm text-on-surface">Municipal Bills</span>
+</div>
+<div class="neo-brutal-card p-4 flex flex-col items-center justify-center text-center gap-2 cursor-pointer bg-error-container">
+<span class="material-symbols-outlined text-error text-3xl">notification_important</span>
+<span class="font-label-sm text-on-surface">Nearby Alerts</span>
+</div>
+</div>
+</section>
+<!-- Main Featured Section: Metro Map -->
+<section class="px-4 md:px-12 mb-2xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Metro Map Feature -->
+<div class="lg:col-span-8 neo-brutal-card overflow-hidden flex flex-col md:flex-row">
+<div class="p-lg md:w-1/2 flex flex-col justify-between">
+<div>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm border-2 border-on-surface inline-block mb-4">Featured Scheme</span>
+<h2 class="font-headline-lg text-on-surface mb-4">Delhi Metro Connectivity Map</h2>
+<p class="font-body-md text-on-surface-variant mb-6">Plan your journey across the National Capital Region with real-time train updates, station facilities, and last-mile connectivity options.</p>
+</div>
+<button class="neo-brutal-button-primary w-fit px-6 py-3 font-label-lg flex items-center gap-2">
+                            View Live Map
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="md:w-1/2 min-h-[300px] bg-surface-variant relative overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="A highly detailed illustration of a modern Delhi civic skyline featuring the India Gate and modern glass skyscrapers in a clean, high-contrast flat graphic style. The scene is dominated by vibrant primary colors and bold outlines, showcasing a stylized Delhi Metro train passing in the foreground under a bright, crisp morning sky." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3ceQCbpn4Uo0C7OpVpzWJYlEconzMiEVpsPlHK30t5U9Z4ie_nCsxywOwXQ_PN1laviLJWlOdCyvjOkHU-WSI3bbKkCQ263EN0A819jfZqh2JFTItvOF7lb8ZQwc-Do5wm68_uUXIC4QeSrM7hALXOuJ3LDdpsIFI1L_7oeE9EyewDfyIJt0Pt8ULfsVzrxyKg4iCEH4bGT9BERTyd-DN0c4eQZ-AAW5jYQEinPF9jMkJgsDZF8PejpMbvmBWgPDn2AODbIZPaICK')"></div>
+<div class="absolute inset-0 bg-on-surface/10"></div>
+</div>
+</div>
+<!-- Live Updates Sidebar -->
+<div class="lg:col-span-4 flex flex-col gap-4">
+<div class="neo-brutal-card p-6 bg-surface-container-lowest flex-1">
+<h3 class="font-title-lg text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">campaign</span>
+                            Live Updates
+                        </h3>
+<div class="space-y-4">
+<div class="p-3 border-l-4 border-primary bg-surface-container-low">
+<p class="font-label-sm text-primary mb-1">Yellow Line • 2 mins ago</p>
+<p class="font-body-md font-medium text-on-surface">Minor delay reported near Hauz Khas. Normal service expected in 10 mins.</p>
+</div>
+<div class="p-3 border-l-4 border-secondary bg-surface-container-low">
+<p class="font-label-sm text-secondary mb-1">DTC Bus • 15 mins ago</p>
+<p class="font-body-md font-medium text-on-surface">Route 440 updated with 5 new electric buses for peak hours.</p>
+</div>
+<div class="p-3 border-l-4 border-error bg-surface-container-low">
+<p class="font-label-sm text-error mb-1">Traffic • 30 mins ago</p>
+<p class="font-body-md font-medium text-on-surface">Heavy congestion on Outer Ring Road near IIT Flyover.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Featured Section: EV Policy -->
+<section class="px-4 md:px-12 mb-2xl">
+<div class="neo-brutal-card bg-primary-container p-lg md:p-3xl relative overflow-hidden">
+<!-- Lotus Temple Inspired Geometry Decoration -->
+<div class="absolute right-0 top-0 opacity-10 pointer-events-none transform translate-x-1/4 -translate-y-1/4 scale-150">
+<svg height="400" viewbox="0 0 100 100" width="400">
+<path d="M50 5 L60 40 L95 50 L60 60 L50 95 L40 60 L5 50 L40 40 Z" fill="white"></path>
+<circle cx="50" cy="50" fill="transparent" r="10" stroke="white" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="max-w-2xl relative z-10">
+<h2 class="font-headline-lg text-on-primary-container mb-4">Delhi EV Policy Guide</h2>
+<p class="font-body-lg text-on-primary-container opacity-90 mb-8">
+                        Delhi is leading India's electric revolution. Learn about subsidies, charging infrastructure, and tax exemptions for your next green vehicle.
+                    </p>
+<div class="flex flex-col md:flex-row gap-4">
+<div class="neo-brutal-card bg-white p-4 flex-1">
+<span class="material-symbols-outlined text-secondary text-3xl mb-2">ev_station</span>
+<h4 class="font-title-lg text-on-surface">2,500+</h4>
+<p class="font-label-sm text-on-surface-variant">Charging Points</p>
+</div>
+<div class="neo-brutal-card bg-white p-4 flex-1">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">payments</span>
+<h4 class="font-title-lg text-on-surface">₹1.5L</h4>
+<p class="font-label-sm text-on-surface-variant">Max Subsidy</p>
+</div>
+<div class="neo-brutal-card bg-white p-4 flex-1">
+<span class="material-symbols-outlined text-tertiary-container text-3xl mb-2">electric_car</span>
+<h4 class="font-title-lg text-on-surface">No Tax</h4>
+<p class="font-label-sm text-on-surface-variant">Road Tax Exemption</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Neighborhood Map Section -->
+<section class="px-4 md:px-12 mb-2xl">
+<h3 class="font-headline-md text-on-surface mb-6">Discover Nearby Services</h3>
+<div class="neo-brutal-card h-[400px] overflow-hidden relative">
+<div class="w-full h-full bg-surface-container-high flex items-center justify-center" data-location="New Delhi" style="">
+<img class="w-full h-full object-cover" data-alt="A sophisticated and detailed digital map of New Delhi, showcasing landmarks like Connaught Place and India Gate. The map style is minimalist and modern, using the primary blue and secondary green colors of the design system. Icons for hospitals, metro stations, and government offices are highlighted with sharp, clean neo-brutal borders." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEOZTGJbeuK5UFJoJztpwcvDzUJTtOEuh21BAkarMhzPjGMsDyD6Z2I1GSW02a6vK0eZoc38uDqKj29E6aY-3gwtSa83jYs1BEa6Pdd6nwR9OMb2XzDbr2MDX0C8864cFaBexwT-EImu2k7PfXJ4FV0-jGGX4OvkkE2l3D-E6xfVkGvkYie9SnhTOpH1zn6DBw4CPC17hPgOJpS-E4AQKqrvZGE0HG2OSVXC2ct5bOwfpavxBLldURBtAK3X9XJLwSBQatg4H8vgPf"/>
+</div>
+<div class="absolute bottom-6 right-6 flex flex-col gap-3">
+<button class="neo-brutal-card p-3 bg-white hover:bg-surface-container"><span class="material-symbols-outlined">add</span></button>
+<button class="neo-brutal-card p-3 bg-white hover:bg-surface-container"><span class="material-symbols-outlined">remove</span></button>
+</div>
+<div class="absolute top-6 left-6 max-w-xs neo-brutal-card bg-white p-4">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-3 h-3 bg-error rounded-full animate-pulse"></div>
+<span class="font-label-sm font-bold text-on-surface">Live Heatmap: AQI 164</span>
+</div>
+<p class="font-body-md text-on-surface-variant">Air quality in your area is Moderate. Sensitive groups should limit outdoor exertion.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Energy Saving Alert themed -->
+<footer class="bg-inverse-surface text-inverse-on-surface border-t-3 border-on-surface mt-2xl">
+<div class="px-4 md:px-12 py-12">
+<div class="flex flex-col md:flex-row justify-between items-start gap-8 border-b border-outline-variant pb-8 mb-8">
+<div class="max-w-md">
+<h4 class="text-secondary font-black text-title-lg mb-2">Bharat One Delhi</h4>
+<p class="text-on-surface-variant text-body-md">Your single gateway to a smarter, more connected Delhi. A digital initiative for the citizens of the National Capital Territory.</p>
+</div>
+<div class="bg-surface-container-lowest/10 p-6 border-2 border-secondary rounded-xl flex items-center gap-6 max-w-lg">
+<span class="material-symbols-outlined text-secondary text-5xl" style="font-variation-settings: 'FILL' 1;">bolt</span>
+<div>
+<h5 class="text-secondary font-bold text-headline-md mb-1">Peak Load Alert</h5>
+<p class="text-body-md opacity-80">Help us manage Delhi's urban power grid. Try reducing non-essential electricity use between 6 PM - 10 PM tonight.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap justify-between gap-4 font-label-sm opacity-60 uppercase tracking-widest">
+<span>© 2024 Digital Delhi Authority</span>
+<div class="flex gap-6">
+<a href="#">Privacy Policy</a>
+<a href="#">Public API</a>
+<a href="#">Contact Us</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- Bottom Navigation Shell for Mobile -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-3 bg-surface-container-lowest border-t-3 border-on-surface shadow-[0_-4px_0_0_rgba(25,27,34,1)] rounded-t-xl">
+<div class="flex flex-col items-center justify-center bg-secondary-container text-on-secondary-container rounded-full px-4 py-1 border-3 border-on-surface -translate-y-1 transition-all duration-200">
+<span class="material-symbols-outlined">home</span>
+<span class="text-label-sm font-label-sm">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">apps</span>
+<span class="text-label-sm font-label-sm">Services</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">smart_toy</span>
+<span class="text-label-sm font-label-sm">AI</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">query_stats</span>
+<span class="text-label-sm font-label-sm">Track</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-surface-variant opacity-70 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">person</span>
+<span class="text-label-sm font-label-sm">Profile</span>
+</div>
+</nav>
+<script>
+        // Simple scroll interaction for the navigation bar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+
+        // Toggle card interaction states
+        document.querySelectorAll('.neo-brutal-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential hover logic here
+            });
+        });
+    </script>
+</body></html>
